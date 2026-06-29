@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishwakarma Enterprises - शुद्ध एवं प्राकृतिक हर्बल प्रोडक्ट्स</title>
+    <style>
+        /* Modern Minimalist & Natural Color Palette (Deep Green, Soft Mint, Crisp Charcoal) */
+        :root {
+            --primary-color: #1b4332;
+            --primary-light: #2d6a4f;
+            --accent-color: #52b788;
+            --bg-light: #f4f9f6;
+            --text-dark: #2d3142;
+            --text-light: #ffffff;
+            --border-color: #e2ece9;
+            --shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Header Style */
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 5px solid var(--accent-color);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #b7e4c7;
+            font-weight: 300;
+        }
+
+        /* Top Notification Bar */
+        .promo-bar {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            text-align: center;
+            padding: 8px 10px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: #fff;
+            box-shadow: var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+            margin: 0 15px;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 4px;
+        }
+
+        /* Container Section */
+        .container {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* Hero / Welcome Banner */
+        .hero {
+            background: linear-gradient(135deg, #d8f3dc 0%, #b7e4c7 100%);
+            padding: 35px;
+            border-radius: 12px;
+            text-align: center;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow);
+            border-left: 6px solid var(--primary-light);
+        }
+
+        .hero h2 {
+            color: var(--primary-color);
+            margin-bottom: 12px;
+            font-size: 1.6rem;
+        }
+
+        .hero p {
+            color: #2b4c3f;
+            font-size: 1.05rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Section Heading */
+        .section-title {
+            text-align: center;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            position: relative;
+            font-size: 1.8rem;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent-color);
+            margin: 8px auto 0 auto;
+            border-radius: 2px;
+        }
+
+        /* Products Grid Setup (Using responsive block display fallback structure) */
+        .product-grid {
+            display: block;
+            overflow: hidden;
+            margin-bottom: 50px;
+        }
+
+        .product-card {
+            background: #fff;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+            box-shadow: var(--shadow);
+            margin-bottom: 25px;
+            padding: 20px;
+            width: 100%;
+            float: left;
+            transition: transform 0.3s ease;
+        }
+
+        @media(min-width: 600px) {
+            .product-card {
+                width: 48%;
+                margin-right: 4%;
+            }
+            .product-card:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+
+        @media(min-width: 900px) {
+            .product-card {
+                width: 31.33%;
+                margin-right: 3%;
+            }
+            .product-card:nth-child(2n) {
+                margin-right: 3%;
+            }
+            .product-card:nth-child(3n) {
+                margin-right: 0;
+            }
+        }
+
+        .product-image-placeholder {
+            background-color: #edf2f0;
+            height: 180px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            display: block;
+            text-align: center;
+            line-height: 180px;
+            color: #8fa89b;
+            font-weight: bold;
+            font-size: 1.1rem;
+            border: 1px dashed #cbdad2;
+        }
+
+        .product-card h3 {
+            color: var(--primary-color);
+            font-size: 1.3rem;
+            margin-bottom: 8px;
+        }
+
+        .product-card p {
+            color: #555;
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            height: 65px;
+            overflow: hidden;
+        }
+
+        .badge {
+            background-color: #e8f5e9;
+            color: var(--primary-light);
+            padding: 3px 8px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        /* Order Button styling */
+        .btn-order {
+            display: block;
+            background-color: #25d366; /* WhatsApp Green */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: background 0.3s ease;
+        }
+
+        .btn-order:hover {
+            background-color: #128c7e;
+        }
+
+        /* Why Choose Us Section */
+        .features {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: var(--shadow);
+            margin-bottom: 50px;
+            clear: both;
+        }
+
+        .features h3 {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .features ul {
+            list-style-type: none;
+        }
+
+        .features ul li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 25px;
+            color: #444;
+        }
+
+        .features ul li::before {
+            content: '✔️';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+
+        /* Contact Details Footer Section */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 40px 20px;
+            text-align: center;
+            clear: both;
+            border-top: 5px solid var(--accent-color);
+        }
+
+        footer h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #b7e4c7;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+            font-size: 1rem;
+            color: #e2ece9;
+        }
+
+        footer .footer-accent {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .footer-bottom {
+            margin-top: 30px;
+            font-size: 0.85rem;
+            color: #8fa89b;
+            border-top: 1px solid #2d6a4f;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Promo Announcement Bar -->
+    <div class="promo-bar">
+        🌿 100% शुद्ध और प्राकृतिक हर्बल प्रोडक्ट्स | सीधे आपके घर तक डिलीवरी!
+    </div>
+
+    <!-- Main Branding Header -->
+    <header>
+        <h1>VISHWAKARMA ENTERPRISES</h1>
+        <p>Premium Quality Spices & Ayurvedic Herbal Products</p>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html" class="active">होम</a>
+        <a href="#products">हमारे प्रोडक्ट्स</a>
+        <a href="#why-us">विशेषताएं</a>
+        <a href="#contact">संपर्क करें</a>
+    </nav>
+
+    <div class="container">
+        
+        <!-- Welcome Section -->
+        <div class="hero">
+            <h2>शुद्धता और स्वास्थ्य का नया नाम</h2>
+            <p>विश्वकर्मा एंटरप्राइजेज में आपका स्वागत है। हम आपके और आपके परिवार के बेहतर स्वास्थ्य के लिए उच्चतम गुणवत्ता वाले मसाले (Masala) और शुद्ध आयुर्वेदिक जड़ी-बूटियों (Moringa, Neem, Tulsi आदि) के पाउडर और प्रोडक्ट्स उपलब्ध कराते हैं।</p>
+        </div>
+
+        <!-- Products Showcase Section -->
+        <h2 id="products" class="section-title">हमारे मुख्य प्रोडक्ट्स (Our Products)</h2>
+        
+        <div class="product-grid">
+            
+            <!-- Product 1: Masala -->
+            <div class="product-card">
+                <span class="badge">शुद्ध देसी मसाले</span>
+                <div class="product-image-placeholder">Masala (मसाले)</div>
+                <h3>स्पेशल मिक्स मसाले</h3>
+                <p>बिना मिलावट के तैयार किए गए घर जैसे शुद्ध और खुशबूदार मसाले, जो आपके खाने का स्वाद दोगुना कर देंगे।</p>
+                <a href="https://wa.me/919935830935?text=Hi, mujhe Masala order karna hai." class="btn-order" target="_blank">💬 WhatsApp पर ऑर्डर करें</a>
+            </div>
+
+            <!-- Product 2: Moringa -->
+            <div class="product-card">
+                <span class="badge">सुपरफूड पाउडर</span>
+                <div class="product-image-placeholder">Moringa (सहजन)</div>
+                <h3>मोरिंगा पाउडर (Moringa)</h3>
+                <p>300 से अधिक बीमारियों से लड़ने में मददगार, प्रोटीन, विटामिन और मिनरल्स से भरपूर 100% ऑर्गेनिक मोरिंगा लीफ पाउडर।</p>
+                <a href="https://wa.me/919935830935?text=Hi, mujhe Moringa powder order karna hai." class="btn-order" target="_blank">💬 WhatsApp पर ऑर्डर करें</a>
+            </div>
+
+            <!-- Product 3: Neem -->
+            <div class="product-card">
+                <span class="badge">नेचुरल एंटीसेप्टिक</span>
+                <div class="product-image-placeholder">Neem (नीम)</div>
+                <h3>शुद्ध नीम पाउडर (Neem)</h3>
+                <p>त्वचा की समस्याओं, खून को साफ करने और रोग प्रतिरोधक क्षमता (Immunity) को बढ़ाने के लिए प्राकृतिक रूप से तैयार नीम पाउडर।</p>
+                <a href="https://wa.me/919935830935?text=Hi, mujhe Neem powder order karna hai." class="btn-order" target="_blank">💬 WhatsApp पर ऑर्डर करें</a>
+            </div>
+
+            <!-- Product 4: Tulsi -->
+            <div class="product-card">
+                <span class="badge">इम्यूनिटी बूस्टर</span>
+                <div class="product-image-placeholder">Tulsi (तुलसी)</div>
+                <h3>तुलसी ड्रॉप्स / पाउडर</h3>
+                <p>सर्दी, खांसी और मौसमी बीमारियों से सुरक्षा के लिए बेस्ट एंटी-ऑक्सीडेंट गुणों से भरपूर प्रीमियम तुलसी एक्सट्रैक्ट।</p>
+                <a href="https://wa.me/919935830935?text=Hi, mujhe Tulsi product order karna hai." class="btn-order" target="_blank">💬 WhatsApp पर ऑर्डर करें</a>
+            </div>
+
+            <!-- Product 5: Karela -->
+            <div class="product-card">
+                <span class="badge">शुगर कंट्रोल स्पेशल</span>
+                <div class="product-image-placeholder">Karela (करेला)</div>
+                <h3>करेला-जामुन जूस / पाउडर</h3>
+                <p>ब्लड शुगर लेवल को प्राकृतिक रूप से नियंत्रित करने और पाचन क्रिया को दुरुस्त रखने में बेहद असरदार फॉर्मूला।</p>
+                <a href="https://wa.me/919935830935?text=Hi, mujhe Karela product order karna hai." class="btn-order" target="_blank">💬 WhatsApp पर ऑर्डर करें</a>
+            </div>
+
+            <!-- Product 6: Mushroom -->
+            <div class="product-card">
+                <span class="badge">हाई प्रोटीन डाइट</span>
+                <div class="product-image-placeholder">Mushroom (मशरूम)</div>
+                <h3>सूखे मशरूम / पाउडर</h3>
+                <p>प्रोटीन, विटामिन डी और इम्युनिटी बढ़ाने वाले तत्वों से भरपूर प्रीमियम क्वालिटी ड्राई मशरूम प्रोडक्ट।</p>
+                <a href="https://wa.me/919935830935?text=Hi, mujhe Mushroom product order karna hai." class="btn-order" target="_blank">💬 WhatsApp पर ऑर्डर करें</a>
+            </div>
+
+            <!-- Product 7: Amla -->
+            <div class="product-card">
+                <span class="badge">विटामिन-C रिच</span>
+                <div class="product-image-placeholder">Amla (आँवला)</div>
+                <h3>आँवला पाउडर / कैन्डी</h3>
+                <p>बालों, आँखों और पेट की सेहत के लिए अमृत समान, विटामिन-सी का सबसे बेहतरीन प्राकृतिक स्रोत।</p>
+                <a href="https://wa.me/919935830935?text=Hi, mujhe Amla product order karna hai." class="btn-order" target="_blank">💬 WhatsApp पर ऑर्डर करें</a>
+            </div>
+
+        </div>
+
+        <!-- Trust & Features Section -->
+        <div id="why-us" class="features">
+            <h3>विश्वकर्मा एंटरप्राइजेज से ही क्यों खरीदें?</h3>
+            <ul>
+                <li><strong>100% नेचुरल और केमिकल मुक्त:</strong> हमारे सभी हर्बल पाउडर्स बिना किसी प्रिजर्वेटिव या केमिकल के तैयार किए जाते हैं।</li>
+                <li><strong>डायरेक्ट होम डिलीवरी:</strong> आप घर बैठे अपना ऑर्डर बुक कर सकते हैं, हम सुरक्षित डिलीवरी सुनिश्चित करते हैं।</li>
+                <li><strong>आसान ऑर्डर प्रक्रिया:</strong> बस अपने मनपसंद प्रोडक्ट के नीचे दिए गए WhatsApp बटन पर क्लिक करें और सीधे ऑर्डर करें।</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Contact & Address Footer Area -->
+    <footer id="contact">
+        <h3>संपर्क और ऑर्डर की जानकारी (Contact details)</h3>
+        <p>ऑर्डर बुक करने, डीलरशिप या किसी भी पूछताछ के लिए आज ही हमें संपर्क करें:</p>
+        <p style="margin-top: 15px;"><span class="footer-accent">📞 मोबाइल नंबर:</span> +91 9935830935</p>
+        <p><span class="footer-accent">📍 पता (Address):</span> ग्राम बरेहा, पोस्ट बहरौली, जिला लखनऊ, उत्तर प्रदेश - 226303</p>
+        
+        <div class="footer-bottom">
+            &copy; 2026 Vishwakarma Enterprises. All Rights Reserved. <br>
+            Designed for Natural Health & Wellness.
+        </div>
+    </footer>
+
+</body>
+</html>
