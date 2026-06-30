@@ -1,204 +1,118 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vishwakarma Enterprises - शुद्ध एवं प्राकृतिक हर्बल प्रोडक्ट्स</title>
-    <style>
-        :root {
-            --primary-color: #1b4332;
-            --primary-light: #2d6a4f;
-            --accent-color: #52b788;
-            --bg-light: #f4f9f6;
-            --text-dark: #2d3142;
-            --text-light: #ffffff;
-            --border-color: #e2ece9;
-            --shadow: 0 4px 15px rgba(0,0,0,0.05);
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishwakarma Enterprises</title>
 
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; scroll-behavior: smooth; }
-        body { background-color: var(--bg-light); color: var(--text-dark); line-height: 1.6; }
-        header { background-color: var(--primary-color); color: var(--text-light); text-align: center; padding: 40px 20px; border-bottom: 5px solid var(--accent-color); }
-        header h1 { font-size: 2.2rem; margin-bottom: 5px; }
-        header p { font-size: 1.1rem; color: #b7e4c7; }
-        .promo-bar { background-color: var(--accent-color); color: var(--primary-color); text-align: center; padding: 8px 10px; font-size: 0.9rem; font-weight: bold; }
-        
-        nav { background-color: #fff; box-shadow: var(--shadow); position: sticky; top: 0; z-index: 100; text-align: center; padding: 15px 0; }
-        nav a { color: var(--primary-color); text-decoration: none; font-weight: 600; margin: 0 15px; font-size: 1rem; }
-        nav a:hover { color: var(--accent-color); }
+<style>
 
-        .container { max-width: 1100px; margin: 30px auto; padding: 0 20px; }
-        .hero { background: linear-gradient(135deg, #d8f3dc 0%, #b7e4c7 100%); padding: 35px; border-radius: 12px; text-align: center; margin-bottom: 40px; border-left: 6px solid var(--primary-light); }
-        .hero h2 { color: var(--primary-color); margin-bottom: 12px; }
-        
-        .section-title { text-align: center; color: var(--primary-color); margin-top: 40px; margin-bottom: 30px; font-size: 1.8rem; }
-        
-        /* Product Grid */
-        .product-grid { display: block; overflow: hidden; margin-bottom: 50px; }
-        .product-card { background: #fff; border-radius: 10px; border: 1px solid var(--border-color); box-shadow: var(--shadow); margin-bottom: 25px; padding: 20px; width: 100%; float: left; text-align: center; }
-        @media(min-width: 600px) { .product-card { width: 48%; margin-right: 4%; } .product-card:nth-child(2n) { margin-right: 0; } }
-        @media(min-width: 900px) { .product-card { width: 31.33%; margin-right: 3%; } .product-card:nth-child(2n) { margin-right: 3%; } .product-card:nth-child(3n) { margin-right: 0; } }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
 
-        /* Product Image Style */
-        .product-image-container { background-color: #edf2f0; height: 220px; border-radius: 8px; margin-bottom: 15px; overflow: hidden; border: 1px solid #cbdad2; display: flex; align-items: center; justify-content: center; }
-        .product-image-container img { width: 100%; height: 100%; object-fit: cover; }
-        
-        .badge { background-color: #e8f5e9; color: var(--primary-light); padding: 3px 8px; font-size: 0.8rem; font-weight: bold; border-radius: 4px; display: inline-block; margin-bottom: 10px; }
-        .btn-order { display: block; background-color: #25d366; color: #fff; text-align: center; padding: 10px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 15px; }
-        
-        .features { background-color: #fff; padding: 30px; border-radius: 10px; box-shadow: var(--shadow); margin-bottom: 50px; clear: both; }
-        .features ul { list-style-type: none; }
-        .features ul li { margin-bottom: 12px; padding-left: 25px; position: relative; }
-        .features ul li::before { content: '✔️'; position: absolute; left: 0; color: var(--accent-color); font-weight: bold; }
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#0f5132,#198754);
+}
 
-        /* Auth Section */
-        .auth-section { display: flex; flex-wrap: wrap; gap: 30px; margin-bottom: 60px; clear: both; }
-        .auth-box { background: #fff; padding: 30px; border-radius: 12px; box-shadow: var(--shadow); flex: 1; min-width: 280px; border-top: 6px solid var(--primary-color); text-align: center; }
-        .auth-box h3 { color: var(--primary-color); margin-bottom: 5px; }
-        .email-sub { color: #8fa89b; font-size: 0.85rem; margin-bottom: 20px; display: block; }
-        
-        .form-group { margin-bottom: 15px; text-align: left; }
-        .form-group label { display: block; margin-bottom: 5px; color: var(--primary-color); font-weight: 600; font-size: 0.9rem; }
-        .form-group input { width: 100%; padding: 10px; border: 1px solid #cbdad2; border-radius: 6px; outline: none; transition: border-color 0.3s; }
-        .form-group input:focus { border-color: var(--accent-color); }
-        
-        .btn-submit { width: 100%; background: var(--primary-color); color: white; border: none; padding: 12px; font-weight: bold; border-radius: 6px; cursor: pointer; transition: background 0.3s; }
-        .btn-submit:hover { background: var(--primary-light); }
+.login-container{
+width:380px;
+background:white;
+padding:35px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+text-align:center;
+}
 
-        footer { background-color: var(--primary-color); color: var(--text-light); padding: 40px 20px; text-align: center; clear: both; border-top: 5px solid var(--accent-color); }
-        footer h3 { font-size: 1.5rem; margin-bottom: 20px; color: #b7e4c7; }
-        footer p { margin-bottom: 10px; color: #e2ece9; }
-        .footer-accent { color: #fff; font-weight: bold; }
-        .footer-bottom { margin-top: 30px; font-size: 0.85rem; color: #8fa89b; border-top: 1px solid #2d6a4f; padding-top: 15px; }
-    </style>
+.logo{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:15px;
+}
+
+h1{
+color:#0f5132;
+margin-bottom:5px;
+}
+
+.tagline{
+color:#666;
+font-size:14px;
+margin-bottom:25px;
+}
+
+input{
+width:100%;
+padding:14px;
+margin:10px 0;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:15px;
+}
+
+button{
+width:100%;
+padding:14px;
+border:none;
+background:#198754;
+color:white;
+font-size:18px;
+border-radius:10px;
+cursor:pointer;
+font-weight:bold;
+}
+
+button:hover{
+background:#146c43;
+}
+
+.contact{
+margin-top:20px;
+font-size:13px;
+color:#555;
+line-height:1.8;
+}
+
+</style>
 </head>
+
 <body>
 
-    <div class="promo-bar">🌿 100% शुद्ध और प्राकृतिक हर्बल प्रोडक्ट्स | सीधे आपके घर तक डिलीवरी!</div>
+<div class="login-container">
 
-    <header>
-        <h1>VISHWAKARMA ENTERPRISES</h1>
-        <p>Premium Quality Spices & Ayurvedic Herbal Products</p>
-    </header>
+<img src="images/logo.png" alt="Logo" class="logo">
 
-    <nav>
-        <a href="#">होम</a>
-        <a href="#products">हमारे प्रोडक्ट्स</a>
-        <a href="#why-us">विशेषताएं</a>
-        <a href="#account-section" style="color: #52b788; font-weight: bold;">लॉगिन / रजिस्टर</a>
-        <a href="#contact">संपर्क करें</a>
-    </nav>
+<h1>Vishwakarma Enterprises</h1>
 
-    <div class="container">
-        <!-- Hero Section -->
-        <div class="hero">
-            <h2>शुद्धता और स्वास्थ्य का नया नाम</h2>
-            <p>विश्वकर्मा एंटरप्राइजेज में आपका स्वागत है। हम आपके बेहतर स्वास्थ्य के लिए उच्चतम गुणवत्ता वाले मसाले और शुद्ध आयुर्वेदिक जड़ी-बूटियों के पाउडर उपलब्ध कराते हैं।</p>
-        </div>
+<p class="tagline">
+Nature's Goodness, Trusted Quality
+</p>
 
-        <!-- Products Section -->
-        <h2 id="products" class="section-title">हमारे मुख्य प्रोडक्ट्स</h2>
-        <div class="product-grid">
-            
-            <!-- Product: Masala -->
-            <div class="product-card">
-                <span class="badge">शुद्ध देसी मसाले</span>
-                <div class="product-image-container">
-                    <img src="images/masala-packet.jpg" alt="स्पेशल मिक्स मसाले पैकेट" onerror="this.src='https://placehold.co/400x300/edf2f0/1b4332?text=Masala+Packet'">
-                </div>
-                <h3>स्पेशल मिक्स मसाले</h3>
-                <p>बिना मिलावट के तैयार किए गए घर जैसे शुद्ध और खुशबूदार मसाले का पैकेट।</p>
-                <a href="https://wa.me/919935830935?text=Hi, mujhe Masala order karna hai." class="btn-order" target="_blank">💬 WhatsApp ऑर्डर</a>
-            </div>
+<input type="email" placeholder="Enter Email">
 
-            <!-- Product: Moringa -->
-            <div class="product-card">
-                <span class="badge">सुपरफूड पाउडर</span>
-                <div class="product-image-container">
-                    <img src="images/moringa-packet.jpg" alt="मोरिंगा पाउडर पैकेट" onerror="this.src='https://placehold.co/400x300/edf2f0/1b4332?text=Moringa+Packet'">
-                </div>
-                <h3>मोरिंगा पाउडर</h3>
-                <p>विटामिन और मिनरल्स से भरपूर 100% ऑर्गेनिक मोरिंगा लीफ पाउडर पैकेट।</p>
-                <a href="https://wa.me/919935830935?text=Hi, mujhe Moringa powder order karna hai." class="btn-order" target="_blank">💬 WhatsApp ऑर्डर</a>
-            </div>
+<input type="password" placeholder="Enter Password">
 
-            <!-- Product: Neem -->
-            <div class="product-card">
-                <span class="badge">नेचुरल एंटीसेप्टिक</span>
-                <div class="product-image-container">
-                    <img src="images/neem-packet.jpg" alt="शुद्ध नीम पाउडर पैकेट" onerror="this.src='https://placehold.co/400x300/edf2f0/1b4332?text=Neem+Packet'">
-                </div>
-                <h3>शुद्ध नीम पाउडर</h3>
-                <p>त्वचा की समस्याओं और रोग प्रतिरोधक क्षमता बढ़ाने के लिए उपयोगी हर्बल पैकेट।</p>
-                <a href="https://wa.me/919935830935?text=Hi, mujhe Neem powder order karna hai." class="btn-order" target="_blank">💬 WhatsApp ऑर्डर</a>
-            </div>
-            
-        </div>
+<button onclick="window.location.href='home.html'">
+Login
+</button>
 
-        <!-- Features Section -->
-        <div id="why-us" class="features">
-            <h3>विश्वकर्मा एंटरप्राइजेज से ही क्यों खरीदें?</h3>
-            <ul>
-                <li><strong>100% नेचुरल:</strong> हमारे सभी पाउडर्स बिना किसी केमिकल के तैयार किए जाते हैं।</li>
-                <li><strong>डायरेक्ट होम डिलीवरी:</strong> आप घर बैठे ऑर्डर करें, हम सुरक्षित डिलीवरी सुनिश्चित करते हैं।</li>
-            </ul>
-        </div>
+<div class="contact">
+📧 vishwakarmaenterprises.co@gmail.com<br>
+📱 +91 9935830935<br>
+📍 Near Purvanchal Expressway,<br>
+Bareha Bahrauli, Lucknow - 226303
+</div>
 
-        <!-- Merged Account Section -->
-        <h2 id="account-section" class="section-title">खाता (Account) सेटअप और लॉगिन</h2>
-        <div class="auth-section">
-            <!-- Login Block -->
-            <div class="auth-box">
-                <h3>लॉगिन करें</h3>
-                <span class="email-sub">vishwakarmaenterprises.co@gmail.com</span>
-                <form action="#" method="GET" onsubmit="alert('लॉगिन सफल!'); return false;">
-                    <div class="form-group">
-                        <label>यूज़रनेम / ईमेल</label>
-                        <input type="text" placeholder="अपना यूज़रनेम दर्ज करें" required>
-                    </div>
-                    <div class="form-group">
-                        <label>पासवर्ड</label>
-                        <input type="password" placeholder="अपना पासवर्ड दर्ज करें" required>
-                    </div>
-                    <button type="submit" class="btn-submit">प्रवेश करें (Login)</button>
-                </form>
-            </div>
-
-            <!-- Signup Block -->
-            <div class="auth-box">
-                <h3>नया अकाउंट बनाएं</h3>
-                <span class="email-sub">vishwakarmaenterprises.co@gmail.com</span>
-                <form action="#" method="GET" onsubmit="alert('रजिस्ट्रेशन सफल!'); return false;">
-                    <div class="form-group">
-                        <label>पूरा नाम</label>
-                        <input type="text" placeholder="अपना नाम दर्ज करें" required>
-                    </div>
-                    <div class="form-group">
-                        <label>मोबाइल नंबर</label>
-                        <input type="tel" placeholder="अपना 10 अंकों का मोबाइल नंबर" pattern="[0-9]{10}" required>
-                    </div>
-                    <div class="form-group">
-                        <label>ईमेल आईडी</label>
-                        <input type="email" placeholder="अपनी ईमेल आईडी दर्ज करें" required>
-                    </div>
-                    <div class="form-group">
-                        <label>नया पासवर्ड</label>
-                        <input type="password" placeholder="एक मजबूत पासवर्ड बनाएं" required>
-                    </div>
-                    <button type="submit" class="btn-submit">रजिस्टर करें (Sign Up)</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- Contact Footer Section -->
-    <footer id="contact">
-        <h3>संपर्क और ऑर्डर की जानकारी</h3>
-        <p><span class="footer-accent">📞 मोबाइल नंबर:</span> +91 9935830935</p>
-        <p><span class="footer-accent">📧 ईमेल:</span> vishwakarmaenterprises.co@gmail.com</p>
-        <p><span class="footer-accent">📍 पता:</span> ग्राम बरेहा, पोस्ट बहरौली, जिला लखनऊ, उत्तर प्रदेश - 226303</p>
-        <div class="footer-bottom">&copy; 2026 Vishwakarma Enterprises. All Rights Reserved.</div>
-    </footer>
+</div>
 
 </body>
 </html>
