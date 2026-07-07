@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shopping Cart | VE Naturals</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<link rel="icon" href="images/logo.png">
+
+</head>
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="top-bar">
+
+<div class="container top-flex">
+
+<div class="top-left">
+
+<i class="fa-solid fa-leaf"></i>
+
+Welcome to VE Naturals
+
+</div>
+
+<div class="top-right">
+
+<span>
+
+<i class="fa-solid fa-phone"></i>
+
++91 9935830935
+
+</span>
+
+<span>
+
+<i class="fa-solid fa-envelope"></i>
+
+vishwakarmaenterprises.co@gmail.com
+
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- HEADER -->
+
+<header class="main-header">
+
+<div class="container header-flex">
+
+<div class="logo">
+
+<a href="index.html">
+
+<img src="images/logo.png" alt="Logo">
+
+</a>
+
+</div>
+
+<div class="search-wrapper">
+
+<div class="search-box">
+
+<input
+type="text"
+placeholder="Search Products...">
+
+<button>
+
+<i class="fa fa-search"></i>
+
+</button>
+
+</div>
+
+</div>
+
+<div class="header-icons">
+
+<a href="login.html">
+
+<div class="icon-box">
+
+<i class="fa-regular fa-user"></i>
+
+<p>Login</p>
+
+</div>
+
+</a>
+
+<a href="wishlist.html">
+
+<div class="icon-box">
+
+<i class="fa-regular fa-heart"></i>
+
+<span>0</span>
+
+<p>Wishlist</p>
+
+</div>
+
+</a>
+
+<a href="cart.html">
+
+<div class="icon-box">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span>1</span>
+
+<p>Cart</p>
+
+</div>
+
+</a>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="container nav-flex">
+
+<ul class="nav-menu">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="shop.html">Shop</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+<li><a class="active" href="cart.html">Cart</a></li>
+
+</ul>
+
+</div>
+
+</nav>
+
+<!-- PAGE TITLE -->
+
+<section class="page-banner">
+
+<div class="container">
+
+<h1>
+
+Shopping Cart
+
+</h1>
+
+<p>
+
+<a href="index.html">Home</a>
+
+/
+
+Shopping Cart
+
+</p>
+
+</div>
+
+</section>
+
+<!-- CART -->
+
+<section class="cart-section">
+
+<div class="container">
+
+<table class="cart-table">
+
+<thead>
+
+<tr>
+
+<th>Product</th>
+
+<th>Price</th>
+
+<th>Qty</th>
+
+<th>Total</th>
+
+<th>Remove</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+
+<div class="cart-product">
+
+<img src="images/products/product1.png">
+
+<div>
+
+<h4>
+
+VE Garam Masala
+
+</h4>
+
+<p>
+
+100g Pack
+
+</p>
+
+</div>
+
+</div>
+
+</td>
+
+<td>
+
+₹149
+
+</td>
+
+<td>
+
+<input
+type="number"
+value="1"
+min="1">
+
+</td>
+
+<td>
+
+₹149
+
+</td>
+
+<td>
+
+<button class="remove-btn">
+
+<i class="fa-solid fa-trash"></i>
+
+</button>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<div class="cart-product">
+
+<img src="images/products/product2.png">
+
+<div>
+
+<h4>
+
+Turmeric Powder
+
+</h4>
+
+<p>
+
+200g Pack
+
+</p>
+
+</div>
+
+</div>
+
+</td>
+
+<td>
+
+₹99
+
+</td>
+
+<td>
+
+<input
+type="number"
+value="2"
+min="1">
+
+</td>
+
+<td>
+
+₹198
+
+</td>
+
+<td>
+
+<button class="remove-btn">
+
+<i class="fa-solid fa-trash"></i>
+
+</button>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+<!-- ==========================
+CART SUMMARY
+========================== -->
+
+<div class="cart-bottom">
+
+<div class="coupon-box">
+
+<h3>Apply Coupon</h3>
+
+<div class="coupon-form">
+
+<input
+type="text"
+placeholder="Enter Coupon Code">
+
+<button class="btn-green">
+
+Apply Coupon
+
+</button>
+
+</div>
+
+</div>
+
+<div class="cart-summary">
+
+<h2>
+
+Cart Summary
+
+</h2>
+
+<div class="summary-row">
+
+<span>
+
+Subtotal
+
+</span>
+
+<span>
+
+₹347
+
+</span>
+
+</div>
+
+<div class="summary-row">
+
+<span>
+
+Shipping
+
+</span>
+
+<span>
+
+FREE
+
+</span>
+
+</div>
+
+<div class="summary-row">
+
+<span>
+
+GST (5%)
+
+</span>
+
+<span>
+
+₹17
+
+</span>
+
+</div>
+
+<div class="summary-row">
+
+<span>
+
+Discount
+
+</span>
+
+<span style="color:green;">
+
+- ₹20
+
+</span>
+
+</div>
+
+<hr>
+
+<div class="summary-row total">
+
+<strong>
+
+Grand Total
+
+</strong>
+
+<strong>
+
+₹344
+
+</strong>
+
+</div>
+
+<div class="cart-buttons">
+
+<a href="shop.html"
+class="btn-white">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+Continue Shopping
+
+</a>
+
+<a href="checkout.html"
+class="btn-green">
+
+<i class="fa-solid fa-credit-card"></i>
+
+Proceed to Checkout
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+SHOPPING BENEFITS
+========================== -->
+
+<section class="features">
+
+<div class="container feature-grid">
+
+<div class="feature">
+
+<i class="fa-solid fa-truck-fast"></i>
+
+<h4>
+
+Free Shipping
+
+</h4>
+
+<p>
+
+Above ₹499
+
+</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-rotate-left"></i>
+
+<h4>
+
+Easy Returns
+
+</h4>
+
+<p>
+
+7 Days Return Policy
+
+</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-lock"></i>
+
+<h4>
+
+Secure Payment
+
+</h4>
+
+<p>
+
+100% Safe Payment
+
+</p>
+
+</div>
+
+<div class="feature">
+
+<i class="fa-solid fa-headset"></i>
+
+<h4>
+
+Customer Support
+
+</h4>
+
+<p>
+
+24×7 Support
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- ==========================
+NEWSLETTER
+========================== -->
+
+<section class="newsletter">
+
+<div class="container newsletter-flex">
+
+<div>
+
+<h2>
+
+Subscribe Our Newsletter
+
+</h2>
+
+<p>
+
+Get Latest Offers, New Products & Discounts Directly in Your Inbox.
+
+</p>
+
+</div>
+
+<form>
+
+<input
+type="email"
+placeholder="Enter Your Email">
+
+<button>
+
+Subscribe
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- ==========================
+FOOTER
+========================== -->
+
+<footer>
+
+<div class="container footer-grid">
+
+<!-- ABOUT -->
+
+<div>
+
+<h2>
+
+VE Naturals
+
+</h2>
+
+<p>
+
+🌿 Pure & Natural Herbal Products & Premium Quality Spices.
+
+Nature's Purity, Trusted Taste.
+
+</p>
+
+<div class="social">
+
+<a href="#">
+
+<i class="fab fa-facebook-f"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fab fa-instagram"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fab fa-youtube"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+</div>
+
+</div>
+
+<!-- QUICK LINKS -->
+
+<div>
+
+<h3>
+
+Quick Links
+
+</h3>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="shop.html">Shop</a></li>
+
+<li><a href="cart.html">Cart</a></li>
+
+<li><a href="wishlist.html">Wishlist</a></li>
+
+<li><a href="login.html">Login</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+</ul>
+
+</div>
+
+<!-- CATEGORIES -->
+
+<div>
+
+<h3>
+
+Categories
+
+</h3>
+
+<ul>
+
+<li><a href="#">Herbal Powders</a></li>
+
+<li><a href="#">Whole Spices</a></li>
+
+<li><a href="#">Blended Masala</a></li>
+
+<li><a href="#">Premium Spices</a></li>
+
+<li><a href="#">Organic Products</a></li>
+
+</ul>
+
+</div>
+
+<!-- CONTACT -->
+
+<div>
+
+<h3>
+
+Contact Us
+
+</h3>
+
+<p>
+
+<strong>
+
+Manufactured & Marketed By
+
+</strong>
+
+</p>
+
+<p>
+
+VISHWAKARMA ENTERPRISES
+
+</p>
+
+<p>
+
+Near Purvanchal Expressway
+
+Bareha, Bahrauli
+
+Mohanlalganj
+
+Lucknow – 226303
+
+</p>
+
+<p>
+
+📞 +91 9935830935
+
+</p>
+
+<p>
+
+✉️ vishwakarmaenterprises.co@gmail.com
+
+</p>
+
+</div>
+
+</div>
+
+<div class="copyright">
+
+© 2026 VE Naturals |
+
+Manufactured & Marketed By VISHWAKARMA ENTERPRISES |
+
+All Rights Reserved.
+
+</div>
+
+</footer>
+
+<!-- SCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
