@@ -1,0 +1,801 @@
+<?php
+include 'db.php';
+
+$search = "";
+$category = "";
+
+if (isset($_GET['search'])) {
+    $search = mysqli_real_escape_string($conn, $_GET['search']);
+}
+
+if (isset($_GET['category'])) {
+    $category = mysqli_real_escape_string($conn, $_GET['category']);
+}
+
+if (!empty($search) && !empty($category)) {
+    $sql = "SELECT * FROM products 
+            WHERE (product_name LIKE '%$search%'
+            OR category LIKE '%$search%'
+            OR description LIKE '%$search')";           
+} elseif (!empty($search)) {
+    $sql = "SELECT * FROM products 
+            WHERE product_name LIKE '%$search%'";
+} elseif (!empty($category)) {
+    $sql = "SELECT * FROM products 
+            WHERE category = '$category'";
+} else {
+    $sql = "SELECT * FROM products";
+}
+
+$result = mysqli_query($conn, $sql);
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Products</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#f8f8f8;
+            padding:30px;
+        }
+        .products{
+            display:grid;
+            grid-template-columns:repeat(4,1fr);
+            gap:20px;
+            margin-top:20px;
+        }
+        .product-card{
+            background:#fff;
+            padding:15px;
+            border-radius:10px;
+            box-shadow:0 2px 8px rgba(0,0,0,0.08);
+            text-align:center;
+        }
+        .product-card img{
+            width:150px;
+            height:150px;
+            object-fit:contain;
+        }
+        .product-card h3{
+            margin:10px 0;
+            font-size:18px;
+        }
+        .product-card p{
+            margin:5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Search Results</h2>
+
+<div class="products">
+<?php
+if (mysqli_num_rows($result) > 0) {
+    while($row = mysqli_fetch_assoc($result)) {
+?>
+        <div class="product-card">
+            <img src="images/<?php echo $row['image']; ?>" alt="">
+            <h3><?php echo $row['product_name']; ?></h3>
+            <p>Category: <?php echo $row['category']; ?></p>
+            <p>₹<?php echo $row['price']; ?></p>
+        </div>
+<?php
+    }
+} else {
+    echo "<p>No products found.</p>";
+}
+?>
+</div>
+
+</body>
+</html>
+<!-- ==========================
+PURCHASE SECTION
+========================== -->
+
+<div class="quantity-box">
+
+<label><strong>Quantity :</strong></label>
+
+<div class="quantity">
+
+<button type="button">-</button>
+
+<input type="number" value="1" min="1">
+
+<button type="button">+</button>
+
+</div>
+
+</div>
+
+<div class="product-buttons">
+
+<a href="cart.html" class="btn-green">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+Add To Cart
+
+</a>
+
+<a href="checkout.html" class="btn-white">
+
+<i class="fa-solid fa-bolt"></i>
+
+Buy Now
+
+</a>
+
+<a href="wishlist.html" class="btn-white">
+
+<i class="fa-regular fa-heart"></i>
+
+Wishlist
+
+</a>
+
+</div>
+
+<hr>
+
+<!-- ==========================
+PRODUCT FEATURES
+========================== -->
+
+<div class="product-features">
+
+<h3>
+
+Product Highlights
+
+</h3>
+
+<ul>
+
+<li>✔ 100% Pure & Natural Ingredients</li>
+
+<li>✔ No Artificial Colour</li>
+
+<li>✔ No Preservatives</li>
+
+<li>✔ Rich Aroma & Freshness</li>
+
+<li>✔ Premium Quality Packaging</li>
+
+<li>✔ Hygienically Processed</li>
+
+<li>✔ Made in India</li>
+
+</ul>
+
+</div>
+
+<hr>
+
+<!-- ==========================
+PRODUCT SPECIFICATION
+========================== -->
+
+<div class="specification">
+
+<h3>
+
+Product Specifications
+
+</h3>
+
+<table>
+
+<tr>
+
+<td>Brand</td>
+
+<td>VE Naturals</td>
+
+</tr>
+
+<tr>
+
+<td>Product Name</td>
+
+<td>VE Garam Masala</td>
+
+</tr>
+
+<tr>
+
+<td>Net Weight</td>
+
+<td>100g / 200g / 500g</td>
+
+</tr>
+
+<tr>
+
+<td>Shelf Life</td>
+
+<td>12 Months</td>
+
+</tr>
+
+<tr>
+
+<td>Storage</td>
+
+<td>Store in Cool & Dry Place</td>
+
+</tr>
+
+<tr>
+
+<td>Packaging</td>
+
+<td>Food Grade Pouch</td>
+
+</tr>
+
+<tr>
+
+<td>Country of Origin</td>
+
+<td>India</td>
+
+</tr>
+
+</table>
+
+</div>
+
+<hr>
+
+<!-- ==========================
+DELIVERY INFO
+========================== -->
+
+<div class="delivery-box">
+
+<h3>
+
+Delivery Information
+
+</h3>
+
+<p>
+
+🚚 Free Delivery on Orders Above ₹499
+
+</p>
+
+<p>
+
+📦 Dispatch within 24 Hours
+
+</p>
+
+<p>
+
+🔒 Secure Payment Available
+
+</p>
+
+<p>
+
+↩ Easy Return Policy
+
+</p>
+
+</div>
+
+<hr>
+
+<!-- ==========================
+SHARE
+========================== -->
+
+<div class="share-product">
+
+<h3>
+
+Share This Product
+
+</h3>
+
+<div class="social">
+
+<a href="#">
+
+<i class="fab fa-facebook-f"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fab fa-instagram"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fab fa-twitter"></i>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================
+PRODUCT DESCRIPTION
+========================== -->
+
+<section class="product-description">
+
+<div class="container">
+
+<h2>
+
+Product Description
+
+</h2>
+
+<p>
+
+VE Naturals Garam Masala is a premium blend of carefully selected whole spices. Every ingredient is cleaned, processed and packed hygienically to preserve its natural aroma and authentic taste.
+
+Our Garam Masala enhances the flavour of vegetables, curries, dals, paneer dishes and many traditional Indian recipes.
+
+</p>
+
+<p>
+
+Manufactured & Marketed By:
+
+<strong>VISHWAKARMA ENTERPRISES</strong>
+
+Near Purvanchal Expressway,
+
+Bareha, Bahrauli,
+
+Mohanlalganj,
+
+Lucknow - 226303
+
+</p>
+
+</div>
+
+</section>
+<!-- =====================================
+CUSTOMER REVIEWS
+====================================== -->
+
+<section class="review-section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Customer Reviews</h2>
+
+</div>
+
+<div class="review-grid">
+
+<div class="review-card">
+
+★★★★★
+
+<p>
+
+Excellent Quality Garam Masala.
+Very Fresh Aroma and Premium Taste.
+
+</p>
+
+<h4>Rahul Sharma</h4>
+
+</div>
+
+<div class="review-card">
+
+★★★★★
+
+<p>
+
+Packaging is excellent.
+Worth every rupee.
+
+</p>
+
+<h4>Neha Verma</h4>
+
+</div>
+
+<div class="review-card">
+
+★★★★★
+
+<p>
+
+Highly Recommended.
+Will Buy Again.
+
+</p>
+
+<h4>Amit Singh</h4>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+RELATED PRODUCTS
+====================================== -->
+
+<section class="product-section">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>Related Products</h2>
+
+<a href="shop.html">
+
+View All
+
+</a>
+
+</div>
+
+<div class="product-grid">
+
+<div class="product-card">
+
+<img src="images/products/product2.png" alt="">
+
+<h3>Turmeric Powder</h3>
+
+<p class="price">
+
+₹99
+
+</p>
+
+<div class="rating">
+
+★★★★★
+
+</div>
+
+<div class="product-btn">
+
+<a href="product.html">
+
+View Details
+
+</a>
+
+</div>
+
+</div>
+
+<div class="product-card">
+
+<img src="images/products/product3.png" alt="">
+
+<h3>Red Chilli Powder</h3>
+
+<p class="price">
+
+₹129
+
+</p>
+
+<div class="rating">
+
+★★★★★
+
+</div>
+
+<div class="product-btn">
+
+<a href="product.html">
+
+View Details
+
+</a>
+
+</div>
+
+</div>
+
+<div class="product-card">
+
+<img src="images/products/product4.png" alt="">
+
+<h3>Coriander Powder</h3>
+
+<p class="price">
+
+₹89
+
+</p>
+
+<div class="rating">
+
+★★★★★
+
+</div>
+
+<div class="product-btn">
+
+<a href="product.html">
+
+View Details
+
+</a>
+
+</div>
+
+</div>
+
+<div class="product-card">
+
+<img src="images/products/product5.png" alt="">
+
+<h3>Kitchen King Masala</h3>
+
+<p class="price">
+
+₹169
+
+</p>
+
+<div class="rating">
+
+★★★★★
+
+</div>
+
+<div class="product-btn">
+
+<a href="product.html">
+
+View Details
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+NEWSLETTER
+====================================== -->
+
+<section class="newsletter">
+
+<div class="container newsletter-flex">
+
+<div>
+
+<h2>
+
+Subscribe Our Newsletter
+
+</h2>
+
+<p>
+
+Get latest offers and new product updates.
+
+</p>
+
+</div>
+
+<form>
+
+<input
+type="email"
+placeholder="Enter Your Email">
+
+<button>
+
+Subscribe
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+
+<!-- =====================================
+FOOTER
+====================================== -->
+
+<footer>
+
+<div class="container footer-grid">
+
+<div>
+
+<h2>
+
+VE Naturals
+
+</h2>
+
+<p>
+
+🌿 Pure & Natural
+
+Premium Herbal Products & Natural Spices
+
+</p>
+
+<p>
+
+Nature's Purity,
+
+Trusted Taste.
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+
+Quick Links
+
+</h3>
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="shop.html">Shop</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+<li><a href="login.html">Login</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>
+
+Contact Us
+
+</h3>
+
+<p>
+
+Manufactured & Marketed By
+
+</p>
+
+<p>
+
+<strong>
+
+VISHWAKARMA ENTERPRISES
+
+</strong>
+
+</p>
+
+<p>
+
+Near Purvanchal Expressway,
+
+Bareha, Bahrauli,
+
+Mohanlalganj,
+
+Lucknow – 226303
+
+</p>
+
+<p>
+
+📞 +91 9935830935
+
+</p>
+
+<p>
+
+✉️ vishwakarmaenterprises.co@gmail.com
+
+</p>
+
+</div>
+
+<div>
+
+<h3>
+
+Follow Us
+
+</h3>
+
+<div class="social">
+
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-youtube"></i></a>
+
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="copyright">
+
+© 2026 VE Naturals |
+
+Manufactured & Marketed By
+
+VISHWAKARMA ENTERPRISES
+
+All Rights Reserved.
+
+</div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
