@@ -172,3 +172,23 @@ behavior:"smooth"
 });
 
 console.log("VE Naturals Loaded Successfully");
+
+// ============================
+// CONST PAGES
+// ============================
+const pages = document.querySelectorAll(".pagination a");
+
+pages.forEach((page)=>{
+    page.addEventListener("click",function(e){
+        e.preventDefault();
+
+        pages.forEach(btn=>btn.classList.remove("active"));
+
+        if(!this.classList.contains("next-btn")){
+            this.classList.add("active");
+        }
+    });
+});
+
+
+
