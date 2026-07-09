@@ -1,1 +1,836 @@
+/* ==========================================
+   VE NATURALS - HOME CSS
+   Part 1
+==========================================*/
 
+/* Hero Section */
+
+.hero{
+    width:100%;
+    min-height:650px;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("../images/banner.jpg") center/cover no-repeat;
+}
+
+.hero-content{
+    max-width:650px;
+    color:#fff;
+}
+
+.hero-content h4{
+    color:#FFD700;
+    font-size:20px;
+    margin-bottom:15px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+.hero-content h1{
+    font-size:60px;
+    line-height:1.2;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.hero-content p{
+    font-size:18px;
+    line-height:30px;
+    margin-bottom:35px;
+}
+
+/* Buttons */
+
+.hero-btns{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn-primary{
+
+    background:#0b8a3b;
+    color:#fff;
+    padding:15px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    background:#06652b;
+
+}
+
+.btn-secondary{
+
+    background:#fff;
+    color:#0b8a3b;
+    padding:15px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:600;
+    transition:.3s;
+
+}
+
+.btn-secondary:hover{
+
+    background:#FFD700;
+    color:#222;
+
+}
+
+/* Hero Features */
+
+.hero-features{
+
+    display:flex;
+    gap:30px;
+    margin-top:60px;
+    flex-wrap:wrap;
+
+}
+
+.feature-box{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+    color:#fff;
+
+}
+
+.feature-box i{
+
+    width:55px;
+    height:55px;
+    background:#0b8a3b;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    font-size:22px;
+
+}
+
+.feature-box h5{
+
+    font-size:18px;
+    margin-bottom:5px;
+
+}
+
+.feature-box p{
+
+    font-size:14px;
+    color:#eee;
+
+}
+/* ==========================================
+   VE NATURALS - HOME CSS
+   Part 2
+==========================================*/
+
+/* Categories Section */
+
+.categories{
+    padding:80px 0;
+    background:#f8f9fa;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-size:42px;
+    color:#0b8a3b;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#666;
+    font-size:18px;
+}
+
+.category-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.category-card{
+    background:#fff;
+    border-radius:15px;
+    text-align:center;
+    padding:30px 20px;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.category-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.category-card img{
+    width:120px;
+    height:120px;
+    object-fit:contain;
+    margin-bottom:20px;
+}
+
+.category-card h3{
+    color:#222;
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.category-card p{
+    color:#777;
+    font-size:15px;
+    line-height:24px;
+}
+
+/* Featured Products */
+
+.featured-products{
+    padding:80px 0;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.product-card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+}
+
+.product-card img{
+    width:100%;
+    height:280px;
+    object-fit:contain;
+    background:#fff;
+    padding:15px;
+}
+
+.product-content{
+    padding:20px;
+}
+
+.product-content h3{
+    font-size:22px;
+    color:#222;
+    margin-bottom:10px;
+}
+
+.product-content p{
+    color:#666;
+    line-height:25px;
+    margin-bottom:15px;
+}
+
+.product-price{
+    color:#0b8a3b;
+    font-size:28px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.product-btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#0b8a3b;
+    color:#fff;
+    border-radius:30px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.product-btn:hover{
+    background:#06652b;
+}
+/* ==========================================
+   VE NATURALS - HOME CSS
+   Part 3
+==========================================*/
+
+/* Why Choose Us */
+
+.why-us{
+    padding:90px 0;
+    background:#f8f9fa;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.why-card{
+    background:#fff;
+    padding:35px 25px;
+    border-radius:18px;
+    text-align:center;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.why-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+}
+
+.why-card i{
+    width:80px;
+    height:80px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    background:#0b8a3b;
+    color:#fff;
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.why-card h3{
+    font-size:24px;
+    color:#222;
+    margin-bottom:15px;
+}
+
+.why-card p{
+    color:#666;
+    line-height:28px;
+}
+
+/* Offer Banner */
+
+.offer-banner{
+    margin:80px 0;
+    border-radius:20px;
+    overflow:hidden;
+    background:linear-gradient(rgba(11,138,59,.9),rgba(11,138,59,.9)),
+    url("../images/banner.jpg") center/cover no-repeat;
+    padding:80px 40px;
+    text-align:center;
+    color:#fff;
+}
+
+.offer-banner h2{
+    font-size:46px;
+    margin-bottom:20px;
+}
+
+.offer-banner p{
+    font-size:18px;
+    max-width:700px;
+    margin:auto;
+    line-height:30px;
+    margin-bottom:35px;
+}
+
+.offer-btn{
+    display:inline-block;
+    padding:15px 40px;
+    background:#FFD700;
+    color:#222;
+    text-decoration:none;
+    border-radius:40px;
+    font-size:18px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.offer-btn:hover{
+    background:#fff;
+}
+
+/* Counter Section */
+
+.counter-section{
+    padding:80px 0;
+}
+
+.counter-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.counter-box{
+    background:#fff;
+    text-align:center;
+    padding:35px 20px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.counter-box h2{
+    color:#0b8a3b;
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+.counter-box p{
+    color:#666;
+    font-size:17px;
+}
+/* ==========================================
+   VE NATURALS - HOME CSS
+   Part 4
+==========================================*/
+
+/* Testimonials */
+
+.testimonials{
+    padding:90px 0;
+    background:#ffffff;
+}
+
+.testimonial-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.testimonial-card{
+    background:#f8f9fa;
+    border-radius:18px;
+    padding:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.testimonial-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+}
+
+.testimonial-card i{
+    font-size:40px;
+    color:#0b8a3b;
+    margin-bottom:20px;
+}
+
+.testimonial-card p{
+    color:#555;
+    line-height:28px;
+    margin-bottom:25px;
+}
+
+.client{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.client img{
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.client h4{
+    color:#222;
+    margin-bottom:5px;
+}
+
+.client span{
+    color:#777;
+    font-size:14px;
+}
+
+/* Newsletter */
+
+.newsletter{
+    padding:90px 0;
+    background:#0b8a3b;
+    color:#fff;
+    text-align:center;
+}
+
+.newsletter h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.newsletter p{
+    max-width:700px;
+    margin:auto;
+    line-height:30px;
+    margin-bottom:35px;
+    font-size:18px;
+}
+
+.news-form{
+    max-width:650px;
+    margin:auto;
+    display:flex;
+    gap:15px;
+}
+
+.news-form input{
+    flex:1;
+    height:55px;
+    border:none;
+    outline:none;
+    border-radius:50px;
+    padding:0 20px;
+    font-size:16px;
+}
+
+.news-form button{
+    padding:0 35px;
+    border:none;
+    border-radius:50px;
+    background:#FFD700;
+    color:#222;
+    font-size:17px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.news-form button:hover{
+    background:#fff;
+}
+
+/* Instagram Gallery */
+
+.instagram{
+    padding:90px 0;
+}
+
+.instagram-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.instagram-grid img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:.3s;
+}
+
+.instagram-grid img:hover{
+    transform:scale(1.05);
+}
+
+/* Call To Action */
+
+.cta{
+    padding:80px 20px;
+    text-align:center;
+    background:#f8f9fa;
+}
+
+.cta h2{
+    font-size:42px;
+    color:#0b8a3b;
+    margin-bottom:20px;
+}
+
+.cta p{
+    max-width:700px;
+    margin:auto;
+    color:#666;
+    line-height:30px;
+    margin-bottom:35px;
+}
+
+.cta-btn{
+    display:inline-block;
+    padding:15px 40px;
+    background:#0b8a3b;
+    color:#fff;
+    text-decoration:none;
+    border-radius:40px;
+    font-size:18px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.cta-btn:hover{
+    background:#06652b;
+}
+/* ==========================================
+   VE NATURALS - HOME CSS
+   Part 5 (Final)
+==========================================*/
+
+/* Animation */
+
+.fade-up{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .8s ease;
+}
+
+.fade-up.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.zoom-in{
+    opacity:0;
+    transform:scale(.8);
+    transition:all .8s ease;
+}
+
+.zoom-in.show{
+    opacity:1;
+    transform:scale(1);
+}
+
+/* Floating Animation */
+
+.float{
+    animation:float 3s ease-in-out infinite;
+}
+
+@keyframes float{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-15px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+/* Button Hover */
+
+.btn-primary,
+.btn-secondary,
+.product-btn,
+.offer-btn,
+.cta-btn{
+
+transition:.3s;
+
+}
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.product-btn:hover,
+.offer-btn:hover,
+.cta-btn:hover{
+
+transform:translateY(-4px);
+
+}
+
+/* Smooth Scroll */
+
+html{
+
+scroll-behavior:smooth;
+
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.hero{
+
+min-height:550px;
+text-align:center;
+
+}
+
+.hero-content{
+
+margin:auto;
+
+}
+
+.hero-content h1{
+
+font-size:42px;
+
+}
+
+.hero-features{
+
+justify-content:center;
+
+}
+
+.news-form{
+
+flex-direction:column;
+
+}
+
+.news-form button{
+
+width:100%;
+height:55px;
+
+}
+
+.offer-banner{
+
+padding:60px 20px;
+
+}
+
+.offer-banner h2{
+
+font-size:34px;
+
+}
+
+.section-title h2{
+
+font-size:34px;
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.hero{
+
+padding:80px 20px;
+
+}
+
+.hero-content h1{
+
+font-size:32px;
+
+}
+
+.hero-content p{
+
+font-size:16px;
+line-height:28px;
+
+}
+
+.hero-btns{
+
+justify-content:center;
+
+}
+
+.feature-box{
+
+width:100%;
+justify-content:center;
+
+}
+
+.category-grid,
+.product-grid,
+.why-grid,
+.counter-grid,
+.testimonial-grid,
+.instagram-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.newsletter h2{
+
+font-size:30px;
+
+}
+
+.cta h2{
+
+font-size:30px;
+
+}
+
+.offer-banner h2{
+
+font-size:28px;
+
+}
+
+}
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.hero-content h1{
+
+font-size:26px;
+
+}
+
+.hero-content h4{
+
+font-size:16px;
+
+}
+
+.section-title h2{
+
+font-size:28px;
+
+}
+
+.btn-primary,
+.btn-secondary{
+
+width:100%;
+text-align:center;
+
+}
+
+.product-card img{
+
+height:220px;
+
+}
+
+.category-card img{
+
+width:90px;
+height:90px;
+
+}
+
+}
