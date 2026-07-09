@@ -1,1 +1,702 @@
+/*==========================================
+    VE NATURALS - RESPONSIVE CSS
+    Part 1
+==========================================*/
 
+/*============= Large Laptop =============*/
+
+@media (max-width:1200px){
+
+.container{
+    width:95%;
+}
+
+.hero-content h1{
+    font-size:48px;
+}
+
+.section-title{
+    font-size:38px;
+}
+
+.product-grid{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.shop-layout{
+    grid-template-columns:260px 1fr;
+}
+
+.footer-top{
+    gap:30px;
+}
+
+}
+
+/*============= Laptop =============*/
+
+@media (max-width:1024px){
+
+.header{
+    padding:15px 0;
+}
+
+.navbar ul{
+    gap:20px;
+}
+
+.hero{
+    height:550px;
+}
+
+.hero-content h1{
+    font-size:42px;
+}
+
+.hero-content p{
+    font-size:17px;
+}
+
+.categories{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.product-grid{
+    grid-template-columns:repeat(3,1fr);
+}
+
+.product-container{
+    grid-template-columns:1fr;
+}
+
+.cart-container{
+    grid-template-columns:1fr;
+}
+
+.shop-layout{
+    grid-template-columns:1fr;
+}
+
+.sidebar{
+    margin-bottom:30px;
+}
+
+.footer-top{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+/*==========================================
+    VE NATURALS - RESPONSIVE CSS
+    Part 2
+==========================================*/
+
+/*============= Tablet =============*/
+
+@media (max-width:992px){
+
+.container{
+    width:95%;
+}
+
+.header{
+    padding:12px 0;
+}
+
+.logo img{
+    width:70px;
+}
+
+.navbar{
+    display:none;
+}
+
+.mobile-menu-btn{
+    display:block;
+    font-size:28px;
+    cursor:pointer;
+    color:#0b8a3b;
+}
+
+.hero{
+    height:500px;
+    text-align:center;
+}
+
+.hero-content{
+    max-width:100%;
+}
+
+.hero-content h1{
+    font-size:38px;
+    line-height:1.3;
+}
+
+.hero-content p{
+    font-size:16px;
+}
+
+.hero-btns{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+/* Categories */
+
+.category-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+/* Products */
+
+.product-grid{
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+/* Shop */
+
+.shop-layout{
+    grid-template-columns:1fr;
+}
+
+.shop-sidebar{
+    margin-bottom:30px;
+}
+
+/* Product Page */
+
+.product-container{
+    grid-template-columns:1fr;
+}
+
+.main-image{
+    height:420px;
+}
+
+/* Cart */
+
+.cart-container{
+    grid-template-columns:1fr;
+}
+
+.cart-summary{
+    margin-top:30px;
+}
+
+/* Footer */
+
+.footer-top{
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.footer-bottom{
+    flex-direction:column;
+    text-align:center;
+    gap:15px;
+}
+
+.footer-bottom-links{
+    justify-content:center;
+}
+
+}
+/*==========================================
+    VE NATURALS - RESPONSIVE CSS
+    Part 3
+==========================================*/
+
+/*============= Mobile =============*/
+
+@media (max-width:768px){
+
+.container{
+    width:95%;
+    padding:0 15px;
+}
+
+/* Header */
+
+.top-header{
+    display:none;
+}
+
+.main-header{
+    padding:12px 0;
+}
+
+.logo img{
+    width:55px;
+    height:55px;
+}
+
+.logo h2{
+    font-size:24px;
+}
+
+.header-right{
+    gap:10px;
+}
+
+.search-box{
+    display:none;
+}
+
+/* Hero */
+
+.hero{
+    min-height:450px;
+    padding:60px 0;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:32px;
+    line-height:1.4;
+}
+
+.hero-content p{
+    font-size:15px;
+}
+
+.hero-btns{
+    flex-direction:column;
+    align-items:center;
+}
+
+.hero-btns a{
+    width:220px;
+    text-align:center;
+}
+
+/* Categories */
+
+.category-grid{
+    grid-template-columns:1fr;
+}
+
+/* Products */
+
+.product-grid{
+    grid-template-columns:1fr;
+}
+
+/* Product Page */
+
+.product-container{
+    grid-template-columns:1fr;
+}
+
+.main-image{
+    height:300px;
+}
+
+.thumbnail-images{
+    justify-content:center;
+}
+
+.product-buttons{
+    flex-direction:column;
+}
+
+.add-cart,
+.buy-now{
+    width:100%;
+}
+
+/* Shop */
+
+.shop-topbar{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.shop-sidebar{
+    margin-bottom:25px;
+}
+
+/* Cart */
+
+.cart-table{
+    display:block;
+    overflow-x:auto;
+}
+
+.cart-buttons{
+    flex-direction:column;
+}
+
+.cart-buttons button{
+    width:100%;
+}
+
+/* Checkout */
+
+.checkout-form{
+    grid-template-columns:1fr;
+}
+
+/* Footer */
+
+.footer-top{
+    grid-template-columns:1fr;
+    text-align:center;
+}
+
+.footer-social{
+    justify-content:center;
+}
+
+.footer-bottom{
+    flex-direction:column;
+}
+
+.footer-bottom-links{
+    justify-content:center;
+}
+
+}
+/*==========================================
+    VE NATURALS - RESPONSIVE CSS
+    Part 4
+==========================================*/
+
+/*============= Small Mobile =============*/
+
+@media (max-width:576px){
+
+.container{
+    width:100%;
+    padding:0 12px;
+}
+
+/* Header */
+
+.logo img{
+    width:45px;
+    height:45px;
+}
+
+.logo h2{
+    font-size:20px;
+}
+
+.mobile-menu-btn{
+    font-size:24px;
+}
+
+/* Hero */
+
+.hero{
+    min-height:400px;
+    padding:40px 0;
+}
+
+.hero-content h1{
+    font-size:26px;
+    line-height:1.4;
+}
+
+.hero-content p{
+    font-size:14px;
+    line-height:24px;
+}
+
+.hero-btns a{
+    width:100%;
+    padding:14px;
+}
+
+/* Section */
+
+.section-title{
+    font-size:28px;
+}
+
+.section-subtitle{
+    font-size:14px;
+}
+
+/* Products */
+
+.product-card{
+    border-radius:12px;
+}
+
+.product-image img{
+    height:200px;
+    object-fit:contain;
+}
+
+.product-content{
+    padding:15px;
+}
+
+.product-title{
+    font-size:18px;
+}
+
+.product-price{
+    font-size:18px;
+}
+
+/* Product Details */
+
+.main-image{
+    height:240px;
+}
+
+.thumbnail-images img{
+    width:60px;
+    height:60px;
+}
+
+.product-info h1{
+    font-size:22px;
+}
+
+.current-price{
+    font-size:24px;
+}
+
+.old-price{
+    font-size:16px;
+}
+
+/* Cart */
+
+.cart-table th,
+.cart-table td{
+    font-size:13px;
+    padding:10px;
+}
+
+.cart-summary{
+    padding:18px;
+}
+
+.checkout-btn{
+    height:48px;
+    font-size:15px;
+}
+
+/* Forms */
+
+input,
+select,
+textarea{
+    font-size:15px;
+}
+
+button{
+    font-size:15px;
+}
+
+/* Footer */
+
+.footer{
+    padding:50px 0 20px;
+}
+
+.footer-title{
+    font-size:20px;
+}
+
+.footer-logo h2{
+    font-size:22px;
+}
+
+.footer-logo p{
+    font-size:14px;
+}
+
+.footer-social a{
+    width:40px;
+    height:40px;
+    font-size:16px;
+}
+
+.footer-bottom{
+    font-size:13px;
+}
+
+.footer-bottom-links{
+    gap:12px;
+}
+
+/* Back To Top */
+
+.back-to-top{
+    width:42px;
+    height:42px;
+    font-size:16px;
+    right:15px;
+    bottom:15px;
+}
+
+}
+/*==========================================
+    VE NATURALS - RESPONSIVE CSS
+    Part 5 (Final)
+==========================================*/
+
+/*============= Extra Small Mobile =============*/
+
+@media (max-width:360px){
+
+.container{
+    padding:0 10px;
+}
+
+.logo h2{
+    font-size:18px;
+}
+
+.hero{
+    min-height:350px;
+}
+
+.hero-content h1{
+    font-size:22px;
+}
+
+.hero-content p{
+    font-size:13px;
+}
+
+.hero-btns a{
+    width:100%;
+    padding:12px;
+    font-size:14px;
+}
+
+.section-title{
+    font-size:24px;
+}
+
+.product-grid{
+    grid-template-columns:1fr;
+    gap:15px;
+}
+
+.product-image img{
+    height:170px;
+}
+
+.product-title{
+    font-size:16px;
+}
+
+.product-price,
+.current-price{
+    font-size:20px;
+}
+
+.footer-title{
+    font-size:18px;
+}
+
+.footer-logo h2{
+    font-size:20px;
+}
+
+.footer-bottom{
+    font-size:12px;
+}
+
+}
+
+/*============= Landscape Mobile =============*/
+
+@media (max-width:768px) and (orientation:landscape){
+
+.hero{
+    min-height:320px;
+    padding:30px 0;
+}
+
+.hero-content h1{
+    font-size:28px;
+}
+
+.hero-content p{
+    font-size:14px;
+}
+
+}
+
+/*============= Large Desktop =============*/
+
+@media (min-width:1440px){
+
+.container{
+    max-width:1400px;
+    margin:auto;
+}
+
+.product-grid{
+    grid-template-columns:repeat(4,1fr);
+}
+
+.category-grid{
+    grid-template-columns:repeat(4,1fr);
+}
+
+.hero-content h1{
+    font-size:64px;
+}
+
+.section-title{
+    font-size:48px;
+}
+
+}
+
+/*============= Ultra Wide Screen =============*/
+
+@media (min-width:1800px){
+
+.container{
+    max-width:1600px;
+}
+
+.hero{
+    min-height:850px;
+}
+
+.hero-content h1{
+    font-size:72px;
+}
+
+}
+
+/*============= Print Style =============*/
+
+@media print{
+
+header,
+footer,
+.back-to-top,
+.mobile-menu-btn,
+.hero-btns,
+.footer-social{
+    display:none !important;
+}
+
+body{
+    background:#fff;
+    color:#000;
+}
+
+a{
+    color:#000;
+    text-decoration:none;
+}
+
+}
+
+/*==========================================
+    End Responsive CSS
+==========================================*/
