@@ -1,1 +1,529 @@
+/*==========================================
+   VE NATURALS - CART CSS
+   Part 1
+==========================================*/
 
+/* Cart Section */
+
+.cart-section{
+    padding:80px 0;
+    background:#f8f9fa;
+}
+
+.cart-container{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:35px;
+    align-items:flex-start;
+}
+
+/* Cart Table */
+
+.cart-table{
+    width:100%;
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    border-collapse:collapse;
+}
+
+.cart-table thead{
+    background:#0b8a3b;
+    color:#fff;
+}
+
+.cart-table th{
+    padding:18px;
+    text-align:left;
+    font-size:16px;
+    font-weight:600;
+}
+
+.cart-table td{
+    padding:20px;
+    border-bottom:1px solid #eee;
+    vertical-align:middle;
+}
+
+/* Product Info */
+
+.cart-product{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.cart-product img{
+    width:90px;
+    height:90px;
+    object-fit:contain;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:8px;
+}
+
+.cart-product h4{
+    font-size:18px;
+    color:#222;
+    margin-bottom:5px;
+}
+
+.cart-product span{
+    color:#666;
+    font-size:14px;
+}
+
+/* Price */
+
+.cart-price{
+    font-size:18px;
+    font-weight:600;
+    color:#0b8a3b;
+}
+
+/* Remove */
+
+.remove-btn{
+    width:42px;
+    height:42px;
+    border:none;
+    border-radius:50%;
+    background:#ffebee;
+    color:#e53935;
+    cursor:pointer;
+    transition:.3s;
+    font-size:18px;
+}
+
+.remove-btn:hover{
+    background:#e53935;
+    color:#fff;
+}
+/*==========================================
+   VE NATURALS - CART CSS
+   Part 2
+==========================================*/
+
+/* Quantity */
+
+.cart-quantity{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:2px solid #ddd;
+    border-radius:8px;
+    overflow:hidden;
+    width:130px;
+}
+
+.cart-quantity button{
+    width:40px;
+    height:40px;
+    border:none;
+    background:#f5f5f5;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+.cart-quantity button:hover{
+    background:#0b8a3b;
+    color:#fff;
+}
+
+.cart-quantity input{
+    width:50px;
+    height:40px;
+    border:none;
+    text-align:center;
+    font-size:17px;
+    font-weight:600;
+    outline:none;
+}
+
+/* Subtotal */
+
+.cart-subtotal{
+    font-size:18px;
+    font-weight:700;
+    color:#222;
+}
+
+/* Coupon Box */
+
+.coupon-box{
+    margin-top:30px;
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.coupon-box input{
+    flex:1;
+    min-width:220px;
+    height:50px;
+    padding:0 18px;
+    border:2px solid #ddd;
+    border-radius:8px;
+    outline:none;
+    transition:.3s;
+}
+
+.coupon-box input:focus{
+    border-color:#0b8a3b;
+}
+
+.apply-btn{
+    padding:0 30px;
+    height:50px;
+    border:none;
+    background:#0b8a3b;
+    color:#fff;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.apply-btn:hover{
+    background:#06652b;
+}
+
+/* Cart Buttons */
+
+.cart-buttons{
+    margin-top:30px;
+    display:flex;
+    justify-content:space-between;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.continue-btn,
+.update-btn{
+    padding:14px 30px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.continue-btn{
+    background:#f1f1f1;
+    color:#222;
+}
+
+.continue-btn:hover{
+    background:#ddd;
+}
+
+.update-btn{
+    background:#0b8a3b;
+    color:#fff;
+}
+
+.update-btn:hover{
+    background:#06652b;
+}
+/*==========================================
+   VE NATURALS - CART CSS
+   Part 3
+==========================================*/
+
+/* Cart Summary */
+
+.cart-summary{
+    background:#fff;
+    border-radius:15px;
+    padding:30px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    position:sticky;
+    top:100px;
+}
+
+.cart-summary h2{
+    font-size:28px;
+    color:#0b8a3b;
+    margin-bottom:25px;
+    border-bottom:2px solid #eee;
+    padding-bottom:15px;
+}
+
+/* Summary Row */
+
+.summary-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:18px;
+    font-size:17px;
+    color:#444;
+}
+
+.summary-row strong{
+    color:#222;
+}
+
+/* Shipping */
+
+.shipping{
+    color:#0b8a3b;
+    font-weight:600;
+}
+
+/* Discount */
+
+.discount{
+    color:#e53935;
+    font-weight:600;
+}
+
+/* Grand Total */
+
+.grand-total{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:25px 0;
+    padding-top:20px;
+    border-top:2px solid #eee;
+}
+
+.grand-total h3{
+    font-size:24px;
+    color:#222;
+}
+
+.grand-total span{
+    font-size:30px;
+    font-weight:700;
+    color:#0b8a3b;
+}
+
+/* Checkout Button */
+
+.checkout-btn{
+    width:100%;
+    height:55px;
+    border:none;
+    border-radius:35px;
+    background:#0b8a3b;
+    color:#fff;
+    font-size:18px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.checkout-btn:hover{
+    background:#06652b;
+}
+
+/* Payment Info */
+
+.payment-box{
+    margin-top:25px;
+    padding:20px;
+    background:#f8f9fa;
+    border-radius:12px;
+}
+
+.payment-box h4{
+    margin-bottom:15px;
+    color:#222;
+}
+
+.payment-icons{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.payment-icons img{
+    width:55px;
+    height:35px;
+    object-fit:contain;
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:5px;
+    padding:5px;
+}
+
+/* Trust Box */
+
+.trust-box{
+    margin-top:25px;
+    background:#f8fff8;
+    border:1px solid #d6f5dc;
+    border-radius:12px;
+    padding:20px;
+}
+
+.trust-box p{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:#333;
+    margin-bottom:12px;
+}
+
+.trust-box p:last-child{
+    margin-bottom:0;
+}
+
+.trust-box i{
+    color:#0b8a3b;
+}
+/*==========================================
+   VE NATURALS - CART CSS
+   Part 4
+==========================================*/
+
+/* Shipping Information */
+
+.shipping-box{
+    margin-top:30px;
+    background:#fff;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.shipping-box h3{
+    font-size:24px;
+    color:#0b8a3b;
+    margin-bottom:20px;
+}
+
+.shipping-item{
+    display:flex;
+    align-items:flex-start;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.shipping-item:last-child{
+    margin-bottom:0;
+}
+
+.shipping-item i{
+    width:45px;
+    height:45px;
+    background:#0b8a3b;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    font-size:18px;
+}
+
+.shipping-item h4{
+    font-size:18px;
+    color:#222;
+    margin-bottom:5px;
+}
+
+.shipping-item p{
+    color:#666;
+    line-height:24px;
+}
+
+/* Gift Option */
+
+.gift-box{
+    margin-top:30px;
+    padding:20px;
+    background:#f8fff8;
+    border:2px dashed #0b8a3b;
+    border-radius:12px;
+}
+
+.gift-box label{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    cursor:pointer;
+    font-size:16px;
+    color:#333;
+}
+
+.gift-box input{
+    width:18px;
+    height:18px;
+}
+
+/* Delivery Estimate */
+
+.delivery-estimate{
+    margin-top:30px;
+    padding:20px;
+    background:#fff7e6;
+    border-left:5px solid #ff9800;
+    border-radius:10px;
+}
+
+.delivery-estimate h4{
+    color:#ff9800;
+    margin-bottom:10px;
+}
+
+.delivery-estimate p{
+    color:#555;
+    line-height:24px;
+}
+
+/* Empty Cart */
+
+.empty-cart{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.empty-cart i{
+    font-size:90px;
+    color:#ddd;
+    margin-bottom:20px;
+}
+
+.empty-cart h2{
+    font-size:32px;
+    color:#222;
+    margin-bottom:15px;
+}
+
+.empty-cart p{
+    color:#666;
+    margin-bottom:30px;
+}
+
+.empty-cart .shop-btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#0b8a3b;
+    color:#fff;
+    text-decoration:none;
+    border-radius:35px;
+    transition:.3s;
+}
+
+.empty-cart .shop-btn:hover{
+    background:#06652b;
+}
+
+/* Recommended Products */
+
+.recommended-products{
+    margin-top:80px;
+}
+
+.recommended-products h2{
+    text-align:center;
+    font-size:38px;
+    color:#0b8a3b;
+    margin-bottom:40px;
+}
