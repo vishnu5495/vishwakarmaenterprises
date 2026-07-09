@@ -1,1 +1,801 @@
+/*==========================================
+   VE NATURALS - SHOP CSS
+   Part 1
+==========================================*/
 
+/* Shop Banner */
+
+.shop-banner{
+    width:100%;
+    height:350px;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("../images/banner.jpg") center center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.shop-banner h1{
+    color:#fff;
+    font-size:55px;
+    margin-bottom:15px;
+}
+
+.shop-banner p{
+    color:#eee;
+    font-size:18px;
+}
+
+/* Shop Section */
+
+.shop-page{
+    padding:80px 0;
+    background:#f8f9fa;
+}
+
+/* Layout */
+
+.shop-layout{
+    display:grid;
+    grid-template-columns:280px 1fr;
+    gap:35px;
+}
+
+/* Sidebar */
+
+.shop-sidebar{
+    background:#fff;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+/* Sidebar Title */
+
+.sidebar-title{
+    font-size:24px;
+    color:#0b8a3b;
+    margin-bottom:25px;
+    border-bottom:2px solid #eee;
+    padding-bottom:12px;
+}
+
+/* Category */
+
+.category-list{
+    list-style:none;
+}
+
+.category-list li{
+    margin-bottom:15px;
+}
+
+.category-list a{
+    text-decoration:none;
+    color:#333;
+    display:flex;
+    justify-content:space-between;
+    transition:.3s;
+}
+
+.category-list a:hover{
+    color:#0b8a3b;
+    padding-left:8px;
+}
+
+/* Search */
+
+.shop-search{
+    position:relative;
+    margin-bottom:30px;
+}
+
+.shop-search input{
+    width:100%;
+    height:48px;
+    border:2px solid #ddd;
+    border-radius:30px;
+    padding:0 50px 0 20px;
+    outline:none;
+    transition:.3s;
+}
+
+.shop-search input:focus{
+    border-color:#0b8a3b;
+}
+
+.shop-search button{
+    position:absolute;
+    top:50%;
+    right:8px;
+    transform:translateY(-50%);
+    width:35px;
+    height:35px;
+    border:none;
+    border-radius:50%;
+    background:#0b8a3b;
+    color:#fff;
+    cursor:pointer;
+}
+/*==========================================
+   VE NATURALS - SHOP CSS
+   Part 2
+==========================================*/
+
+/* Product Grid */
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+/* Product Card */
+
+.product-card{
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    position:relative;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 18px 35px rgba(0,0,0,.15);
+}
+
+/* Product Image */
+
+.product-image{
+    position:relative;
+    overflow:hidden;
+}
+
+.product-image img{
+    width:100%;
+    height:280px;
+    object-fit:contain;
+    padding:15px;
+    background:#fff;
+    transition:.4s;
+}
+
+.product-card:hover .product-image img{
+    transform:scale(1.08);
+}
+
+/* Sale Badge */
+
+.sale-badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#e53935;
+    color:#fff;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+/* Wishlist */
+
+.wishlist-btn{
+    position:absolute;
+    top:15px;
+    right:15px;
+    width:42px;
+    height:42px;
+    background:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    color:#444;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.wishlist-btn:hover{
+    background:#0b8a3b;
+    color:#fff;
+}
+
+/* Product Content */
+
+.product-content{
+    padding:20px;
+}
+
+.product-category{
+    color:#888;
+    font-size:14px;
+    margin-bottom:8px;
+}
+
+.product-title{
+    font-size:21px;
+    color:#222;
+    margin-bottom:10px;
+    font-weight:600;
+}
+
+.product-title a{
+    color:#222;
+    text-decoration:none;
+}
+
+.product-title a:hover{
+    color:#0b8a3b;
+}
+
+/* Rating */
+
+.rating{
+    margin-bottom:15px;
+    color:#ffc107;
+}
+
+.rating span{
+    color:#777;
+    font-size:14px;
+    margin-left:8px;
+}
+
+/* Price */
+
+.price{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-bottom:20px;
+}
+
+.new-price{
+    color:#0b8a3b;
+    font-size:26px;
+    font-weight:700;
+}
+
+.old-price{
+    color:#999;
+    text-decoration:line-through;
+    font-size:18px;
+}
+
+/* Buttons */
+
+.product-buttons{
+    display:flex;
+    gap:10px;
+}
+
+.cart-btn{
+    flex:1;
+    height:46px;
+    background:#0b8a3b;
+    color:#fff;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.cart-btn:hover{
+    background:#06652b;
+}
+
+.view-btn{
+    width:46px;
+    height:46px;
+    border-radius:50%;
+    background:#f2f2f2;
+    color:#222;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.view-btn:hover{
+    background:#0b8a3b;
+    color:#fff;
+}
+/*==========================================
+   VE NATURALS - SHOP CSS
+   Part 3
+==========================================*/
+
+/* Price Filter */
+
+.filter-box{
+    margin-bottom:35px;
+}
+
+.filter-box h3{
+    font-size:22px;
+    color:#0b8a3b;
+    margin-bottom:18px;
+}
+
+.price-range{
+    width:100%;
+    cursor:pointer;
+}
+
+.price-values{
+    display:flex;
+    justify-content:space-between;
+    margin-top:12px;
+    color:#666;
+    font-size:15px;
+}
+
+/* Brand Filter */
+
+.brand-list{
+    list-style:none;
+    padding:0;
+}
+
+.brand-list li{
+    margin-bottom:12px;
+}
+
+.brand-list label{
+    cursor:pointer;
+    color:#444;
+    font-size:16px;
+}
+
+.brand-list input{
+    margin-right:10px;
+}
+
+/* Product Tags */
+
+.tag-list{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.tag-list a{
+    text-decoration:none;
+    padding:8px 15px;
+    background:#f3f3f3;
+    color:#333;
+    border-radius:30px;
+    transition:.3s;
+    font-size:14px;
+}
+
+.tag-list a:hover{
+    background:#0b8a3b;
+    color:#fff;
+}
+
+/* Popular Products */
+
+.popular-products{
+    margin-top:35px;
+}
+
+.popular-item{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+    align-items:center;
+}
+
+.popular-item img{
+    width:75px;
+    height:75px;
+    object-fit:contain;
+    background:#fff;
+    border-radius:10px;
+    border:1px solid #eee;
+}
+
+.popular-info h4{
+    font-size:16px;
+    margin-bottom:5px;
+}
+
+.popular-info h4 a{
+    color:#222;
+    text-decoration:none;
+}
+
+.popular-info h4 a:hover{
+    color:#0b8a3b;
+}
+
+.popular-info span{
+    color:#0b8a3b;
+    font-weight:600;
+}
+
+/* Shop Top Bar */
+
+.shop-topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.shop-topbar p{
+    color:#666;
+    font-size:16px;
+}
+
+/* Sort */
+
+.sort-box select{
+    padding:12px 18px;
+    border:2px solid #ddd;
+    border-radius:8px;
+    outline:none;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.sort-box select:focus{
+    border-color:#0b8a3b;
+}
+
+/* Filter Button */
+
+.filter-btn{
+    padding:12px 22px;
+    border:none;
+    background:#0b8a3b;
+    color:#fff;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.filter-btn:hover{
+    background:#06652b;
+}
+/*==========================================
+   VE NATURALS - SHOP CSS
+   Part 4
+==========================================*/
+
+/* Product Hover Overlay */
+
+.product-overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.45);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    opacity:0;
+    visibility:hidden;
+    transition:.4s;
+}
+
+.product-card:hover .product-overlay{
+    opacity:1;
+    visibility:visible;
+}
+
+.product-overlay a{
+    width:50px;
+    height:50px;
+    background:#fff;
+    color:#0b8a3b;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:18px;
+    transition:.3s;
+}
+
+.product-overlay a:hover{
+    background:#0b8a3b;
+    color:#fff;
+}
+
+/* Product Label */
+
+.product-label{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#ff5722;
+    color:#fff;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.product-label.new{
+    background:#28a745;
+}
+
+.product-label.hot{
+    background:#dc3545;
+}
+
+/* Pagination */
+
+.pagination{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    margin-top:60px;
+    flex-wrap:wrap;
+}
+
+.pagination a{
+    width:48px;
+    height:48px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    background:#fff;
+    border:2px solid #0b8a3b;
+    color:#0b8a3b;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.pagination a:hover,
+.pagination a.active{
+    background:#0b8a3b;
+    color:#fff;
+}
+
+.pagination .next-btn{
+    width:auto;
+    padding:0 22px;
+}
+
+/* Empty Product */
+
+.no-product{
+    text-align:center;
+    padding:80px 20px;
+}
+
+.no-product i{
+    font-size:80px;
+    color:#ccc;
+    margin-bottom:20px;
+}
+
+.no-product h3{
+    color:#333;
+    margin-bottom:10px;
+}
+
+.no-product p{
+    color:#777;
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+.shop-layout{
+    grid-template-columns:1fr;
+}
+
+.shop-sidebar{
+    margin-bottom:30px;
+}
+
+.shop-topbar{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+}
+/*==========================================
+   VE NATURALS - SHOP CSS
+   Part 5 (Final)
+==========================================*/
+
+/* Smooth Animation */
+
+.product-card,
+.shop-sidebar,
+.filter-btn,
+.cart-btn,
+.view-btn,
+.pagination a{
+    transition:all .3s ease;
+}
+
+/* Scroll Animation */
+
+.fade-in{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .8s ease;
+}
+
+.fade-in.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+.shop-page{
+    padding:50px 15px;
+}
+
+.shop-banner{
+    height:240px;
+}
+
+.shop-banner h1{
+    font-size:34px;
+}
+
+.shop-banner p{
+    font-size:15px;
+}
+
+.shop-search input{
+    height:45px;
+    font-size:14px;
+}
+
+.shop-search button{
+    width:32px;
+    height:32px;
+}
+
+.product-grid{
+    grid-template-columns:1fr;
+    gap:25px;
+}
+
+.product-image img{
+    height:240px;
+}
+
+.product-title{
+    font-size:19px;
+}
+
+.new-price{
+    font-size:22px;
+}
+
+.old-price{
+    font-size:16px;
+}
+
+.product-buttons{
+    flex-direction:column;
+}
+
+.cart-btn{
+    width:100%;
+}
+
+.view-btn{
+    width:100%;
+    border-radius:30px;
+    height:45px;
+}
+
+.pagination{
+    gap:8px;
+}
+
+.pagination a{
+    width:40px;
+    height:40px;
+    font-size:14px;
+}
+
+.pagination .next-btn{
+    padding:0 18px;
+}
+
+}
+
+/* Small Mobile */
+
+@media(max-width:480px){
+
+.shop-banner{
+    height:200px;
+}
+
+.shop-banner h1{
+    font-size:28px;
+}
+
+.shop-sidebar{
+    padding:18px;
+}
+
+.sidebar-title{
+    font-size:20px;
+}
+
+.product-card{
+    border-radius:12px;
+}
+
+.product-image img{
+    height:200px;
+    padding:10px;
+}
+
+.product-content{
+    padding:15px;
+}
+
+.product-title{
+    font-size:18px;
+}
+
+.rating{
+    font-size:13px;
+}
+
+.new-price{
+    font-size:20px;
+}
+
+.old-price{
+    font-size:14px;
+}
+
+.sale-badge,
+.product-label{
+    font-size:11px;
+    padding:5px 10px;
+}
+
+.wishlist-btn{
+    width:38px;
+    height:38px;
+}
+
+}
+
+/* Desktop */
+
+@media(min-width:1400px){
+
+.product-grid{
+    grid-template-columns:repeat(4,1fr);
+}
+
+}
+
+/* End of Shop CSS */
