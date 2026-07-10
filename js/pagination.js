@@ -334,3 +334,122 @@ window.addEventListener("resize",()=>{
     }
 
 });
+/*==========================================
+    VE NATURALS
+    Pagination JavaScript
+    Part 5 (Final)
+==========================================*/
+
+/*==============================
+  Refresh Pagination
+==============================*/
+
+function refreshPagination(){
+
+    createPagination();
+
+    showProducts(currentPage);
+
+    updateActiveButton();
+
+    updateNavigationButtons();
+
+}
+
+/*==============================
+  Go To Page
+==============================*/
+
+function goToPage(page){
+
+    if(page < 1 || page > totalPages()) return;
+
+    currentPage = page;
+
+    refreshPagination();
+
+    window.scrollTo({
+
+        top:0,
+
+        behavior:"smooth"
+
+    });
+
+}
+
+/*==============================
+  Initialize Pagination
+==============================*/
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+    if(products.length > 0){
+
+        refreshPagination();
+
+    }
+
+});
+
+/*==============================
+  Page Change Animation
+==============================*/
+
+function animateProducts(){
+
+    products.forEach(product=>{
+
+        if(product.style.display !== "none"){
+
+            product.style.opacity = "0";
+
+            product.style.transform = "translateY(20px)";
+
+            setTimeout(()=>{
+
+                product.style.opacity = "1";
+
+                product.style.transform = "translateY(0)";
+
+            },150);
+
+        }
+
+    });
+
+}
+
+document.addEventListener("click",(e)=>{
+
+    if(e.target.classList.contains("page-btn") ||
+       e.target.classList.contains("prev-page") ||
+       e.target.classList.contains("next-page") ||
+       e.target.classList.contains("first-page") ||
+       e.target.classList.contains("last-page")){
+
+        animateProducts();
+
+    }
+
+});
+
+/*==============================
+  Console Message
+==============================*/
+
+console.log("====================================");
+console.log(" VE NATURALS PAGINATION READY ");
+console.log("====================================");
+
+/*==============================
+  Global Functions (Optional)
+==============================*/
+
+window.goToPage = goToPage;
+window.nextPage = nextPage;
+window.previousPage = previousPage;
+
+/*==========================================
+        End Pagination Script
+==========================================*/
