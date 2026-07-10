@@ -1111,3 +1111,100 @@ PAGINATION
     width:auto;
     padding:0 18px;
 }
+/* LOGIN PAGE */
+
+.login-section{
+    padding:80px 0;
+    background:#f8f9fa;
+}
+
+.login-section .container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:start;
+}
+
+.login-box,
+.login-benefits{
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.form-group{
+    margin-bottom:18px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.login-options{
+    display:flex;
+    justify-content:space-between;
+    margin:20px 0;
+}
+
+.login-btn{
+    width:100%;
+}
+
+.login-divider{
+    text-align:center;
+    margin:25px 0;
+}
+
+.social-login a{
+    display:block;
+    text-align:center;
+    padding:12px;
+    margin-bottom:10px;
+    border-radius:8px;
+    color:#fff;
+}
+
+.google-btn{
+    background:#db4437;
+}
+
+.facebook-btn{
+    background:#1877f2;
+}
+
+.benefit-item{
+    display:flex;
+    gap:15px;
+    margin-bottom:20px;
+}
+
+.benefit-item i{
+    font-size:24px;
+    color:#0c7a2d;
+}
+
+.secure-login{
+    margin-top:20px;
+    padding:15px;
+    background:#eef9f0;
+    border-radius:8px;
+    font-weight:600;
+}
+
+@media(max-width:768px){
+    .login-section .container{
+        grid-template-columns:1fr;
+    }
+}
