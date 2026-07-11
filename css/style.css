@@ -1208,3 +1208,59 @@ PAGINATION
         grid-template-columns:1fr;
     }
 }
+/========== PRODUCT BUTTONS ==========/
+
+.quantity-box{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:10px;
+margin:15px 0;
+}
+
+.quantity-box button{
+width:35px;
+height:35px;
+border:none;
+background:#0c7a2d;
+color:#fff;
+font-size:18px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.quantity-box input{
+width:55px;
+height:35px;
+text-align:center;
+border:1px solid #ccc;
+border-radius:6px;
+}
+
+.product-actions{
+display:flex;
+flex-direction:column;
+gap:10px;
+margin-top:15px;
+}
+
+.cart-btn,
+.buy-btn{
+width:100%;
+padding:12px;
+border:none;
+border-radius:8px;
+font-size:15px;
+font-weight:600;
+cursor:pointer;
+}
+
+.cart-btn{
+background:#ff9800;
+color:#fff;
+}
+
+.buy-btn{
+background:#25D366;
+color:#fff;
+}
