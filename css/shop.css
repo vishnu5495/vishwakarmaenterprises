@@ -1133,6 +1133,1396 @@ width:50px;
 height:50px;
 font-size:20px;
 }
+/*==========================================
+VE NATURALS
+SHOP CSS
+PART 6
+Mega Menu • Breadcrumb • Language Switch
+==========================================*/
 
+/*==========================
+MEGA MENU
+==========================*/
+
+.navbar{
+    position:relative;
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+}
+
+.navbar ul{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    list-style:none;
+}
+
+.navbar ul li{
+    position:relative;
+}
+
+.navbar ul li a{
+    display:block;
+    padding:18px 10px;
+    color:#222;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.navbar ul li:hover>a{
+    color:#0b8a3b;
+}
+
+.mega-menu{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:850px;
+    background:#fff;
+    display:none;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 12px 30px rgba(0,0,0,.12);
+    z-index:999;
+}
+
+.navbar li:hover .mega-menu{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+}
+
+.mega-menu h4{
+    color:#0b8a3b;
+    margin-bottom:15px;
+}
+
+.mega-menu a{
+    display:block;
+    color:#555;
+    padding:6px 0;
+    font-size:14px;
+}
+
+.mega-menu a:hover{
+    color:#0b8a3b;
+    padding-left:6px;
+}
+
+/*==========================
+LANGUAGE SWITCH
+==========================*/
+
+.language-switch{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.lang-btn{
+    border:none;
+    background:#0b8a3b;
+    color:#fff;
+    padding:8px 18px;
+    border-radius:25px;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.lang-btn:hover{
+    background:#06652b;
+}
+
+/*==========================
+BREADCRUMB
+==========================*/
+
+.breadcrumb{
+    background:#eef8f1;
+    padding:14px 0;
+}
+
+.breadcrumb ul{
+    display:flex;
+    list-style:none;
+    gap:10px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.breadcrumb li{
+    color:#666;
+}
+
+.breadcrumb li a{
+    text-decoration:none;
+    color:#0b8a3b;
+}
+
+.breadcrumb li::after{
+    content:"/";
+    margin-left:10px;
+}
+
+.breadcrumb li:last-child::after{
+    display:none;
+}
+
+/*==========================
+CATEGORY BAR
+==========================*/
+
+.category-bar{
+    position:sticky;
+    top:78px;
+    background:#fff;
+    z-index:100;
+    padding:12px 0;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.category-list{
+    display:flex;
+    gap:15px;
+    overflow-x:auto;
+    scrollbar-width:none;
+}
+
+.category-list::-webkit-scrollbar{
+    display:none;
+}
+
+.category-list a{
+    white-space:nowrap;
+    text-decoration:none;
+    color:#333;
+    background:#f3f3f3;
+    padding:10px 20px;
+    border-radius:25px;
+    transition:.3s;
+}
+
+.category-list a:hover,
+.category-list a.active{
+    background:#0b8a3b;
+    color:#fff;
+}
+
+/*==========================
+ADVANCED SEARCH
+==========================*/
+
+.search-suggestions{
+    position:absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    background:#fff;
+    border-radius:0 0 12px 12px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    display:none;
+    z-index:999;
+}
+
+.search-suggestions a{
+    display:block;
+    padding:12px 18px;
+    text-decoration:none;
+    color:#444;
+    border-bottom:1px solid #eee;
+}
+
+.search-suggestions a:hover{
+    background:#f7f7f7;
+    color:#0b8a3b;
+}
+
+.search-box:focus-within .search-suggestions{
+    display:block;
+}
+
+/*==========================
+MOBILE
+==========================*/
+
+@media(max-width:992px){
+
+.mega-menu{
+    display:none!important;
+}
+
+.category-bar{
+    top:65px;
+}
+
+.language-switch{
+    margin-top:10px;
+}
+
+}
+
+@media(max-width:768px){
+
+.navbar ul{
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+.category-list a{
+    padding:8px 16px;
+    font-size:14px;
+}
+
+.lang-btn{
+    padding:7px 14px;
+    font-size:13px;
+}
+
+}
+/*==========================================
+VE NATURALS
+SHOP CSS
+PART 7
+Cart • Wishlist • Quick View • Image Zoom
+==========================================*/
+
+/*==========================
+SHOPPING CART SIDEBAR
+==========================*/
+
+.cart-sidebar{
+position:fixed;
+top:0;
+right:-420px;
+width:420px;
+height:100%;
+background:#fff;
+box-shadow:-5px 0 25px rgba(0,0,0,.15);
+z-index:9999;
+transition:.4s;
+overflow-y:auto;
+}
+
+.cart-sidebar.active{
+right:0;
+}
+
+.cart-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px;
+border-bottom:1px solid #eee;
+}
+
+.cart-header h2{
+font-size:24px;
+color:#0b8a3b;
+}
+
+.close-cart{
+font-size:26px;
+cursor:pointer;
+color:#555;
+}
+
+.cart-body{
+padding:20px;
+}
+
+.cart-item{
+display:flex;
+gap:15px;
+margin-bottom:20px;
+padding-bottom:20px;
+border-bottom:1px solid #eee;
+}
+
+.cart-item img{
+width:90px;
+height:90px;
+object-fit:contain;
+background:#fff;
+border:1px solid #eee;
+border-radius:10px;
+}
+
+.cart-info{
+flex:1;
+}
+
+.cart-info h4{
+font-size:17px;
+margin-bottom:8px;
+}
+
+.cart-info span{
+color:#0b8a3b;
+font-weight:700;
+}
+
+.cart-footer{
+padding:20px;
+border-top:1px solid #eee;
+}
+
+.checkout-btn{
+width:100%;
+height:50px;
+border:none;
+border-radius:30px;
+background:#0b8a3b;
+color:#fff;
+font-size:17px;
+font-weight:600;
+cursor:pointer;
+}
+
+.checkout-btn:hover{
+background:#06652b;
+}
+
+/*==========================
+WISHLIST SIDEBAR
+==========================*/
+
+.wishlist-sidebar{
+position:fixed;
+left:-420px;
+top:0;
+width:420px;
+height:100%;
+background:#fff;
+z-index:9999;
+transition:.4s;
+overflow-y:auto;
+box-shadow:5px 0 25px rgba(0,0,0,.15);
+}
+
+.wishlist-sidebar.active{
+left:0;
+}
+
+.wishlist-header{
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+border-bottom:1px solid #eee;
+}
+
+.wishlist-header h2{
+color:#0b8a3b;
+}
+
+.close-wishlist{
+font-size:26px;
+cursor:pointer;
+}
+
+/*==========================
+QUICK VIEW MODAL
+==========================*/
+
+.quick-view{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.65);
+display:none;
+justify-content:center;
+align-items:center;
+z-index:99999;
+padding:20px;
+}
+
+.quick-view.active{
+display:flex;
+}
+
+.quick-box{
+background:#fff;
+width:100%;
+max-width:1000px;
+border-radius:20px;
+display:grid;
+grid-template-columns:1fr 1fr;
+overflow:hidden;
+}
+
+.quick-image{
+padding:35px;
+background:#fafafa;
+}
+
+.quick-image img{
+width:100%;
+height:420px;
+object-fit:contain;
+transition:.4s;
+}
+
+.quick-image img:hover{
+transform:scale(1.15);
+}
+
+.quick-content{
+padding:40px;
+}
+
+.quick-content h2{
+font-size:34px;
+margin-bottom:15px;
+}
+
+.quick-content .price{
+font-size:30px;
+font-weight:700;
+color:#0b8a3b;
+margin:20px 0;
+}
+
+.quick-content p{
+line-height:1.8;
+color:#666;
+}
+
+/*==========================
+IMAGE ZOOM
+==========================*/
+
+.product-image{
+overflow:hidden;
+cursor:zoom-in;
+}
+
+.product-image img{
+transition:.4s;
+}
+
+.product-card:hover .product-image img{
+transform:scale(1.12);
+}
+
+/*==========================
+COMPARE BUTTON
+==========================*/
+
+.compare-btn{
+width:100%;
+height:46px;
+margin-top:10px;
+border:none;
+border-radius:30px;
+background:#ff9800;
+color:#fff;
+font-weight:600;
+cursor:pointer;
+transition:.3s;
+}
+
+.compare-btn:hover{
+background:#e68900;
+}
+
+/*==========================
+PREMIUM HOVER
+==========================*/
+
+.product-card{
+transition:.35s;
+}
+
+.product-card:hover{
+transform:translateY(-10px);
+box-shadow:0 18px 35px rgba(0,0,0,.15);
+}
+
+/*==========================
+RESPONSIVE
+==========================*/
+
+@media(max-width:992px){
+
+.quick-box{
+grid-template-columns:1fr;
+}
+
+.quick-image img{
+height:280px;
+}
+
+.cart-sidebar,
+.wishlist-sidebar{
+width:100%;
+}
+
+}
+
+@media(max-width:768px){
+
+.quick-content{
+padding:25px;
+}
+
+.quick-content h2{
+font-size:26px;
+}
+
+.quick-content .price{
+font-size:24px;
+}
+
+}
+/*==========================================
+VE NATURALS
+SHOP CSS
+PART 8
+Reviews • Offers • Countdown • Best Seller
+==========================================*/
+
+/*==========================
+CUSTOMER REVIEWS
+==========================*/
+
+.review-section{
+    padding:80px 0;
+    background:#f8faf9;
+}
+
+.review-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.review-title h2{
+    font-size:36px;
+    color:#222;
+}
+
+.review-title p{
+    color:#666;
+    margin-top:10px;
+}
+
+.review-slider{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.review-card{
+    background:#fff;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.review-card:hover{
+    transform:translateY(-8px);
+}
+
+.review-card img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.review-card h4{
+    margin-bottom:5px;
+}
+
+.review-stars{
+    color:#ffc107;
+    margin-bottom:15px;
+}
+
+.review-card p{
+    color:#666;
+    line-height:1.7;
+}
+
+/*==========================
+OFFER CARDS
+==========================*/
+
+.offer-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+    margin:70px 0;
+}
+
+.offer-card{
+    padding:35px;
+    border-radius:18px;
+    color:#fff;
+    position:relative;
+    overflow:hidden;
+}
+
+.offer-card:nth-child(1){
+    background:#0b8a3b;
+}
+
+.offer-card:nth-child(2){
+    background:#ff9800;
+}
+
+.offer-card:nth-child(3){
+    background:#2196f3;
+}
+
+.offer-card h3{
+    font-size:28px;
+    margin-bottom:10px;
+}
+
+.offer-card p{
+    line-height:1.7;
+}
+
+.offer-card a{
+    display:inline-block;
+    margin-top:18px;
+    padding:12px 24px;
+    background:#fff;
+    color:#222;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:600;
+}
+
+/*==========================
+COUNTDOWN
+==========================*/
+
+.countdown{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:25px;
+}
+
+.time-box{
+    width:80px;
+    height:80px;
+    border-radius:15px;
+    background:#fff;
+    color:#222;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    font-weight:700;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+}
+
+.time-box span{
+    font-size:26px;
+}
+
+.time-box small{
+    font-size:13px;
+    color:#666;
+}
+
+/*==========================
+BEST SELLER
+==========================*/
+
+.best-seller{
+    position:absolute;
+    top:20px;
+    right:-45px;
+    width:160px;
+    text-align:center;
+    background:#e53935;
+    color:#fff;
+    padding:8px 0;
+    transform:rotate(45deg);
+    font-size:13px;
+    font-weight:700;
+    z-index:10;
+}
+
+/*==========================
+FEATURE BOX
+==========================*/
+
+.feature-strip{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:25px;
+    margin:80px 0;
+}
+
+.feature-box{
+    background:#fff;
+    padding:25px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 6px 18px rgba(0,0,0,.08);
+}
+
+.feature-box i{
+    font-size:42px;
+    color:#0b8a3b;
+    margin-bottom:15px;
+}
+
+.feature-box h4{
+    margin-bottom:10px;
+}
+
+.feature-box p{
+    color:#666;
+}
+
+/*==========================
+FLOATING BUTTONS
+==========================*/
+
+.floating-buttons{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    z-index:999;
+}
+
+.float-btn{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0b8a3b;
+    color:#fff;
+    text-decoration:none;
+    font-size:22px;
+    box-shadow:0 8px 20px rgba(0,0,0,.18);
+    transition:.3s;
+}
+
+.float-btn:hover{
+    transform:scale(1.1);
+}
+
+.float-btn.whatsapp{
+    background:#25D366;
+}
+
+/*==========================
+RESPONSIVE
+==========================*/
+
+@media(max-width:992px){
+
+.review-slider,
+.offer-grid,
+.feature-strip{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.review-slider,
+.offer-grid,
+.feature-strip{
+    grid-template-columns:1fr;
+}
+
+.countdown{
+    flex-wrap:wrap;
+}
+
+.time-box{
+    width:70px;
+    height:70px;
+}
+
+}
+/*==========================================
+VE NATURALS
+SHOP CSS
+PART 9
+Footer • Mobile Bottom Nav • Dark Mode
+==========================================*/
+
+/*==========================
+PREMIUM FOOTER
+==========================*/
+
+.footer{
+    background:#0f172a;
+    color:#fff;
+    padding:70px 0 25px;
+}
+
+.footer-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:40px;
+}
+
+.footer h3{
+    font-size:22px;
+    margin-bottom:20px;
+    color:#fff;
+}
+
+.footer p{
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+.footer ul{
+    list-style:none;
+}
+
+.footer ul li{
+    margin-bottom:12px;
+}
+
+.footer ul li a{
+    text-decoration:none;
+    color:#cbd5e1;
+    transition:.3s;
+}
+
+.footer ul li a:hover{
+    color:#22c55e;
+    padding-left:6px;
+}
+
+.footer-social{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+
+.footer-social a{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:#1e293b;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-social a:hover{
+    background:#22c55e;
+}
+
+.footer-bottom{
+    margin-top:50px;
+    border-top:1px solid rgba(255,255,255,.1);
+    padding-top:20px;
+    text-align:center;
+    color:#94a3b8;
+}
+
+/*==========================
+SCROLL TO TOP
+==========================*/
+
+.scroll-top{
+    position:fixed;
+    right:25px;
+    bottom:90px;
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:#0b8a3b;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:22px;
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+    z-index:999;
+}
+
+.scroll-top.show{
+    opacity:1;
+    visibility:visible;
+}
+
+.scroll-top:hover{
+    background:#06652b;
+}
+
+/*==========================
+TOAST
+==========================*/
+
+.toast{
+    position:fixed;
+    left:50%;
+    bottom:30px;
+    transform:translateX(-50%);
+    background:#0b8a3b;
+    color:#fff;
+    padding:14px 26px;
+    border-radius:30px;
+    font-weight:600;
+    opacity:0;
+    visibility:hidden;
+    transition:.35s;
+    z-index:99999;
+}
+
+.toast.show{
+    opacity:1;
+    visibility:visible;
+}
+
+/*==========================
+LOADER
+==========================*/
+
+.loader{
+    position:fixed;
+    inset:0;
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:999999;
+}
+
+.loader::after{
+    content:"";
+    width:65px;
+    height:65px;
+    border:6px solid #ddd;
+    border-top:6px solid #0b8a3b;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+
+    100%{
+        transform:rotate(360deg);
+    }
+
+}
+
+/*==========================
+DARK MODE
+==========================*/
+
+.dark-mode{
+    background:#111827;
+    color:#fff;
+}
+
+.dark-mode .product-card,
+.dark-mode .shop-sidebar,
+.dark-mode .feature-box,
+.dark-mode .review-card{
+    background:#1f2937;
+    color:#fff;
+}
+
+.dark-mode .footer{
+    background:#020617;
+}
+
+.dark-mode .search-box{
+    background:#1f2937;
+}
+
+/*==========================
+MOBILE BOTTOM NAV
+==========================*/
+
+.mobile-nav{
+    display:none;
+}
+
+@media(max-width:768px){
+
+.mobile-nav{
+
+display:flex;
+justify-content:space-around;
+align-items:center;
+
+position:fixed;
+left:0;
+bottom:0;
+
+width:100%;
+height:65px;
+
+background:#fff;
+
+box-shadow:0 -3px 12px rgba(0,0,0,.12);
+
+z-index:9999;
+
+}
+
+.mobile-nav a{
+
+text-decoration:none;
+color:#444;
+
+display:flex;
+flex-direction:column;
+
+align-items:center;
+
+font-size:12px;
+
+}
+
+.mobile-nav i{
+
+font-size:20px;
+margin-bottom:4px;
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+/* ==========================================
+   VE NATURALS SHOP CSS
+   PART 10 (Continue)
+========================================== */
+
+/* Process Card */
+
+.process-card{
+    background:#fff;
+    padding:30px;
+    text-align:center;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.process-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+.process-card i{
+    width:80px;
+    height:80px;
+    background:#0b8a3b;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:32px;
+    margin:0 auto 20px;
+}
+
+.process-card h3{
+    font-size:22px;
+    color:#222;
+    margin-bottom:15px;
+}
+
+.process-card p{
+    color:#666;
+    line-height:1.7;
+}
+
+/* Newsletter */
+
+.newsletter{
+    padding:80px 0;
+    background:#0b8a3b;
+    text-align:center;
+}
+
+.newsletter h2{
+    color:#fff;
+    font-size:36px;
+    margin-bottom:15px;
+}
+
+.newsletter p{
+    color:#e8e8e8;
+    margin-bottom:30px;
+}
+
+.newsletter-form{
+    max-width:650px;
+    margin:auto;
+    display:flex;
+    gap:15px;
+}
+
+.newsletter-form input{
+    flex:1;
+    height:55px;
+    border:none;
+    border-radius:35px;
+    padding:0 25px;
+    outline:none;
+    font-size:16px;
+}
+
+.newsletter-form button{
+    width:180px;
+    border:none;
+    border-radius:35px;
+    background:#fff;
+    color:#0b8a3b;
+    font-size:16px;
+    font-weight:700;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.newsletter-form button:hover{
+    background:#222;
+    color:#fff;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.process-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.review-box{
+    grid-template-columns:1fr;
+}
+
+.feature-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.newsletter-form{
+    flex-direction:column;
+}
+
+.newsletter-form button{
+    width:100%;
+}
+
+}
+
+@media(max-width:768px){
+
+.process-grid,
+.feature-grid{
+    grid-template-columns:1fr;
+}
+
+.newsletter h2{
+    font-size:28px;
+}
+
+.newsletter-form input,
+.newsletter-form button{
+    height:50px;
+}
+
+}
+/* ==========================================
+   VE NATURALS SHOP CSS
+   PART 11
+========================================== */
+
+/* Floating WhatsApp */
+
+.whatsapp-float{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    text-decoration:none;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    z-index:9999;
+    transition:.3s;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.1);
+}
+
+/* Scroll To Top */
+
+.scroll-top{
+    position:fixed;
+    right:20px;
+    bottom:95px;
+    width:50px;
+    height:50px;
+    background:#0b8a3b;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    cursor:pointer;
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+    z-index:999;
+}
+
+.scroll-top.show{
+    opacity:1;
+    visibility:visible;
+}
+
+/* Loading */
+
+.loader{
+    position:fixed;
+    inset:0;
+    background:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:99999;
+}
+
+.loader::after{
+    content:"";
+    width:60px;
+    height:60px;
+    border:6px solid #ddd;
+    border-top:6px solid #0b8a3b;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+
+    to{
+        transform:rotate(360deg);
+    }
+
+}
+
+/* Toast */
+
+.toast{
+    position:fixed;
+    top:25px;
+    right:25px;
+    background:#0b8a3b;
+    color:#fff;
+    padding:15px 22px;
+    border-radius:8px;
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+    z-index:99999;
+}
+
+.toast.show{
+    opacity:1;
+    visibility:visible;
+}
+
+/* Product Hover */
+
+.product-card:hover .cart-btn{
+    background:#06652b;
+}
+
+.product-card:hover .buy-btn{
+    background:#128C7E;
+}
+
+/* Smooth */
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* Custom Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#0b8a3b;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f2f2f2;
+}
+
+/* Footer */
+
+.shop-footer{
+    background:#111;
+    color:#fff;
+    padding:70px 0;
+}
+
+.shop-footer h3{
+    margin-bottom:20px;
+}
+
+.shop-footer p{
+    color:#ccc;
+    line-height:1.8;
+}
+
+.shop-footer a{
+    color:#ddd;
+    text-decoration:none;
+}
+
+.shop-footer a:hover{
+    color:#25D366;
+}
+
+.footer-bottom{
+    text-align:center;
+    margin-top:40px;
+    padding-top:20px;
+    border-top:1px solid #333;
+}
 }
 
