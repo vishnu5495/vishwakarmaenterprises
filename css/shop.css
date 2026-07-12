@@ -1,1074 +1,1138 @@
 /*==========================================
-   VE NATURALS - SHOP CSS
-   Part 1
+VE NATURALS
+Professional Shop CSS
+Part 1
 ==========================================*/
 
-/* Shop Banner */
-
-.shop-banner{
-    width:100%;
-    height:350px;
-    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-    url("../images/banner.jpg") center center/cover no-repeat;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
-.shop-banner h1{
-    color:#fff;
-    font-size:55px;
-    margin-bottom:15px;
+body{
+font-family:'Segoe UI',sans-serif;
+background:#f5f7f9;
+color:#222;
+line-height:1.6;
+overflow-x:hidden;
 }
 
-.shop-banner p{
-    color:#eee;
-    font-size:18px;
+.container{
+width:95%;
+max-width:1400px;
+margin:auto;
 }
 
-/* Shop Section */
+/* Top Bar */
 
-.shop-page{
-    padding:80px 0;
-    background:#f8f9fa;
+.top-bar{
+background:#0b8a3b;
+color:#fff;
+padding:10px 0;
+font-size:14px;
 }
 
-/* Layout */
-
-.shop-layout{
-    display:grid;
-    grid-template-columns:280px 1fr;
-    gap:35px;
+.top-flex{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+gap:10px;
 }
 
-/* Sidebar */
+/* Header */
 
-.shop-sidebar{
-    background:#fff;
-    border-radius:15px;
-    padding:25px;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
+.main-header{
+background:#fff;
+position:sticky;
+top:0;
+z-index:999;
+box-shadow:0 2px 15px rgba(0,0,0,.08);
 }
 
-/* Sidebar Title */
-
-.sidebar-title{
-    font-size:24px;
-    color:#0b8a3b;
-    margin-bottom:25px;
-    border-bottom:2px solid #eee;
-    padding-bottom:12px;
+.header-flex{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:18px 0;
+gap:20px;
 }
 
-/* Category */
+/* Logo */
 
-.category-list{
-    list-style:none;
-}
-
-.category-list li{
-    margin-bottom:15px;
-}
-
-.category-list a{
-    text-decoration:none;
-    color:#333;
-    display:flex;
-    justify-content:space-between;
-    transition:.3s;
-}
-
-.category-list a:hover{
-    color:#0b8a3b;
-    padding-left:8px;
+.logo img{
+height:70px;
 }
 
 /* Search */
 
-.shop-search{
-    position:relative;
-    margin-bottom:30px;
+.search-box{
+flex:1;
+display:flex;
+background:#fff;
+border:2px solid #0b8a3b;
+border-radius:50px;
+overflow:hidden;
 }
 
-.shop-search input{
-    width:100%;
-    height:48px;
-    border:2px solid #ddd;
-    border-radius:30px;
-    padding:0 50px 0 20px;
-    outline:none;
-    transition:.3s;
+.search-box select{
+border:none;
+padding:0 15px;
+background:#f3f3f3;
+outline:none;
 }
 
-.shop-search input:focus{
-    border-color:#0b8a3b;
+.search-box input{
+flex:1;
+border:none;
+padding:14px;
+outline:none;
+font-size:15px;
 }
 
-.shop-search button{
-    position:absolute;
-    top:50%;
-    right:8px;
-    transform:translateY(-50%);
-    width:35px;
-    height:35px;
-    border:none;
-    border-radius:50%;
-    background:#0b8a3b;
-    color:#fff;
-    cursor:pointer;
+.search-box button{
+width:60px;
+border:none;
+background:#0b8a3b;
+color:#fff;
+cursor:pointer;
+font-size:18px;
+}
+
+/* Header Icons */
+
+.header-icons{
+display:flex;
+gap:25px;
+}
+
+.header-icons a{
+text-decoration:none;
+color:#222;
+display:flex;
+flex-direction:column;
+align-items:center;
+font-size:14px;
+transition:.3s;
+position:relative;
+}
+
+.header-icons a:hover{
+color:#0b8a3b;
+}
+
+.header-icons i{
+font-size:24px;
+margin-bottom:4px;
+}
+
+/* Counter */
+
+.counter{
+position:absolute;
+top:-5px;
+right:-8px;
+width:20px;
+height:20px;
+background:#ff5722;
+color:#fff;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:11px;
+font-weight:bold;
 }
 /*==========================================
-   VE NATURALS - SHOP CSS
-   Part 2
+VE NATURALS
+Professional Shop CSS
+Part 2
 ==========================================*/
 
-/* Product Grid */
+/*==========================
+NAVBAR
+==========================*/
 
-.product-grid{
-    display:grid;
-    grid-template-columns:repeat (4, 1fr);
-    gap:25px;
+.navbar{
+background:#0b8a3b;
 }
 
-/* Product Card */
+.navbar .container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+}
+
+.navbar ul li{
+position:relative;
+}
+
+.navbar ul li a{
+display:block;
+padding:18px 20px;
+color:#fff;
+text-decoration:none;
+font-size:15px;
+font-weight:600;
+transition:.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active{
+background:#08702f;
+}
+
+.offer-btn{
+background:#ff9800;
+color:#fff;
+padding:10px 22px;
+border-radius:30px;
+font-weight:700;
+cursor:pointer;
+transition:.3s;
+}
+
+.offer-btn:hover{
+background:#e68900;
+transform:scale(1.05);
+}
+
+/*==========================
+LANGUAGE SWITCH
+==========================*/
+
+.language-switch{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.language-switch select{
+padding:8px 15px;
+border:2px solid #0b8a3b;
+border-radius:25px;
+outline:none;
+cursor:pointer;
+background:#fff;
+font-weight:600;
+}
+
+/*==========================
+SHOP BANNER
+==========================*/
+
+.shop-banner{
+height:420px;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url("../images/banner.jpg") center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.banner-content{
+max-width:700px;
+color:#fff;
+}
+
+.banner-content h1{
+font-size:58px;
+font-weight:700;
+margin-bottom:15px;
+}
+
+.banner-content h2{
+font-size:32px;
+margin-bottom:18px;
+}
+
+.banner-content p{
+font-size:18px;
+margin-bottom:30px;
+color:#eee;
+}
+
+.banner-features{
+display:flex;
+justify-content:center;
+gap:18px;
+flex-wrap:wrap;
+margin-bottom:30px;
+}
+
+.banner-features span{
+background:rgba(255,255,255,.15);
+padding:10px 20px;
+border-radius:30px;
+backdrop-filter:blur(6px);
+}
+
+.shop-btn{
+display:inline-block;
+padding:14px 35px;
+background:#0b8a3b;
+color:#fff;
+text-decoration:none;
+border-radius:40px;
+font-size:17px;
+font-weight:700;
+transition:.3s;
+}
+
+.shop-btn:hover{
+background:#075f28;
+transform:translateY(-3px);
+}
+
+/*==========================
+BREADCRUMB
+==========================*/
+
+.breadcrumb{
+background:#fff;
+padding:15px 0;
+border-bottom:1px solid #e5e5e5;
+}
+
+.breadcrumb a{
+text-decoration:none;
+color:#0b8a3b;
+font-weight:600;
+}
+
+.breadcrumb span{
+margin:0 8px;
+color:#999;
+}
+
+/*==========================
+SECTION TITLE
+==========================*/
+
+.section-title{
+text-align:center;
+margin-bottom:45px;
+}
+
+.section-title h2{
+font-size:38px;
+color:#222;
+margin-bottom:10px;
+}
+
+.section-title p{
+font-size:17px;
+color:#666;
+}
+/*==========================================
+VE NATURALS
+Professional Shop CSS
+Part 3
+==========================================*/
+
+/*==========================
+SHOP SECTION
+==========================*/
+
+.shop-page{
+padding:70px 0;
+background:#f5f7f9;
+}
+
+/*==========================
+PRODUCT GRID
+==========================*/
+
+.product-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:30px;
+align-items:stretch;
+}
+
+/*==========================
+PRODUCT CARD
+==========================*/
 
 .product-card{
-    background:#fff;
-    border-radius:18px;
-    overflow:hidden;
-    position:relative;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-    transition:.3s;
+background:#fff;
+border-radius:18px;
+overflow:hidden;
+box-shadow:0 8px 25px rgba(0,0,0,.08);
+transition:.35s;
+position:relative;
+display:flex;
+flex-direction:column;
+padding:18px;
 }
 
 .product-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 18px 35px rgba(0,0,0,.15);
+transform:translateY(-8px);
+box-shadow:0 15px 35px rgba(0,0,0,.15);
 }
 
-/* Product Image */
+/*==========================
+PRODUCT IMAGE
+==========================*/
 
-.product-image{
-    position:relative;
-    overflow:hidden;
+.product-card img{
+width:100%;
+height:220px;
+object-fit:contain;
+transition:.35s;
+margin-bottom:15px;
 }
 
-.product-image img{
-    width:100%;
-    height:280px;
-    object-fit:contain;
-    padding:15px;
-    background:#fff;
-    transition:.4s;
+.product-card:hover img{
+transform:scale(1.08);
 }
 
-.product-card:hover .product-image img{
-    transform:scale(1.08);
-}
-
-/* Sale Badge */
-
-.sale-badge{
-    position:absolute;
-    top:15px;
-    left:15px;
-    background:#e53935;
-    color:#fff;
-    padding:6px 12px;
-    border-radius:20px;
-    font-size:13px;
-    font-weight:600;
-}
-
-/* Wishlist */
-
-.wishlist-btn{
-    position:absolute;
-    top:15px;
-    right:15px;
-    width:42px;
-    height:42px;
-    background:#fff;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-decoration:none;
-    color:#444;
-    box-shadow:0 3px 10px rgba(0,0,0,.15);
-    transition:.3s;
-}
-
-.wishlist-btn:hover{
-    background:#0b8a3b;
-    color:#fff;
-}
-
-/* Product Content */
-
-.product-content{
-    padding:20px;
-}
-
-.product-category{
-    color:#888;
-    font-size:14px;
-    margin-bottom:8px;
-}
-
-.product-title{
-    font-size:21px;
-    color:#222;
-    margin-bottom:10px;
-    font-weight:600;
-}
-
-.product-title a{
-    color:#222;
-    text-decoration:none;
-}
-
-.product-title a:hover{
-    color:#0b8a3b;
-}
-
-/* Rating */
-
-.rating{
-    margin-bottom:15px;
-    color:#ffc107;
-}
-
-.rating span{
-    color:#777;
-    font-size:14px;
-    margin-left:8px;
-}
-
-/* Price */
-
-.price{
-    display:flex;
-    align-items:center;
-    gap:12px;
-    margin-bottom:20px;
-}
-
-.new-price{
-    color:#0b8a3b;
-    font-size:26px;
-    font-weight:700;
-}
-
-.old-price{
-    color:#999;
-    text-decoration:line-through;
-    font-size:18px;
-}
-
-/* Buttons */
-
-.product-buttons{
-    display:flex;
-    gap:10px;
-}
-
-.cart-btn{
-    flex:1;
-    height:46px;
-    background:#0b8a3b;
-    color:#fff;
-    border:none;
-    border-radius:30px;
-    cursor:pointer;
-    font-size:15px;
-    font-weight:600;
-    transition:.3s;
-}
-
-.cart-btn:hover{
-    background:#06652b;
-}
-
-.view-btn{
-    width:46px;
-    height:46px;
-    border-radius:50%;
-    background:#f2f2f2;
-    color:#222;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-decoration:none;
-    transition:.3s;
-}
-
-.view-btn:hover{
-    background:#0b8a3b;
-    color:#fff;
-}
-/*==========================================
-   VE NATURALS - SHOP CSS
-   Part 3
-==========================================*/
-
-/* Price Filter */
-
-.filter-box{
-    margin-bottom:35px;
-}
-
-.filter-box h3{
-    font-size:22px;
-    color:#0b8a3b;
-    margin-bottom:18px;
-}
-
-.price-range{
-    width:100%;
-    cursor:pointer;
-}
-
-.price-values{
-    display:flex;
-    justify-content:space-between;
-    margin-top:12px;
-    color:#666;
-    font-size:15px;
-}
-
-/* Brand Filter */
-
-.brand-list{
-    list-style:none;
-    padding:0;
-}
-
-.brand-list li{
-    margin-bottom:12px;
-}
-
-.brand-list label{
-    cursor:pointer;
-    color:#444;
-    font-size:16px;
-}
-
-.brand-list input{
-    margin-right:10px;
-}
-
-/* Product Tags */
-
-.tag-list{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-}
-
-.tag-list a{
-    text-decoration:none;
-    padding:8px 15px;
-    background:#f3f3f3;
-    color:#333;
-    border-radius:30px;
-    transition:.3s;
-    font-size:14px;
-}
-
-.tag-list a:hover{
-    background:#0b8a3b;
-    color:#fff;
-}
-
-/* Popular Products */
-
-.popular-products{
-    margin-top:35px;
-}
-
-.popular-item{
-    display:flex;
-    gap:15px;
-    margin-bottom:20px;
-    align-items:center;
-}
-
-.popular-item img{
-    width:75px;
-    height:75px;
-    object-fit:contain;
-    background:#fff;
-    border-radius:10px;
-    border:1px solid #eee;
-}
-
-.popular-info h4{
-    font-size:16px;
-    margin-bottom:5px;
-}
-
-.popular-info h4 a{
-    color:#222;
-    text-decoration:none;
-}
-
-.popular-info h4 a:hover{
-    color:#0b8a3b;
-}
-
-.popular-info span{
-    color:#0b8a3b;
-    font-weight:600;
-}
-
-/* Shop Top Bar */
-
-.shop-topbar{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:30px;
-    flex-wrap:wrap;
-    gap:20px;
-}
-
-.shop-topbar p{
-    color:#666;
-    font-size:16px;
-}
-
-/* Sort */
-
-.sort-box select{
-    padding:12px 18px;
-    border:2px solid #ddd;
-    border-radius:8px;
-    outline:none;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.sort-box select:focus{
-    border-color:#0b8a3b;
-}
-
-/* Filter Button */
-
-.filter-btn{
-    padding:12px 22px;
-    border:none;
-    background:#0b8a3b;
-    color:#fff;
-    border-radius:30px;
-    cursor:pointer;
-    font-weight:600;
-    transition:.3s;
-}
-
-.filter-btn:hover{
-    background:#06652b;
-}
-/*==========================================
-   VE NATURALS - SHOP CSS
-   Part 4
-==========================================*/
-
-/* Product Hover Overlay */
-
-.product-overlay{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,.45);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:15px;
-    opacity:0;
-    visibility:hidden;
-    transition:.4s;
-}
-
-.product-card:hover .product-overlay{
-    opacity:1;
-    visibility:visible;
-}
-
-.product-overlay a{
-    width:50px;
-    height:50px;
-    background:#fff;
-    color:#0b8a3b;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-decoration:none;
-    font-size:18px;
-    transition:.3s;
-}
-
-.product-overlay a:hover{
-    background:#0b8a3b;
-    color:#fff;
-}
-
-/* Product Label */
-
-.product-label{
-    position:absolute;
-    top:15px;
-    left:15px;
-    background:#ff5722;
-    color:#fff;
-    padding:6px 12px;
-    border-radius:20px;
-    font-size:13px;
-    font-weight:600;
-}
-
-.product-label.new{
-    background:#28a745;
-}
-
-.product-label.hot{
-    background:#dc3545;
-}
-
-/* Pagination */
-
-.pagination{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:12px;
-    margin-top:60px;
-    flex-wrap:wrap;
-}
-
-.pagination a{
-    width:48px;
-    height:48px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-decoration:none;
-    background:#fff;
-    border:2px solid #0b8a3b;
-    color:#0b8a3b;
-    border-radius:10px;
-    font-weight:600;
-    transition:.3s;
-}
-
-.pagination a:hover,
-.pagination a.active{
-    background:#0b8a3b;
-    color:#fff;
-}
-
-.pagination .next-btn{
-    width:auto;
-    padding:0 22px;
-}
-
-/* Empty Product */
-
-.no-product{
-    text-align:center;
-    padding:80px 20px;
-}
-
-.no-product i{
-    font-size:80px;
-    color:#ccc;
-    margin-bottom:20px;
-}
-
-.no-product h3{
-    color:#333;
-    margin-bottom:10px;
-}
-
-.no-product p{
-    color:#777;
-}
-
-/* Tablet */
-
-@media(max-width:992px){
-
-.shop-layout{
-    grid-template-columns:1fr;
-}
-
-.shop-sidebar{
-    margin-bottom:30px;
-}
-
-.shop-topbar{
-    flex-direction:column;
-    align-items:flex-start;
-}
-
-}
-/*==========================================
-   VE NATURALS - SHOP CSS
-   Part 5 (Final)
-==========================================*/
-
-/* Smooth Animation */
-
-.product-card,
-.shop-sidebar,
-.filter-btn,
-.cart-btn,
-.view-btn,
-.pagination a{
-    transition:all .3s ease;
-}
-
-/* Scroll Animation */
-
-.fade-in{
-    opacity:0;
-    transform:translateY(40px);
-    transition:all .8s ease;
-}
-
-.fade-in.show{
-    opacity:1;
-    transform:translateY(0);
-}
-
-/* Mobile Responsive */
-
-@media(max-width:768px){
-
-.shop-page{
-    padding:50px 15px;
-}
-
-.shop-banner{
-    height:240px;
-}
-
-.shop-banner h1{
-    font-size:34px;
-}
-
-.shop-banner p{
-    font-size:15px;
-}
-
-.shop-search input{
-    height:45px;
-    font-size:14px;
-}
-
-.shop-search button{
-    width:32px;
-    height:32px;
-}
-
-.product-grid{
-    grid-template-columns:1fr;
-    gap:25px;
-}
-
-.product-image img{
-    height:240px;
-}
-
-.product-title{
-    font-size:19px;
-}
-
-.new-price{
-    font-size:22px;
-}
-
-.old-price{
-    font-size:16px;
-}
-
-.product-buttons{
-    flex-direction:column;
-}
-
-.cart-btn{
-    width:100%;
-}
-
-.view-btn{
-    width:100%;
-    border-radius:30px;
-    height:45px;
-}
-
-.pagination{
-    gap:8px;
-}
-
-.pagination a{
-    width:40px;
-    height:40px;
-    font-size:14px;
-}
-
-.pagination .next-btn{
-    padding:0 18px;
-}
-
-}
-
-/* Small Mobile */
-
-@media(max-width:480px){
-
-.shop-banner{
-    height:200px;
-}
-
-.shop-banner h1{
-    font-size:28px;
-}
-
-.shop-sidebar{
-    padding:18px;
-}
-
-.sidebar-title{
-    font-size:20px;
-}
-
-.product-card{
-    border-radius:12px;
-}
-
-.product-image img{
-    height:200px;
-    padding:10px;
-}
-
-.product-content{
-    padding:15px;
-}
-
-.product-title{
-    font-size:18px;
-}
-
-.rating{
-    font-size:13px;
-}
-
-.new-price{
-    font-size:20px;
-}
-
-.old-price{
-    font-size:14px;
-}
-
-.sale-badge,
-.product-label{
-    font-size:11px;
-    padding:5px 10px;
-}
-
-.wishlist-btn{
-    width:38px;
-    height:38px;
-}
-
-}
-
-/* Desktop */
-
-@media(min-width:1400px){
-
-.product-grid{
-    grid-template-columns:repeat(4,1fr);
-}
-
-}
-/* Laptop */
-@media(max-width:1200px){
-.product-grid{
-grid-template-columns:repeat(3,1fr);
-}
-}
-
-/* Tablet */
-@media(max-width:992px){
-.product-grid{
-grid-template-columns:repeat(2,1fr);
-}
-}
-
-/* Mobile */
-@media(max-width:768px){
-.product-grid{
-grid-template-columns:1fr;
-}
-}
-/* End of Shop CSS */
-
-/*==========================================
- VE NATURALS SHOP NEW ADD-ON CSS
-==========================================*/
-
-
-/* Product Badge */
+/*==========================
+BADGE
+==========================*/
 
 .badge{
-    position:absolute;
-    top:15px;
-    left:15px;
-    background:#0c7a2d;
-    color:#fff;
-    padding:7px 15px;
-    border-radius:25px;
-    font-size:13px;
-    font-weight:600;
-    z-index:2;
+position:absolute;
+top:15px;
+left:15px;
+background:#0b8a3b;
+color:#fff;
+padding:6px 14px;
+font-size:12px;
+font-weight:700;
+border-radius:20px;
+z-index:2;
 }
 
 .badge.sale{
-    background:#ff5722;
+background:#ff5722;
 }
 
-
-
-/* Product Card New */
-
-.product-card{
-    position:relative;
+.badge.hot{
+background:#e53935;
 }
 
+/*==========================
+PRODUCT TITLE
+==========================*/
 
+.product-card h3{
+font-size:20px;
+color:#222;
+margin-bottom:10px;
+text-align:center;
+min-height:50px;
+}
 
-/* Quantity */
+/*==========================
+RATING
+==========================*/
+
+.rating{
+text-align:center;
+font-size:18px;
+color:#ffc107;
+margin-bottom:10px;
+}
+
+/*==========================
+PRICE
+==========================*/
+
+.price{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:10px;
+font-size:24px;
+font-weight:700;
+color:#0b8a3b;
+margin-bottom:15px;
+}
+
+.price del{
+font-size:17px;
+font-weight:500;
+color:#999;
+}
+
+/*==========================
+QUANTITY
+==========================*/
 
 .quantity-box{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:10px;
-    margin:15px 0;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:10px;
+margin-bottom:18px;
 }
-
 
 .quantity-box button{
-
-    width:35px;
-    height:35px;
-    border:none;
-    background:#0c7a2d;
-    color:#fff;
-    border-radius:50%;
-    font-size:20px;
-    cursor:pointer;
-
+width:36px;
+height:36px;
+border:none;
+background:#0b8a3b;
+color:#fff;
+font-size:20px;
+border-radius:50%;
+cursor:pointer;
+transition:.3s;
 }
 
+.quantity-box button:hover{
+background:#075f28;
+}
 
 .quantity-box input{
-
-    width:50px;
-    height:35px;
-    text-align:center;
-    border:1px solid #ddd;
-    border-radius:5px;
-
+width:55px;
+height:36px;
+text-align:center;
+border:2px solid #ddd;
+border-radius:8px;
+font-size:15px;
+outline:none;
 }
 
+/*==========================
+BUTTONS
+==========================*/
 
-
-/* Cart Button */
+.cart-btn,
+.buy-btn{
+width:100%;
+height:46px;
+border:none;
+border-radius:30px;
+font-size:15px;
+font-weight:700;
+cursor:pointer;
+transition:.3s;
+margin-top:10px;
+}
 
 .cart-btn{
-
-    width:100%;
-    height:45px;
-    border:none;
-    border-radius:30px;
-    background:#0c7a2d;
-    color:#fff;
-    font-weight:600;
-    cursor:pointer;
-    margin-bottom:10px;
-
+background:#0b8a3b;
+color:#fff;
 }
-
 
 .cart-btn:hover{
-
-    background:#075c21;
-
+background:#075f28;
 }
-
-
-
-/* Buy Now Button */
-
 
 .buy-btn{
-
-    width:100%;
-    height:45px;
-    border:none;
-    border-radius:30px;
-    background:#25D366;
-    color:#fff;
-    font-weight:600;
-    cursor:pointer;
-
+background:#25D366;
+color:#fff;
 }
-
 
 .buy-btn:hover{
+background:#128C7E;
+}
 
-    background:#128C7E;
+/*==========================
+ANIMATION
+==========================*/
+
+.product-card{
+animation:fadeUp .5s ease;
+}
+
+@keyframes fadeUp{
+
+from{
+opacity:0;
+transform:translateY(25px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+/*==========================================
+VE NATURALS
+Professional Shop CSS
+Part 4
+==========================================*/
+
+/*==========================
+PRODUCT OVERLAY
+==========================*/
+
+.product-overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.45);
+display:flex;
+justify-content:center;
+align-items:center;
+gap:15px;
+opacity:0;
+visibility:hidden;
+transition:.35s;
+}
+
+.product-card:hover .product-overlay{
+opacity:1;
+visibility:visible;
+}
+
+.product-overlay a{
+width:50px;
+height:50px;
+background:#fff;
+color:#0b8a3b;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+text-decoration:none;
+font-size:20px;
+transition:.3s;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+.product-overlay a:hover{
+background:#0b8a3b;
+color:#fff;
+transform:scale(1.1);
+}
+
+/*==========================
+WISHLIST BUTTON
+==========================*/
+
+.wishlist-btn{
+position:absolute;
+top:15px;
+right:15px;
+width:42px;
+height:42px;
+background:#fff;
+color:#444;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+text-decoration:none;
+box-shadow:0 4px 12px rgba(0,0,0,.15);
+z-index:3;
+transition:.3s;
+}
+
+.wishlist-btn:hover{
+background:#e53935;
+color:#fff;
+}
+
+/*==========================
+QUICK VIEW BUTTON
+==========================*/
+
+.quick-view{
+position:absolute;
+bottom:20px;
+left:50%;
+transform:translateX(-50%);
+background:#fff;
+color:#0b8a3b;
+padding:10px 22px;
+border-radius:30px;
+font-weight:600;
+text-decoration:none;
+opacity:0;
+transition:.35s;
+}
+
+.product-card:hover .quick-view{
+opacity:1;
+bottom:30px;
+}
+
+.quick-view:hover{
+background:#0b8a3b;
+color:#fff;
+}
+
+/*==========================
+PAGINATION
+==========================*/
+
+.pagination{
+display:flex;
+justify-content:center;
+align-items:center;
+gap:12px;
+margin:60px 0;
+flex-wrap:wrap;
+}
+
+.pagination button,
+.pagination a{
+width:48px;
+height:48px;
+border:2px solid #0b8a3b;
+background:#fff;
+color:#0b8a3b;
+border-radius:10px;
+font-size:16px;
+font-weight:700;
+cursor:pointer;
+transition:.3s;
+display:flex;
+justify-content:center;
+align-items:center;
+text-decoration:none;
+}
+
+.pagination button:hover,
+.pagination a:hover,
+.pagination .active{
+background:#0b8a3b;
+color:#fff;
+}
+
+.prev-page,
+.next-page{
+width:auto !important;
+padding:0 20px;
+}
+
+/*==========================
+RESPONSIVE
+==========================*/
+
+@media(max-width:1200px){
+
+.product-grid{
+grid-template-columns:repeat(3,1fr);
+}
 
 }
 
+@media(max-width:992px){
 
+.product-grid{
+grid-template-columns:repeat(2,1fr);
+}
 
-/* Why Choose Section */
+.shop-banner h1{
+font-size:42px;
+}
 
-
-.product-features{
-
-    padding:70px 0;
-    background:#f7faf8;
+.banner-content h2{
+font-size:26px;
+}
 
 }
 
+@media(max-width:768px){
 
-.feature-title{
+.product-grid{
+grid-template-columns:1fr;
+}
 
-    text-align:center;
-    margin-bottom:40px;
+.header-flex{
+flex-direction:column;
+}
+
+.header-icons{
+justify-content:center;
+}
+
+.navbar .container{
+flex-direction:column;
+}
+
+.navbar ul{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.search-box{
+width:100%;
+}
+
+.shop-banner{
+height:280px;
+}
+
+.shop-banner h1{
+font-size:32px;
+}
+
+.banner-content h2{
+font-size:22px;
+}
+
+.banner-content p{
+font-size:15px;
+}
+
+.pagination button,
+.pagination a{
+width:42px;
+height:42px;
+font-size:14px;
+}
 
 }
 
+@media(max-width:480px){
 
-.feature-title h2{
+.product-card{
+padding:15px;
+}
 
-    font-size:35px;
-    color:#222;
+.product-card img{
+height:180px;
+}
+
+.product-card h3{
+font-size:18px;
+}
+
+.price{
+font-size:20px;
+}
+
+.cart-btn,
+.buy-btn{
+height:42px;
+font-size:14px;
+}
+
+.quantity-box button{
+width:32px;
+height:32px;
+}
+
+.quantity-box input{
+width:45px;
+height:32px;
+}
+
+}
+/*==========================================
+VE NATURALS
+Professional Shop CSS
+Part 5
+==========================================*/
+
+/*==========================
+DARK MODE
+==========================*/
+
+body.dark{
+background:#111;
+color:#fff;
+}
+
+body.dark .main-header,
+body.dark .navbar,
+body.dark .product-card,
+body.dark .footer{
+background:#1c1c1c;
+color:#fff;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark p,
+body.dark a{
+color:#fff;
+}
+
+body.dark .search-box{
+background:#222;
+border-color:#0b8a3b;
+}
+
+body.dark .search-box input{
+background:#222;
+color:#fff;
+}
+
+body.dark .price{
+color:#4caf50;
+}
+
+/*==========================
+DARK MODE BUTTON
+==========================*/
+
+.dark-btn{
+position:fixed;
+right:20px;
+bottom:95px;
+width:55px;
+height:55px;
+border:none;
+border-radius:50%;
+background:#0b8a3b;
+color:#fff;
+font-size:22px;
+cursor:pointer;
+z-index:9999;
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+transition:.3s;
+}
+
+.dark-btn:hover{
+transform:scale(1.08);
+}
+
+/*==========================
+WHATSAPP FLOAT BUTTON
+==========================*/
+
+.whatsapp-float{
+position:fixed;
+left:20px;
+bottom:20px;
+width:60px;
+height:60px;
+background:#25D366;
+color:#fff;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:30px;
+text-decoration:none;
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+z-index:9999;
+transition:.3s;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.1);
+}
+
+/*==========================
+BACK TO TOP
+==========================*/
+
+#backTop{
+position:fixed;
+right:20px;
+bottom:20px;
+width:55px;
+height:55px;
+border:none;
+border-radius:50%;
+background:#0b8a3b;
+color:#fff;
+font-size:22px;
+cursor:pointer;
+display:none;
+z-index:9999;
+transition:.3s;
+}
+
+#backTop:hover{
+background:#075f28;
+}
+
+/*==========================
+TOAST MESSAGE
+==========================*/
+
+.toast{
+position:fixed;
+right:20px;
+top:90px;
+background:#0b8a3b;
+color:#fff;
+padding:15px 25px;
+border-radius:8px;
+font-weight:600;
+opacity:0;
+visibility:hidden;
+transition:.35s;
+z-index:99999;
+}
+
+.toast.show{
+opacity:1;
+visibility:visible;
+}
+
+/*==========================
+LOADER
+==========================*/
+
+#loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:#fff;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+z-index:999999;
+}
+
+.spinner{
+width:65px;
+height:65px;
+border:6px solid #eee;
+border-top:6px solid #0b8a3b;
+border-radius:50%;
+animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+
+100%{
+transform:rotate(360deg);
+}
 
 }
 
+/*==========================
+FOOTER
+==========================*/
 
-.feature-grid{
+.footer{
+background:#0b8a3b;
+color:#fff;
+padding:60px 0 20px;
+margin-top:70px;
+}
 
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:25px;
+.footer-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:35px;
+}
+
+.footer h3{
+margin-bottom:18px;
+font-size:22px;
+}
+
+.footer ul{
+list-style:none;
+}
+
+.footer ul li{
+margin-bottom:10px;
+}
+
+.footer a{
+color:#fff;
+text-decoration:none;
+transition:.3s;
+}
+
+.footer a:hover{
+padding-left:6px;
+}
+
+.footer-bottom{
+margin-top:40px;
+padding-top:20px;
+border-top:1px solid rgba(255,255,255,.2);
+text-align:center;
+font-size:14px;
+}
+
+/*==========================
+NEWSLETTER
+==========================*/
+
+.newsletter{
+background:#f5f5f5;
+padding:60px 0;
+text-align:center;
+}
+
+.newsletter h2{
+font-size:34px;
+margin-bottom:15px;
+}
+
+.newsletter form{
+max-width:650px;
+margin:auto;
+display:flex;
+margin-top:25px;
+}
+
+.newsletter input{
+flex:1;
+height:52px;
+padding:0 18px;
+border:2px solid #0b8a3b;
+border-radius:30px 0 0 30px;
+outline:none;
+}
+
+.newsletter button{
+width:170px;
+border:none;
+background:#0b8a3b;
+color:#fff;
+font-size:16px;
+font-weight:600;
+border-radius:0 30px 30px 0;
+cursor:pointer;
+}
+
+/*==========================
+FINAL RESPONSIVE
+==========================*/
+
+@media(max-width:992px){
+
+.footer-grid{
+grid-template-columns:repeat(2,1fr);
+}
 
 }
 
+@media(max-width:768px){
 
-.feature-card{
+.footer-grid{
+grid-template-columns:1fr;
+text-align:center;
+}
 
-    background:#fff;
-    padding:30px;
-    text-align:center;
-    border-radius:18px;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
+.newsletter form{
+flex-direction:column;
+gap:15px;
+}
+
+.newsletter input,
+.newsletter button{
+width:100%;
+border-radius:30px;
+}
+
+.dark-btn,
+#backTop,
+.whatsapp-float{
+width:50px;
+height:50px;
+font-size:20px;
+}
 
 }
 
-
-.feature-card i{
-
-    font-size:40px;
-    color:#0c7a2d;
-    margin-bottom:15px;
-
-}
-
-
-
-/* Customer Review */
-
-
-.customer-review{
-
-    padding:70px 0;
-
-}
-
-
-.customer-review h2{
-
-    text-align:center;
-    margin-bottom:35px;
-
-}
-
-
-.review-box{
-
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-
-}
-
-
-.review-card{
-
-    background:#fff;
-    padding:30px;
-    border-radius:15px;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-
-}
-
-
-.stars{
-
-    color:#ffc107;
-    font-size:22px;
-
-}
-
-
-
-/* Order Process */
-
-
-.order-process{
-
-    padding:70px 0;
-    background:#f8f9fa;
-
-}
-
-
-.order-process h2{
-
-    text-align:center;
-    margin-bottom:40px;
-
-}
-
-
-.process-grid{
-
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:25px;
-
-}
-
-
-.process
