@@ -2354,175 +2354,375 @@ grid-template-columns:1fr;
 }
 
 }
-/* ==========================================
+    /* ==========================================
    VE NATURALS SHOP CSS
    PART 11
+   Professional E-Commerce Features
 ========================================== */
 
-/* Floating WhatsApp */
 
-.whatsapp-float{
-    position:fixed;
-    right:20px;
+/* Product Quick View */
+
+.quick-view-btn{
+
+    position:absolute;
     bottom:20px;
-    width:60px;
-    height:60px;
-    background:#25D366;
-    color:#fff;
-    border-radius:50%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:28px;
-    text-decoration:none;
-    box-shadow:0 10px 25px rgba(0,0,0,.25);
-    z-index:9999;
-    transition:.3s;
-}
+    left:50%;
+    transform:translateX(-50%);
 
-.whatsapp-float:hover{
-    transform:scale(1.1);
-}
-
-/* Scroll To Top */
-
-.scroll-top{
-    position:fixed;
-    right:20px;
-    bottom:95px;
-    width:50px;
-    height:50px;
-    background:#0b8a3b;
-    color:#fff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    border-radius:50%;
-    cursor:pointer;
-    opacity:0;
-    visibility:hidden;
-    transition:.3s;
-    z-index:999;
-}
-
-.scroll-top.show{
-    opacity:1;
-    visibility:visible;
-}
-
-/* Loading */
-
-.loader{
-    position:fixed;
-    inset:0;
     background:#fff;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    z-index:99999;
-}
+    color:#0b8a3b;
 
-.loader::after{
-    content:"";
-    width:60px;
-    height:60px;
-    border:6px solid #ddd;
-    border-top:6px solid #0b8a3b;
-    border-radius:50%;
-    animation:spin 1s linear infinite;
-}
+    padding:10px 25px;
 
-@keyframes spin{
+    border-radius:30px;
 
-    to{
-        transform:rotate(360deg);
-    }
+    font-weight:600;
 
-}
-
-/* Toast */
-
-.toast{
-    position:fixed;
-    top:25px;
-    right:25px;
-    background:#0b8a3b;
-    color:#fff;
-    padding:15px 22px;
-    border-radius:8px;
-    opacity:0;
-    visibility:hidden;
-    transition:.3s;
-    z-index:99999;
-}
-
-.toast.show{
-    opacity:1;
-    visibility:visible;
-}
-
-/* Product Hover */
-
-.product-card:hover .cart-btn{
-    background:#06652b;
-}
-
-.product-card:hover .buy-btn{
-    background:#128C7E;
-}
-
-/* Smooth */
-
-html{
-    scroll-behavior:smooth;
-}
-
-/* Custom Scrollbar */
-
-::-webkit-scrollbar{
-    width:10px;
-}
-
-::-webkit-scrollbar-thumb{
-    background:#0b8a3b;
-    border-radius:10px;
-}
-
-::-webkit-scrollbar-track{
-    background:#f2f2f2;
-}
-
-/* Footer */
-
-.shop-footer{
-    background:#111;
-    color:#fff;
-    padding:70px 0;
-}
-
-.shop-footer h3{
-    margin-bottom:20px;
-}
-
-.shop-footer p{
-    color:#ccc;
-    line-height:1.8;
-}
-
-.shop-footer a{
-    color:#ddd;
     text-decoration:none;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
 }
 
-.shop-footer a:hover{
-    color:#25D366;
+
+.product-card:hover .quick-view-btn{
+
+    opacity:1;
+
+    visibility:visible;
+
 }
 
-.footer-bottom{
+
+
+/* Product Stock */
+
+.stock-status{
+
+    font-size:14px;
+
+    margin-bottom:15px;
+
+    color:#0b8a3b;
+
+    font-weight:600;
+
+}
+
+
+.stock-status.out{
+
+    color:#e53935;
+
+}
+
+
+
+/* Delivery Info */
+
+.delivery-info{
+
+    background:#f5fff8;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    margin-top:15px;
+
+    font-size:14px;
+
+    color:#555;
+
+}
+
+
+.delivery-info i{
+
+    color:#0b8a3b;
+
+    margin-right:8px;
+
+}
+
+
+
+/* Trust Badges */
+
+.trust-box{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+    margin:40px 0;
+
+}
+
+
+.trust-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:#fff;
+
+    padding:15px 25px;
+
+    border-radius:40px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+.trust-item i{
+
+    font-size:25px;
+
+    color:#0b8a3b;
+
+}
+
+
+
+/* Language Switcher */
+
+.language-switch{
+
+    position:relative;
+
+}
+
+
+.language-btn{
+
+    background:#fff;
+
+    border:1px solid #ddd;
+
+    padding:10px 18px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
+
+
+.language-menu{
+
+    position:absolute;
+
+    top:45px;
+
+    right:0;
+
+    background:#fff;
+
+    width:150px;
+
+    border-radius:10px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    display:none;
+
+    overflow:hidden;
+
+    z-index:99;
+
+}
+
+
+.language-menu a{
+
+    display:block;
+
+    padding:12px 15px;
+
+    text-decoration:none;
+
+    color:#333;
+
+}
+
+
+.language-menu a:hover{
+
+    background:#0b8a3b;
+
+    color:#fff;
+
+}
+
+
+.language-switch:hover .language-menu{
+
+    display:block;
+
+}
+
+
+
+/* Mobile Bottom Cart Bar */
+
+.mobile-cart-bar{
+
+    display:none;
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.mobile-cart-bar{
+
+    position:fixed;
+
+    bottom:0;
+
+    left:0;
+
+    width:100%;
+
+    background:#fff;
+
+    padding:12px;
+
+    display:flex;
+
+    gap:10px;
+
+    box-shadow:0 -5px 20px rgba(0,0,0,.15);
+
+    z-index:999;
+
+
+}
+
+
+.mobile-cart-bar button{
+
+    flex:1;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+}
+
+
+.mobile-cart{
+
+    background:#0b8a3b;
+
+    color:#fff;
+
+}
+
+
+.mobile-buy{
+
+    background:#25D366;
+
+    color:#fff;
+
+}
+
+
+}
+
+
+
+/* Product Loading Skeleton */
+
+
+.skeleton{
+
+    background:linear-gradient(
+    90deg,
+    #eee,
+    #f7f7f7,
+    #eee
+    );
+
+    background-size:200%;
+
+    animation:loading 1.5s infinite;
+
+}
+
+
+@keyframes loading{
+
+
+0%{
+
+background-position:200% 0;
+
+}
+
+
+100%{
+
+background-position:-200% 0;
+
+}
+
+
+}
+
+
+
+/* Product Empty Message */
+
+.empty-message{
+
     text-align:center;
-    margin-top:40px;
-    padding-top:20px;
-    border-top:1px solid #333;
-}
+
+    padding:60px;
+
 }
 
+
+.empty-message i{
+
+    font-size:70px;
+
+    color:#ccc;
+
+}
+
+
+.empty-message h3{
+
+    margin-top:20px;
+
+    color:#333;
+
+}
+
+
+
+/* End Part 11 */
