@@ -5,52 +5,76 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-<title>Shop | VE Naturals</title>
+<title>VE Naturals | Shop</title>
 
-<meta name="description" content="Buy Premium Natural Spices and Herbal Products from VE Naturals">
+<meta name="description"
+content="Buy Premium Natural Spices & Herbal Products">
 
 <link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet" href="css/shop.css">
 
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-<link rel="icon" href="images/logo.jpg">
+<link rel="icon" href="images/logo.png">
 
 </head>
 
-
 <body>
 
-
-<!-- TOP OFFER BAR -->
+<!--=========================
+TOP BAR
+==========================-->
 
 <div class="top-bar">
 
 <div class="container top-flex">
 
-<div>
-🌿 100% Pure & Natural Products
+<div class="top-left">
+
+<span>🌿 100% Pure & Natural</span>
+
+<span>|</span>
+
+<span>🚚 Free Shipping Above ₹499</span>
+
+<span>|</span>
+
+<span>🛡️ Quality You Can Trust</span>
+
 </div>
 
-<div>
-🚚 Free Shipping Above ₹499 |
-🔥 Best Offers Available
-</div>
+<div class="top-right">
+
+<a href="#">Track Order</a>
+
+<a href="#">Help & Support</a>
+
+<select id="languageSwitcher">
+
+<option value="en">English</option>
+
+<option value="hi">हिन्दी</option>
+
+</select>
 
 </div>
 
 </div>
 
+</div>
 
-
-<!-- HEADER -->
+<!--=========================
+HEADER
+==========================-->
 
 <header class="main-header">
 
 <div class="container header-flex">
-
 
 <!-- LOGO -->
 
@@ -58,18 +82,16 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 <a href="index.html">
 
-<img src="images/logo.jpg" alt="VE Naturals">
+<img src="images/logo.png"
+alt="VE Naturals">
 
 </a>
 
 </div>
 
-
-
 <!-- SEARCH -->
 
 <div class="search-box">
-
 
 <select>
 
@@ -77,165 +99,134 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 <option>Spices</option>
 
+<option>Herbal Products</option>
+
 <option>Herbal Powder</option>
 
-<option>Natural Products</option>
+<option>Dry Fruits</option>
 
 </select>
 
-
-<input type="text"
-placeholder="Search VE Naturals Products...">
-
+<input
+type="text"
+id="searchProduct"
+placeholder="Search Products...">
 
 <button>
 
-<i class="fa-solid fa-search"></i>
+<i class="fa fa-search"></i>
 
 </button>
 
-
 </div>
 
-
-
-
-<!-- ICONS -->
-
+<!-- HEADER ICONS -->
 
 <div class="header-icons">
 
+<a href="#">
+
+<i class="fa-solid fa-phone"></i>
+
+<div>
+
+<b>+91 9935830935</b>
+
+<small>Support</small>
+
+</div>
+
+</a>
 
 <a href="login.html">
 
 <i class="fa-regular fa-user"></i>
 
-<span>
-Login
-</span>
+<div>
+
+<b>Login</b>
+
+<small>My Account</small>
+
+</div>
 
 </a>
-
-
 
 <a href="wishlist.html">
 
 <i class="fa-regular fa-heart"></i>
 
-<span>
-Wishlist
+<span class="count">
+
+0
+
 </span>
 
 </a>
-
-
 
 <a href="cart.html">
 
 <i class="fa-solid fa-cart-shopping"></i>
 
-<span>
-Cart
+<span class="count">
+
+0
+
 </span>
 
 </a>
 
-
 </div>
-
-
 
 </div>
 
 </header>
 
-
-
-
-
-<!-- NAVBAR -->
-
+<!--=========================
+NAVBAR
+==========================-->
 
 <nav class="navbar">
 
-<div class="container">
-
+<div class="container nav-flex">
 
 <ul>
 
+<li><a href="index.html">HOME</a></li>
 
-<li>
-<a href="index.html">
-Home
-</a>
-</li>
+<li><a class="active" href="shop.html">SHOP</a></li>
 
+<li><a href="#">SPICES</a></li>
 
-<li>
-<a class="active" href="shop.html">
-Shop
-</a>
-</li>
+<li><a href="#">HERBAL PRODUCTS</a></li>
 
+<li><a href="#">COMBO PACKS</a></li>
 
-<li>
-<a href="#">
-Spices
-</a>
-</li>
+<li><a href="#">ABOUT US</a></li>
 
-
-<li>
-<a href="#">
-Herbal Products
-</a>
-</li>
-
-
-<li>
-<a href="#">
-Combo Packs
-</a>
-</li>
-
-
-<li>
-<a href="contact.html">
-Contact
-</a>
-</li>
-
+<li><a href="contact.html">CONTACT</a></li>
 
 </ul>
 
+<a href="#" class="offer-button">
 
+🔥 BEST OFFERS
 
-<div class="offer-btn">
-
-🔥 Best Offers
-
-</div>
-
-
+</a>
 
 </div>
 
 </nav>
 
+<!--=========================
+HERO SECTION
+==========================-->
 
+<section class="hero">
 
+<div class="container hero-flex">
 
-
-
-
-<!-- HERO BANNER -->
-
-
-<section class="shop-banner">
-
-
-<div class="banner-content">
-
+<div class="hero-left">
 
 <h1>
 
@@ -243,2294 +234,1414 @@ BEST PRODUCTS
 
 </h1>
 
-
 <h2>
 
 For A Healthy Life 🌿
 
 </h2>
 
-
-
 <p>
 
-Pure Herbs | Natural Spices | Premium Quality
+Pure Herbs • Premium Spices • Trusted Quality
 
 </p>
 
+<div class="hero-icons">
 
+<div>
 
-<div class="banner-features">
+<i class="fa-solid fa-seedling"></i>
 
-
-<span>
-🌱 100% Natural
-</span>
-
-
-<span>
-🛡️ Quality Checked
-</span>
-
-
-<span>
-📦 Hygienic Packing
-</span>
-
+<span>100% Natural</span>
 
 </div>
 
+<div>
 
+<i class="fa-solid fa-shield-heart"></i>
+
+<span>Quality Checked</span>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-box"></i>
+
+<span>Hygienic Packing</span>
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-truck"></i>
+
+<span>Fast Delivery</span>
+
+</div>
+
+</div>
 
 <a href="#products"
-class="shop-btn">
+class="shop-now">
 
 SHOP NOW
-  <!-- =========================
-PRODUCT GRID START
-========================= -->
 
-<div class="product-grid">
-
-
-
-<!-- PRODUCT 1 -->
-
-<div class="product-card">
-
-<div class="badge">
-NEW
-</div>
-
-<img src="images/products/garam-masala.jpg"
-alt="Garam Masala">
-
-
-<h3>
-VE Garam Masala
-</h3>
-
-
-<div class="rating">
-★★★★★
-</div>
-
-
-<p class="price">
-
-₹149
-
-<del>
-₹199
-</del>
-
-</p>
-
-
-
-<div class="quantity-box">
-
-<button>
--
-</button>
-
-<input type="number" value="1" min="1">
-
-<button>
-+
-</button>
-
-</div>
-
-
-
-<button class="cart-btn">
-
-<i class="fa-solid fa-cart-shopping"></i>
-
-Add To Cart
-
-</button>
-
-
-<button class="buy-btn">
-
-<i class="fa-brands fa-whatsapp"></i>
-
-Buy Now
-
-</button>
-
-
-</div>
-
-
-
-
-
-
-
-<!-- PRODUCT 2 -->
-
-
-<div class="product-card">
-
-
-<div class="badge sale">
-
-20% OFF
-
-</div>
-
-
-<img src="images/products/haldi-powder.jpg"
-alt="Haldi Powder">
-
-
-
-<h3>
-VE Haldi Powder
-</h3>
-
-
-<div class="rating">
-★★★★★
-</div>
-
-
-
-<p class="price">
-
-₹99
-
-<del>
-₹129
-</del>
-
-</p>
-
-
-
-<div class="quantity-box">
-
-<button>
--
-</button>
-
-<input type="number" value="1">
-
-<button>
-+
-</button>
-
-</div>
-
-
-
-<button class="cart-btn">
-
-<i class="fa-solid fa-cart-shopping"></i>
-
-Add To Cart
-
-</button>
-
-
-<button class="buy-btn">
-
-<i class="fa-brands fa-whatsapp"></i>
-
-Buy Now
-
-</button>
-
-
-</div>
-
-
-
-
-
-
-
-<!-- PRODUCT 3 -->
-
-
-<div class="product-card">
-
-
-<img src="images/products/redchili-powder.jpg">
-
-
-<h3>
-VE Red Chilli Powder
-</h3>
-
-
-
-<div class="rating">
-★★★★☆
-</div>
-
-
-
-<p class="price">
-
-₹120
-
-<del>
-₹150
-</del>
-
-</p>
-
-
-
-<div class="quantity-box">
-
-<button>
--
-</button>
-
-<input type="number" value="1">
-
-<button>
-+
-</button>
-
-</div>
-
-
-
-<button class="cart-btn">
-
-🛒 Add To Cart
-
-</button>
-
-
-
-<button class="buy-btn">
-
-📲 Buy Now
-
-</button>
-
-
-</div>
-
-
-
-
-
-
-
-<!-- PRODUCT 4 -->
-
-
-<div class="product-card">
-
-
-<img src="images/products/coriander-powder.jpg">
-
-
-<h3>
-VE Coriander Powder
-</h3>
-
-
-
-<div class="rating">
-★★★★★
-</div>
-
-
-
-<p class="price">
-
-₹110
-
-</p>
-
-
-
-<div class="quantity-box">
-
-<button>
--
-</button>
-
-<input type="number" value="1">
-
-<button>
-+
-</button>
-
-</div>
-
-
-
-<button class="cart-btn">
-
-🛒 Add To Cart
-
-</button>
-
-
-<button class="buy-btn">
-
-📲 Buy Now
-
-</button>
-
-
-</div>
-
-
-
-
-
-
-
-<!-- PRODUCT 5 -->
-
-
-<div class="product-card">
-
-
-<div class="badge">
-BEST
-</div>
-
-
-<img src="images/products/kali-mirch.jpg">
-
-
-<h3>
-VE Black Pepper
-</h3>
-
-
-
-<div class="rating">
-★★★★★
-</div>
-
-
-
-<p class="price">
-
-₹199
-
-</p>
-
-
-
-<div class="quantity-box">
-
-<button>
--
-</button>
-
-<input type="number" value="1">
-
-<button>
-+
-</button>
-
-</div>
-
-
-
-<button class="cart-btn">
-
-🛒 Add To Cart
-
-</button>
-
-
-<button class="buy-btn">
-
-📲 Buy Now
-
-</button>
-
-
-</div>
-
-
-
-
-
-
-
-<!-- PRODUCT 6 -->
-
-
-<div class="product-card">
-
-
-<img src="images/products/cumin-seeds.jpg">
-
-
-<h3>
-VE Cumin Seeds
-</h3>
-
-
-
-<div class="rating">
-★★★★★
-</div>
-
-
-
-<p class="price">
-
-₹159
-
-</p>
-
-
-
-<div class="quantity-box">
-
-<button>
--
-</button>
-
-<input type="number" value="1">
-
-<button>
-+
-</button>
-
-</div>
-
-
-
-<button class="cart-btn">
-
-🛒 Add To Cart
-
-</button>
-
-
-<button class="buy-btn">
-
-📲 Buy Now
-
-</button>
-
-
-</div>
-
-
-
-</div>
-
-
-<!-- PRODUCT GRID END -->
-  <!-- =========================
-MORE PRODUCTS START
-========================= -->
-
-
-<div class="product-grid">
-
-
-
-<!-- PRODUCT 7 -->
-
-<div class="product-card">
-
-<div class="badge">
-NEW
-</div>
-
-
-<img src="images/products/kitchenking-masal.jpg"
-alt="Kitchen King Masala">
-
-
-
-<h3>
-VE Kitchen King Masala
-</h3>
-
-
-
-<div class="rating">
-★★★★★
-</div>
-
-
-
-<p class="price">
-
-₹169
-
-<del>
-₹199
-</del>
-
-</p>
-
-
-
-<div class="quantity-box">
-
-<button onclick="minusQty(this)">
--
-</button>
-
-<input type="number" value="1">
-
-<button onclick="plusQty(this)">
-+
-</button>
-
-</div>
-
-
-
-<button class="cart-btn">
-
-<i class="fa-solid fa-cart-shopping"></i>
-
-Add To Cart
-
-</button>
-
-
-
-<button class="buy-btn"
-onclick="whatsappOrder('Kitchen King Masala')">
-
-<i class="fa-brands fa-whatsapp"></i>
-
-Buy Now
-
-</button>
-
-
-</div>
-
-
-
-
-
-
-<!-- PRODUCT 8 -->
-
-
-<div class="product-card">
-
-
-<div class="badge sale">
-
-HOT
-
-</div>
-
-
-<img src="images/products/tea-masala.jpg"
-alt="Tea Masala">
-
-
-
-<h3>
-VE Tea Masala
-</h3>
-
-
-
-<div class="rating">
-★★★★☆
-</div>
-
-
-
-<p class="price">
-
-₹139
-
-<del>
-₹179
-</del>
-
-</p>
-
-
-
-<div class="quantity-box">
-
-<button onclick="minusQty(this)">
--
-</button>
-
-
-<input type="number" value="1">
-
-
-<button onclick="plusQty(this)">
-+
-</button>
-
-
-</div>
-
-
-
-<button class="cart-btn">
-
-🛒 Add To Cart
-
-</button>
-
-
-
-<button class="buy-btn"
-onclick="whatsappOrder('Tea Masala')">
-
-📲 Buy Now
-
-</button>
-
-
-</div>
-
-
-
-
-
-
-<!-- PRODUCT 9 -->
-
-
-<div class="product-card">
-
-
-<img src="images/products/biryani-masala.jpg">
-
-
-<h3>
-VE Biryani Masala
-</h3>
-
-
-
-<div class="rating">
-★★★★★
-</div>
-
-
-
-<p class="price">
-
-₹149
-
-</p>
-
-
-
-<div class="quantity-box">
-
-<button onclick="minusQty(this)">
--
-</button>
-
-
-<input type="number" value="1">
-
-
-<button onclick="plusQty(this)">
-+
-</button>
-
-
-</div>
-
-
-
-<button class="cart-btn">
-
-🛒 Add To Cart
-
-</button>
-
-
-
-<button class="buy-btn"
-onclick="whatsappOrder('Biryani Masala')">
-
-📲 Buy Now
-
-</button>
-
-
-</div>
-
-
-
-
-
-
-
-<!-- PRODUCT 10 -->
-
-
-<div class="product-card">
-
-
-<img src="images/products/chole-masala.jpg">
-
-
-<h3>
-VE Chole Masala
-</h3>
-
-
-
-<div class="rating">
-★★★★★
-</div>
-
-
-
-<p class="price">
-
-₹129
-
-</p>
-
-
-
-<div class="quantity-box">
-
-<button onclick="minusQty(this)">
--
-</button>
-
-
-<input type="number" value="1">
-
-
-<button onclick="plusQty(this)">
-+
-</button>
-
-
-</div>
-
-
-
-<button class="cart-btn">
-
-🛒 Add To Cart
-
-</button>
-
-
-
-<button class="buy-btn"
-onclick="whatsappOrder('Chole Masala')">
-
-📲 Buy Now
-
-</button>
-
-
-</div>
-
-
-
-
-
-
-
-<!-- PRODUCT 11 -->
-
-
-<div class="product-card">
-
-
-<div class="badge">
-HERBAL
-</div>
-
-
-<img src="images/products/neem-powder.jpg">
-
-
-<h3>
-VE Neem Powder
-</h3>
-
-
-
-<div class="rating">
-★★★★★
-</div>
-
-
-
-<p class="price">
-
-₹199
-
-</p>
-
-
-
-<div class="quantity-box">
-
-<button onclick="minusQty(this)">
--
-</button>
-
-
-<input type="number" value="1">
-
-
-<button onclick="plusQty(this)">
-+
-</button>
-
-
-</div>
-
-
-
-<button class="cart-btn">
-
-🛒 Add To Cart
-
-</button>
-
-
-
-<button class="buy-btn"
-onclick="whatsappOrder('Neem Powder')">
-
-📲 Buy Now
-
-</button>
-
-
-</div>
-
-
-
-
-
-
-
-<!-- PRODUCT 12 -->
-
-
-<div class="product-card">
-
-
-<div class="badge">
-NATURAL
-</div>
-
-
-<img src="images/products/moringa-powder.jpg">
-
-
-
-<h3>
-VE Moringa Powder
-</h3>
-
-
-
-<div class="rating">
-★★★★★
-</div>
-
-
-
-<p class="price">
-
-₹249
-
-</p>
-
-
-
-<div class="quantity-box">
-
-<button onclick="minusQty(this)">
--
-</button>
-
-
-<input type="number" value="1">
-
-
-<button onclick="plusQty(this)">
-+
-</button>
-
-
-</div>
-
-
-
-<button class="cart-btn">
-
-🛒 Add To Cart
-
-</button>
-
-
-
-<button class="buy-btn"
-onclick="whatsappOrder('Moringa Powder')">
-
-📲 Buy Now
-
-</button>
-
-
-</div>
-
-
-
-</div>
-
-<!-- ========= PRODUCT 13 : Aamchur ========= -->
-<div class="product-card">
-<img src="images/products/aamchur.jpg" alt="Aamchur Powder">
-<h3>Aamchur Powder</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i> Add To Cart
-</button>
-
-<button class="buy-btn">
-<i class="fa-brands fa-whatsapp"></i> Buy Now
-</button>
-</div>
-
-<!-- ========= PRODUCT 14 : Ajwain ========= -->
-<div class="product-card">
-<img src="images/products/ajwain.jpg" alt="Ajwain">
-<h3>Ajwain</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i> Add To Cart
-</button>
-
-<button class="buy-btn">
-<i class="fa-brands fa-whatsapp"></i> Buy Now
-</button>
-</div>
-
-<!-- ========= PRODUCT 15 : Amla Powder ========= -->
-<div class="product-card">
-<img src="images/products/amla-powder.jpg" alt="Amla Powder">
-<h3>Amla Powder</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i> Add To Cart
-</button>
-
-<button class="buy-btn">
-<i class="fa-brands fa-whatsapp"></i> Buy Now
-</button>
-</div>
-
-<!-- ========= PRODUCT 16 : Ashwagandha Powder ========= -->
-<div class="product-card">
-<img src="images/products/ashwagandha-powder.jpg" alt="Ashwagandha Powder">
-<h3>Ashwagandha Powder</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i> Add To Cart
-</button>
-
-<button class="buy-btn">
-<i class="fa-brands fa-whatsapp"></i> Buy Now
-</button>
-</div>
-
-<!-- ========= PRODUCT 17 : Badi Elaichi ========= -->
-<div class="product-card">
-<img src="images/products/badi-elaichi.jpg" alt="Badi Elaichi">
-<h3>Badi Elaichi</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i> Add To Cart
-</button>
-
-<button class="buy-btn">
-<i class="fa-brands fa-whatsapp"></i> Buy Now
-</button>
-</div>
-
-<!-- ========= PRODUCT 18 : Chhoti Elaichi ========= -->
-<div class="product-card">
-<img src="images/products/chhoti-ilaichi.jpg" alt="Chhoti Elaichi">
-<h3>Chhoti Elaichi</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i> Add To Cart
-</button>
-
-<button class="buy-btn">
-<i class="fa-brands fa-whatsapp"></i> Buy Now
-</button>
-</div>
-
-<!-- ========= PRODUCT 19 : Chaat Masala ========= -->
-<div class="product-card">
-<img src="images/products/chhat-masala.jpg" alt="Chaat Masala">
-<h3>Chaat Masala</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i> Add To Cart
-</button>
-
-<button class="buy-btn">
-<i class="fa-brands fa-whatsapp"></i> Buy Now
-</button>
-</div>
-
-<!-- ========= PRODUCT 20 : Chicken Masala ========= -->
-<div class="product-card">
-<img src="images/products/chichen-masala.jpg" alt="Chicken Masala">
-<h3>Chicken Masala</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i> Add To Cart
-</button>
-
-<button class="buy-btn">
-<i class="fa-brands fa-whatsapp"></i> Buy Now
-</button>
-</div>
-<!-- ========= PRODUCT 21 : Cloves ========= -->
-<div class="product-card">
-<img src="images/products/cloves.jpg" alt="Cloves">
-<h3>Cloves (Laung)</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i> Add To Cart
-</button>
-
-<button class="buy-btn">
-<i class="fa-brands fa-whatsapp"></i> Buy Now
-</button>
-</div>
-
-<!-- ========= PRODUCT 22 : Daal Masala ========= -->
-<div class="product-card">
-<img src="images/products/daal-masala.jpg" alt="Daal Masala">
-<h3>Daal Masala</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i> Add To Cart
-</button>
-
-<button class="buy-btn">
-<i class="fa-brands fa-whatsapp"></i> Buy Now
-</button>
-</div>
-
-<!-- ========= PRODUCT 23 : Dalchini ========= -->
-<div class="product-card">
-<img src="images/products/dalchini.jpg" alt="Dalchini">
-<h3>Dalchini</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i> Add To Cart
-</button>
-
-<button class="buy-btn">
-<i class="fa-brands fa-whatsapp"></i> Buy Now
-</button>
-</div>
-
-<!-- ========= PRODUCT 24 : Egg Curry Masala ========= -->
-<div class="product-card">
-<img src="images/products/eggcurry-masala.jpg" alt="Egg Curry Masala">
-<h3>Egg Curry Masala</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i> Add To Cart
-</button>
-
-<button class="buy-btn">
-<i class="fa-brands fa-whatsapp"></i> Buy Now
-</button>
-</div>
-
-<!-- ========= PRODUCT 25 : Fish Masala ========= -->
-<div class="product-card">
-<img src="images/products/fish-masala.jpg" alt="Fish Masala">
-<h3>Fish Masala</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i> Add To Cart
-</button>
-
-<button class="buy-btn">
-<i class="fa-brands fa-whatsapp"></i> Buy Now
-</button>
-</div>
-
-<!-- ========= PRODUCT 26 : Giloy Powder ========= -->
-<div class="product-card">
-  <!-- ========= PRODUCT 31 : Javitri ========= -->
-<div class="product-card">
-<img src="images/products/javitri.jpg" alt="Javitri">
-<h3>Javitri</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i> Add To Cart
-</button>
-
-<button class="buy-btn">
-<i class="fa-brands fa-whatsapp"></i> Buy Now
-</button>
-</div>
-
-<!-- ========= PRODUCT 32 : Jayfal ========= -->
-<div class="product-card">
-<img src="images/products/jayfal.jpg" alt="Jayfal">
-<h3>Jayfal</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i> Add To Cart
-</button>
-
-<button class="buy-btn">
-<i class="fa-brands fa-whatsapp"></i> Buy Now
-</button>
-</div>
-
-<!-- ========= PRODUCT 33 : Kala Namak ========= -->
-<div class="product-card">
-<img src="images/products/kala-namak.jpg" alt="Kala Namak">
-<h3>Kala Namak</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i> Add To Cart
-</button>
-
-<button class="buy-btn">
-<i class="fa-brands fa-whatsapp"></i> Buy Now
-</button>
-</div>
-
-<!-- ========= PRODUCT 34 : Kalonji ========= -->
-<div class="product-card">
-<img src="images/products/kalonji.jpg" alt="Kalonji">
-<h3>Kalonji</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i> Add To Cart
-</button>
-
-<button class="buy-btn">
-<i class="fa-brands fa-whatsapp"></i> Buy Now
-</button>
-</div>
-
-<!-- ========= PRODUCT 35 : Karela Powder ========= -->
-<div class="product-card">
-<img src="images/products/karela-powder.jpg" alt="Karela Powder">
-<h3>Karela Powder</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i> Add To Cart
-</button>
-
-<button class="buy-btn">
-<i class="fa-brands fa-whatsapp"></i> Buy Now
-</button>
-</div>
-
-<!-- ========= PRODUCT 36 : Kari Patta ========= -->
-<div class="product-card">
-<img src="images/products/Kari-patta.jpg" alt="Kari Patta">
-<h3>Kari Patta</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i> Add To Cart
-</button>
-
-<button class="buy-btn">
-<i class="fa-brands fa-whatsapp"></i> Buy Now
-</button>
-</div>
-
-<!-- ========= PRODUCT 37 : Kashmiri Mirch Powder ========= -->
-<div class="product-card">
-<img src="images/products/kashmirimirch-mpowder.jpg" alt="Kashmiri Mirch Powder">
-<h3>Kashmiri Mirch Powder</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i> Add To Cart
-</button>
-
-<button class="buy-btn">
-<i class="fa-brands fa-whatsapp"></i> Buy Now
-</button>
-</div>
-
-<!-- ========= PRODUCT 38 : Kasturi Methi ========= -->
-<div class="product-card">
-<img src="images/products/kasturi-methi.jpg" alt="Kasturi Methi">
-<h3>Kasturi Methi</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i> Add To Cart
-</button>
-
-<button class="buy-btn">
-<i class="fa-brands fa-whatsapp"></i> Buy Now
-</button>
-</div>
-
-<!-- ========= PRODUCT 39 : Khada Masala ========= -->
-<div class="product-card">
-<img src="images/products/khada-masala.jpg" alt="Khada Masala">
-<h3>Khada Masala</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i> Add To Cart
-</button>
-
-<button class="buy-btn">
-<i class="fa-brands fa-whatsapp"></i> Buy Now
-</button>
-</div>
-
-<!-- ========= PRODUCT 40 : Maggi Masala ========= -->
-<div class="product-card">
-<img src="images/products/maggi-masala.jpg" alt="Maggi Masala">
-<h3>Maggi Masala</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn">
-<i class="fa-solid fa-cart-shopping"></i> Add To Cart
-</button>
-
-<button class="buy-btn">
-<i class="fa-brands fa-whatsapp"></i> Buy Now
-</button>
-</div>
-<!-- ========= PRODUCT 41 : Meat Masala ========= -->
-<div class="product-card">
-<img src="images/products/meat-masala.jpg" alt="Meat Masala">
-<h3>Meat Masala</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-<button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
-</div>
-
-<!-- ========= PRODUCT 42 : Paneer Masala ========= -->
-<div class="product-card">
-<img src="images/products/paneer-masala.jpg" alt="Paneer Masala">
-<h3>Paneer Masala</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-<button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
-</div>
-
-<!-- ========= PRODUCT 43 : Pipri ========= -->
-<div class="product-card">
-<img src="images/products/pipri.jpg" alt="Pipri">
-<h3>Pipri</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-<button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
-</div>
-
-<!-- ========= PRODUCT 44 : Pulao Masala ========= -->
-<div class="product-card">
-<img src="images/products/pulav-masala.jpg" alt="Pulao Masala">
-<h3>Pulao Masala</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-<button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
-</div>
-
-<!-- ========= PRODUCT 45 : Rajma Masala ========= -->
-<div class="product-card">
-<img src="images/products/rajma-masala.jpg" alt="Rajma Masala">
-<h3>Rajma Masala</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-<button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
-</div>
-
-<!-- ========= PRODUCT 46 : Raita Masala ========= -->
-<div class="product-card">
-<img src="images/products/raita-masala.jpg" alt="Raita Masala">
-<h3>Raita Masala</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-<button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
-</div>
-
-<!-- ========= PRODUCT 47 : Red Chilli Powder ========= -->
-<div class="product-card">
-<img src="images/products/redchili-powder.jpg" alt="Red Chilli Powder">
-<h3>Red Chilli Powder</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-<button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
-</div>
-
-<!-- ========= PRODUCT 48 : Sabji Masala ========= -->
-<div class="product-card">
-<img src="images/products/sabji-masala.jpg" alt="Sabji Masala">
-<h3>Sabji Masala</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-<button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
-</div>
-
-<!-- ========= PRODUCT 49 : Saunf ========= -->
-<div class="product-card">
-<img src="images/products/saunf.jpg" alt="Saunf">
-<h3>Saunf</h3>
-<p class="price">₹99 <del>₹129</del></p>
-
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-
-<button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-<button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
-</div>
-<!-- ========= PRODUCT 50 : Sendha Namak ========= -->
-<div class="product-card">
-<img src="images/products/sendha-namak.jpg" alt="Sendha Namak">
-<h3>Sendha Namak</h3>
-<p class="price">₹99 <del>₹129</del></p>
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-<button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-<button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
-</div>
-
-<!-- ========= PRODUCT 51 : Shah Jeera ========= -->
-<div class="product-card">
-<img src="images/products/shah-jeera.jpg" alt="Shah Jeera">
-<h3>Shah Jeera</h3>
-<p class="price">₹99 <del>₹129</del></p>
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-<button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-<button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
-</div>
-
-<!-- ========= PRODUCT 52 : Shahi Paneer Masala ========= -->
-<div class="product-card">
-<img src="images/products/shahi-paneer-masala.jpg" alt="Shahi Paneer Masala">
-<h3>Shahi Paneer Masala</h3>
-<p class="price">₹99 <del>₹129</del></p>
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-<button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-<button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
-</div>
-
-<!-- ========= PRODUCT 53 : Sonth Powder ========= -->
-<div class="product-card">
-<img src="images/products/sonth-powder.jpg" alt="Sonth Powder">
-<h3>Sonth Powder</h3>
-<p class="price">₹99 <del>₹129</del></p>
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-<button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-<button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
-</div>
-
-<!-- ========= PRODUCT 54 : Tandoori Masala ========= -->
-<div class="product-card">
-<img src="images/products/tandoori-masala.jpg" alt="Tandoori Masala">
-<h3>Tandoori Masala</h3>
-<p class="price">₹99 <del>₹129</del></p>
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-<button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-<button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
-</div>
-
-<!-- ========= PRODUCT 55 : Tej Patta ========= -->
-<div class="product-card">
-<img src="images/products/tej-patta.jpg" alt="Tej Patta">
-<h3>Tej Patta</h3>
-<p class="price">₹99 <del>₹129</del></p>
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-<button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-<button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
-</div>
-
-<!-- ========= PRODUCT 56 : Trifla Powder ========= -->
-<div class="product-card">
-<img src="images/products/trifla-powder.jpg" alt="Trifla Powder">
-<h3>Trifla Powder</h3>
-<p class="price">₹99 <del>₹129</del></p>
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-<button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-<button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
-</div>
-
-<!-- ========= PRODUCT 57 : Tulsi Powder ========= -->
-<div class="product-card">
-<img src="images/products/tulsi-powder.jpg" alt="Tulsi Powder">
-<h3>Tulsi Powder</h3>
-<p class="price">₹99 <del>₹129</del></p>
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-<button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-<button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
-</div>
-
-<!-- ========= PRODUCT 58 : White Pepper ========= -->
-<div class="product-card">
-<img src="images/products/white-pepper.jpg" alt="White Pepper">
-<h3>White Pepper</h3>
-<p class="price">₹99 <del>₹129</del></p>
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-<button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-<button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
-</div>
-
-<!-- ========= PRODUCT 59 : Ajwain ========= -->
-<div class="product-card">
-<img src="images/products/ajwain.jpg" alt="Ajwain">
-<h3>Ajwain</h3>
-<p class="price">₹99 <del>₹129</del></p>
-<div class="quantity-box">
-<button>-</button>
-<input type="number" value="1" min="1">
-<button>+</button>
-</div>
-<button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add To Cart</button>
-<button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
-</div>
-  
-
-<!-- MORE PRODUCTS END -->
-
-
-
-
-
-<!-- PAGINATION -->
-
-
-<div class="pagination">
-
-
-<a class="active">
-1
 </a>
 
+</div>
 
-<a>
-2
-</a>
+<div class="hero-right">
 
-
-<a>
-3
-</a>
-
-
-<a>
-Next →
-</a>
-
+<img src="images/banner.png"
+alt="VE Naturals Banner">
 
 </div>
-<!-- =========================
-PRODUCT FEATURES SECTION
-========================= -->
 
+</div>
 
-<section class="product-features">
+</section>
 
+<!--=========================
+SHOP SECTION START
+==========================-->
+
+<section class="shop-page">
 
 <div class="container">
 
+<div class="shop-layout">
+<!--==================================
+SHOP SIDEBAR
+===================================-->
 
-<div class="feature-title">
+<aside class="shop-sidebar">
 
-<h2>
+    <!-- Search -->
 
-Why Buy From VE Naturals?
+    <div class="sidebar-box">
 
-</h2>
+        <h3>Search Product</h3>
 
+        <input type="text"
+               id="productSearch"
+               placeholder="Search...">
+
+    </div>
+
+    <!-- Categories -->
+
+    <div class="sidebar-box">
+
+        <h3>Categories</h3>
+
+        <ul class="category-list">
+
+            <li><a href="#">🌿 Herbal Products</a></li>
+
+            <li><a href="#">🌶️ Spices</a></li>
+
+            <li><a href="#">🥣 Masala Powder</a></li>
+
+            <li><a href="#">🍃 Herbal Powder</a></li>
+
+            <li><a href="#">🧂 Salt</a></li>
+
+            <li><a href="#">🎁 Combo Packs</a></li>
+
+        </ul>
+
+    </div>
+
+    <!-- Price -->
+
+    <div class="sidebar-box">
+
+        <h3>Price Filter</h3>
+
+        <input type="range"
+               min="50"
+               max="1000"
+               value="500">
+
+        <p>₹50 - ₹1000</p>
+
+    </div>
+
+    <!-- Rating -->
+
+    <div class="sidebar-box">
+
+        <h3>Customer Rating</h3>
+
+        <label><input type="checkbox"> ⭐⭐⭐⭐⭐</label><br>
+
+        <label><input type="checkbox"> ⭐⭐⭐⭐☆</label><br>
+
+        <label><input type="checkbox"> ⭐⭐⭐☆☆</label>
+
+    </div>
+
+    <!-- Best Selling -->
+
+    <div class="sidebar-box">
+
+        <h3>Best Selling</h3>
+
+        <ul class="best-products">
+
+            <li>VE Garam Masala</li>
+
+            <li>VE Haldi Powder</li>
+
+            <li>VE Tea Masala</li>
+
+            <li>VE Neem Powder</li>
+
+            <li>VE Moringa Powder</li>
+
+        </ul>
+
+    </div>
+
+</aside>
+
+<!--==================================
+PRODUCT AREA
+===================================-->
+
+<div class="shop-content">
+
+<div class="shop-topbar">
 
 <p>
 
-Premium Quality | Natural Ingredients | Trusted Brand
+Showing
+<b>1-12</b>
+of
+<b>59</b>
+Products
 
 </p>
 
+<select id="sortProduct">
+
+<option>Sort By</option>
+
+<option>Newest</option>
+
+<option>Price Low to High</option>
+
+<option>Price High to Low</option>
+
+<option>Best Selling</option>
+
+</select>
 
 </div>
 
+<!-- Product Grid -->
 
+<div class="product-grid" id="products">
+<!--==============================
+PRODUCT 1
+===============================-->
 
+<div class="product-card">
+
+    <span class="badge new">NEW</span>
+
+    <img src="images/products/garam-masala.jpg" alt="VE Garam Masala">
+
+    <div class="product-info">
+
+        <h3>VE Garam Masala</h3>
+
+        <div class="rating">
+            ★★★★★
+        </div>
+
+        <div class="price">
+            <span class="new-price">₹149</span>
+            <span class="old-price">₹199</span>
+        </div>
+
+        <div class="quantity-box">
+            <button>-</button>
+            <input type="number" value="1" min="1">
+            <button>+</button>
+        </div>
+
+        <button class="cart-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Add to Cart
+        </button>
+
+        <button class="buy-btn">
+            <i class="fa-brands fa-whatsapp"></i>
+            Buy Now
+        </button>
+
+    </div>
+
+</div>
+
+<!--==============================
+PRODUCT 2
+===============================-->
+
+<div class="product-card">
+
+    <span class="badge sale">20% OFF</span>
+
+    <img src="images/products/haldi-powder.jpg" alt="VE Haldi Powder">
+
+    <div class="product-info">
+
+        <h3>VE Haldi Powder</h3>
+
+        <div class="rating">
+            ★★★★★
+        </div>
+
+        <div class="price">
+            <span class="new-price">₹99</span>
+            <span class="old-price">₹129</span>
+        </div>
+
+        <div class="quantity-box">
+            <button>-</button>
+            <input type="number" value="1" min="1">
+            <button>+</button>
+        </div>
+
+        <button class="cart-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Add to Cart
+        </button>
+
+        <button class="buy-btn">
+            <i class="fa-brands fa-whatsapp"></i>
+            Buy Now
+        </button>
+
+    </div>
+
+</div>
+
+<!--==============================
+PRODUCT 3
+===============================-->
+
+<div class="product-card">
+
+    <img src="images/products/redchili-powder.jpg" alt="VE Red Chilli Powder">
+
+    <div class="product-info">
+
+        <h3>VE Red Chilli Powder</h3>
+
+        <div class="rating">
+            ★★★★☆
+        </div>
+
+        <div class="price">
+            <span class="new-price">₹120</span>
+            <span class="old-price">₹150</span>
+        </div>
+
+        <div class="quantity-box">
+            <button>-</button>
+            <input type="number" value="1" min="1">
+            <button>+</button>
+        </div>
+
+        <button class="cart-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Add to Cart
+        </button>
+
+        <button class="buy-btn">
+            <i class="fa-brands fa-whatsapp"></i>
+            Buy Now
+        </button>
+
+    </div>
+
+</div>
+
+<!--==============================
+PRODUCT 4
+===============================-->
+
+<div class="product-card">
+
+    <img src="images/products/coriander-powder.jpg" alt="VE Coriander Powder">
+
+    <div class="product-info">
+
+        <h3>VE Coriander Powder</h3>
+
+        <div class="rating">
+            ★★★★★
+        </div>
+
+        <div class="price">
+            <span class="new-price">₹110</span>
+        </div>
+
+        <div class="quantity-box">
+            <button>-</button>
+            <input type="number" value="1" min="1">
+            <button>+</button>
+        </div>
+
+        <button class="cart-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            Add to Cart
+        </button>
+
+        <button class="buy-btn">
+            <i class="fa-brands fa-whatsapp"></i>
+            Buy Now
+        </button>
+
+    </div>
+
+</div>
+<!--==============================
+PRODUCT 5
+===============================-->
+<div class="product-card">
+    <span class="badge best">BEST</span>
+    <img src="images/products/kali-mirch.jpg" alt="Black Pepper">
+    <div class="product-info">
+        <h3>VE Black Pepper</h3>
+        <div class="rating">★★★★★</div>
+        <div class="price">
+            <span class="new-price">₹199</span>
+            <span class="old-price">₹249</span>
+        </div>
+        <div class="quantity-box">
+            <button>-</button>
+            <input type="number" value="1" min="1">
+            <button>+</button>
+        </div>
+        <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        <button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
+    </div>
+</div>
+
+<!-- PRODUCT 6 -->
+<div class="product-card">
+    <img src="images/products/cumin-seeds.jpg" alt="Cumin Seeds">
+    <div class="product-info">
+        <h3>VE Cumin Seeds</h3>
+        <div class="rating">★★★★★</div>
+        <div class="price"><span class="new-price">₹159</span></div>
+        <div class="quantity-box">
+            <button>-</button><input type="number" value="1" min="1"><button>+</button>
+        </div>
+        <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        <button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
+    </div>
+</div>
+
+<!-- PRODUCT 7 -->
+<div class="product-card">
+    <img src="images/products/kitchen-king-masala.jpg" alt="Kitchen King Masala">
+    <div class="product-info">
+        <h3>VE Kitchen King Masala</h3>
+        <div class="rating">★★★★★</div>
+        <div class="price"><span class="new-price">₹169</span></div>
+        <div class="quantity-box">
+            <button>-</button><input type="number" value="1" min="1"><button>+</button>
+        </div>
+        <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        <button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
+    </div>
+</div>
+
+<!-- PRODUCT 8 -->
+<div class="product-card">
+    <img src="images/products/tea-masala.jpg" alt="Tea Masala">
+    <div class="product-info">
+        <h3>VE Tea Masala</h3>
+        <div class="rating">★★★★☆</div>
+        <div class="price"><span class="new-price">₹139</span></div>
+        <div class="quantity-box">
+            <button>-</button><input type="number" value="1" min="1"><button>+</button>
+        </div>
+        <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        <button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
+    </div>
+</div>
+
+<!-- PRODUCT 9 -->
+<div class="product-card">
+    <img src="images/products/biryani-masala.jpg" alt="Biryani Masala">
+    <div class="product-info">
+        <h3>VE Biryani Masala</h3>
+        <div class="rating">★★★★★</div>
+        <div class="price"><span class="new-price">₹149</span></div>
+        <div class="quantity-box">
+            <button>-</button><input type="number" value="1" min="1"><button>+</button>
+        </div>
+        <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        <button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
+    </div>
+</div>
+
+<!-- PRODUCT 10 -->
+<div class="product-card">
+    <img src="images/products/chole-masala.jpg" alt="Chole Masala">
+    <div class="product-info">
+        <h3>VE Chole Masala</h3>
+        <div class="rating">★★★★★</div>
+        <div class="price"><span class="new-price">₹129</span></div>
+        <div class="quantity-box">
+            <button>-</button><input type="number" value="1" min="1"><button>+</button>
+        </div>
+        <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        <button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
+    </div>
+</div>
+
+<!-- PRODUCT 11 -->
+<div class="product-card">
+    <span class="badge herbal">HERBAL</span>
+    <img src="images/products/neem-powder.jpg" alt="Neem Powder">
+    <div class="product-info">
+        <h3>VE Neem Powder</h3>
+        <div class="rating">★★★★★</div>
+        <div class="price"><span class="new-price">₹199</span></div>
+        <div class="quantity-box">
+            <button>-</button><input type="number" value="1" min="1"><button>+</button>
+        </div>
+        <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        <button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
+    </div>
+</div>
+
+<!-- PRODUCT 12 -->
+<div class="product-card">
+    <span class="badge natural">NATURAL</span>
+    <img src="images/products/moringa-powder.jpg" alt="Moringa Powder">
+    <div class="product-info">
+        <h3>VE Moringa Powder</h3>
+        <div class="rating">★★★★★</div>
+        <div class="price"><span class="new-price">₹249</span></div>
+        <div class="quantity-box">
+            <button>-</button><input type="number" value="1" min="1"><button>+</button>
+        </div>
+        <button class="cart-btn"><i class="fa-solid fa-cart-shopping"></i> Add to Cart</button>
+        <button class="buy-btn"><i class="fa-brands fa-whatsapp"></i> Buy Now</button>
+    </div>
+</div>
+
+</div>
+<!-- product-grid END -->
+  <!--==================================
+PAGINATION
+===================================-->
+
+<div class="shop-bottom">
+
+<div class="showing-results">
+
+Showing <strong>1–12</strong> of <strong>59</strong> Products
+
+</div>
+
+<div class="pagination">
+
+<button class="page-btn prev-page">
+
+<i class="fa-solid fa-angle-left"></i>
+
+Previous
+
+</button>
+
+<button class="page-btn active">
+
+1
+
+</button>
+
+<button class="page-btn">
+
+2
+
+</button>
+
+<button class="page-btn">
+
+3
+
+</button>
+
+<button class="page-btn">
+
+4
+
+</button>
+
+<button class="page-btn">
+
+5
+
+</button>
+
+<button class="page-btn next-page">
+
+Next
+
+<i class="fa-solid fa-angle-right"></i>
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+<!-- shop-content END -->
+
+</div>
+<!-- shop-layout END -->
+
+</div>
+<!-- container END -->
+
+</section>
+
+<!--==========================
+WHY CHOOSE VE NATURALS
+===========================-->
+
+<section class="why-us">
+
+<div class="container">
+
+<h2>Why Choose VE Naturals?</h2>
 
 <div class="feature-grid">
 
-
 <div class="feature-card">
 
-<i class="fa-solid fa-leaf"></i>
+<i class="fa-solid fa-seedling"></i>
 
-<h3>
-100% Natural
-</h3>
+<h3>100% Natural</h3>
 
-<p>
-Pure Ingredients Without Compromise
-</p>
+<p>Pure & Premium Quality Products</p>
 
 </div>
 
-
-
-
 <div class="feature-card">
 
-<i class="fa-solid fa-shield-halved"></i>
+<i class="fa-solid fa-shield-heart"></i>
 
-<h3>
-Quality Checked
-</h3>
+<h3>Quality Checked</h3>
 
-<p>
-Hygienically Packed Products
-</p>
+<p>Every Product Tested Before Packing</p>
 
 </div>
-
-
-
-
 
 <div class="feature-card">
 
 <i class="fa-solid fa-box"></i>
 
-<h3>
-Safe Packaging
-</h3>
+<h3>Safe Packaging</h3>
 
-<p>
-Freshness Protected Packing
-</p>
+<p>Hygienic Food Grade Packing</p>
 
 </div>
-
-
-
-
 
 <div class="feature-card">
 
 <i class="fa-solid fa-truck-fast"></i>
 
-<h3>
-Fast Delivery
-</h3>
+<h3>Fast Delivery</h3>
 
-<p>
-Delivery Across India
-</p>
+<p>Quick Shipping Across India</p>
 
 </div>
 
-
 </div>
 
-
 </div>
-
 
 </section>
 
-
-
-
-
-
-
-<!-- =========================
-CUSTOMER REVIEW
-========================= -->
-
+<!--==========================
+CUSTOMER REVIEWS
+===========================-->
 
 <section class="customer-review">
 
-
 <div class="container">
 
-
-<h2>
-Customer Reviews
-</h2>
-
-
+<h2>Happy Customers</h2>
 
 <div class="review-box">
 
-
-
 <div class="review-card">
 
-
-<div class="stars">
 ★★★★★
-</div>
 
+<p>Excellent quality spices. Fresh aroma and fast delivery.</p>
 
-<p>
-
-"VE Naturals Garam Masala ka taste bahut accha hai. Quality premium hai."
-
-</p>
-
-
-<h4>
-Rahul Sharma
-</h4>
-
+<h4>Rahul Sharma</h4>
 
 </div>
-
-
-
-
 
 <div class="review-card">
 
-
-<div class="stars">
 ★★★★★
-</div>
 
+<p>Very good herbal products. Packaging is premium.</p>
 
-<p>
-
-"Packaging aur product quality dono bahut badhiya hai."
-
-</p>
-
-
-<h4>
-Neha Verma
-</h4>
-
+<h4>Pooja Verma</h4>
 
 </div>
-
-
-
-
 
 <div class="review-card">
 
+★★★★★
 
-<div class="stars">
-★★★★☆
-</div>
+<p>Highly recommended. Value for money.</p>
 
-
-<p>
-
-"Natural products ke liye trusted brand."
-
-</p>
-
-
-<h4>
-Amit Singh
-</h4>
-
+<h4>Amit Singh</h4>
 
 </div>
 
-
-
 </div>
 
-
 </div>
-
 
 </section>
 
+<!--==========================
+FOOTER
+===========================-->
 
-
-
-
-
-
-
-<!-- =========================
-ORDER PROCESS
-========================= -->
-
-
-<section class="order-process">
-
+<footer class="footer">
 
 <div class="container">
 
-
-<h2>
-How To Order
-</h2>
-
-
-
-<div class="process-grid">
-
-
-<div>
-
-<span>
-1
-</span>
-
-<h3>
-Select Product
-</h3>
-
 <p>
-Choose your favourite product
+
+© 2026 VE Naturals | All Rights Reserved
+
 </p>
 
 </div>
 
+</footer>
 
+<!-- JavaScript -->
 
+<script src="js/shop.js"></script>
 
+<script src="js/pagination.js"></script>
 
-<div>
+<script src="js/cart.js"></script>
 
-<span>
-2
-</span>
+<script src="js/language.js"></script>
 
-<h3>
-Add To Cart
-</h3>
+</body>
 
-<p>
-Add quantity and checkout
-</p>
+</html>
+/*=========================================
+VE NATURALS
+SHOP CSS PART 1
+=========================================*/
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:"Poppins",sans-serif;
+}
+
+body{
+background:#f7f8fa;
+color:#222;
+overflow-x:hidden;
+}
+
+.container{
+width:90%;
+max-width:1400px;
+margin:auto;
+}
+
+/*=========================
+TOP BAR
+=========================*/
+
+.top-bar{
+background:#0c7a2d;
+color:#fff;
+font-size:14px;
+padding:10px 0;
+}
+
+.top-flex{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+gap:10px;
+}
+
+.top-left,
+.top-right{
+display:flex;
+align-items:center;
+gap:18px;
+}
+
+.top-right a{
+color:#fff;
+text-decoration:none;
+transition:.3s;
+}
+
+.top-right a:hover{
+color:#ffd54f;
+}
+
+#languageSwitcher{
+padding:7px 10px;
+border:none;
+border-radius:6px;
+cursor:pointer;
+font-size:14px;
+}
+
+/*=========================
+HEADER
+=========================*/
+
+.main-header{
+background:#fff;
+padding:18px 0;
+box-shadow:0 3px 15px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:999;
+}
+
+.header-flex{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:30px;
+}
+
+/* Logo */
+
+.logo img{
+height:70px;
+}
+
+/* Search */
+
+.search-box{
+flex:1;
+display:flex;
+height:50px;
+border:2px solid #0c7a2d;
+border-radius:40px;
+overflow:hidden;
+background:#fff;
+}
+
+.search-box select{
+width:180px;
+border:none;
+padding:0 15px;
+background:#f5f5f5;
+outline:none;
+}
+
+.search-box input{
+flex:1;
+border:none;
+padding:0 20px;
+font-size:15px;
+outline:none;
+}
+
+.search-box button{
+width:70px;
+background:#0c7a2d;
+border:none;
+color:#fff;
+cursor:pointer;
+font-size:18px;
+transition:.3s;
+}
+
+.search-box button:hover{
+background:#075c21;
+}
+
+/*=========================
+HEADER ICONS
+=========================*/
+
+.header-icons{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.header-icons a{
+text-decoration:none;
+color:#222;
+display:flex;
+align-items:center;
+gap:8px;
+position:relative;
+transition:.3s;
+}
+
+.header-icons a:hover{
+color:#0c7a2d;
+}
+
+.header-icons i{
+font-size:22px;
+}
+
+.count{
+position:absolute;
+top:-8px;
+right:-8px;
+background:#ff3d3d;
+color:#fff;
+width:20px;
+height:20px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:11px;
+font-weight:bold;
+}
+
+/*=========================
+NAVBAR
+=========================*/
+
+.navbar{
+background:#0c7a2d;
+}
+
+.nav-flex{
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+}
+
+.navbar ul li a{
+display:block;
+padding:18px 22px;
+text-decoration:none;
+color:#fff;
+font-weight:600;
+transition:.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active{
+background:#075c21;
+}
+
+.offer-button{
+background:#ff9800;
+color:#fff;
+padding:12px 22px;
+border-radius:30px;
+text-decoration:none;
+font-weight:700;
+transition:.3s;
+}
+
+.offer-button:hover{
+background:#ff6f00;
+}
+<!-- =========================================
+PRODUCT SECTION START
+========================================= -->
+
+<section class="shop-section">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Our Premium Products</h2>
+<p>100% Pure Natural Spices & Herbal Products</p>
+</div>
+
+<div class="product-grid">
+
+<!-- Product 1 -->
+<div class="product-card">
+<span class="badge new">NEW</span>
+
+<div class="product-image">
+<img src="images/products/garam-masala.jpg" alt="Garam Masala">
+</div>
+
+<div class="product-info">
+<p class="category">Spices</p>
+<h3>VE Garam Masala</h3>
+
+<div class="rating">
+★★★★★
+<span>(120 Reviews)</span>
+</div>
+
+<div class="price-box">
+<span class="price">₹149</span>
+<del>₹199</del>
+</div>
+
+<div class="quantity-box">
+<button>-</button>
+<input type="number" value="1">
+<button>+</button>
+</div>
+
+<button class="cart-btn">
+🛒 Add to Cart
+</button>
+
+<button class="buy-btn">
+WhatsApp Buy
+</button>
+
+</div>
+</div>
+
+<!-- Product 2 -->
+
+<div class="product-card">
+
+<span class="badge sale">20% OFF</span>
+
+<div class="product-image">
+<img src="images/products/haldi-powder.jpg">
+</div>
+
+<div class="product-info">
+
+<p class="category">Spices</p>
+
+<h3>VE Haldi Powder</h3>
+
+<div class="rating">
+★★★★★
+<span>(95 Reviews)</span>
+</div>
+
+<div class="price-box">
+<span class="price">₹99</span>
+<del>₹129</del>
+</div>
+
+<div class="quantity-box">
+<button>-</button>
+<input type="number" value="1">
+<button>+</button>
+</div>
+
+<button class="cart-btn">🛒 Add to Cart</button>
+
+<button class="buy-btn">WhatsApp Buy</button>
 
 </div>
 
+</div>
 
+<!-- Product 3 -->
 
+<div class="product-card">
 
+<div class="product-image">
+<img src="images/products/redchili-powder.jpg">
+</div>
 
-<div>
+<div class="product-info">
 
-<span>
-3
-</span>
+<p class="category">Spices</p>
 
-<h3>
-Confirm Order
-</h3>
+<h3>VE Red Chilli Powder</h3>
 
-<p>
-Order through WhatsApp
-</p>
+<div class="rating">
+★★★★★
+<span>(85 Reviews)</span>
+</div>
+
+<div class="price-box">
+<span class="price">₹120</span>
+<del>₹150</del>
+</div>
+
+<div class="quantity-box">
+<button>-</button>
+<input type="number" value="1">
+<button>+</button>
+</div>
+
+<button class="cart-btn">🛒 Add to Cart</button>
+
+<button class="buy-btn">WhatsApp Buy</button>
 
 </div>
 
+</div>
 
+<!-- Product 4 -->
 
+<div class="product-card">
 
+<div class="product-image">
+<img src="images/products/coriander-powder.jpg">
+</div>
 
-<div>
+<div class="product-info">
 
-<span>
-4
-</span>
+<p class="category">Spices</p>
 
-<h3>
-Fast Delivery
-</h3>
+<h3>VE Coriander Powder</h3>
 
-<p>
-Receive your product safely
-</p>
+<div class="rating">
+★★★★★
+<span>(72 Reviews)</span>
+</div>
+
+<div class="price-box">
+<span class="price">₹110</span>
+</div>
+
+<div class="quantity-box">
+<button>-</button>
+<input type="number" value="1">
+<button>+</button>
+</div>
+
+<button class="cart-btn">🛒 Add to Cart</button>
+
+<button class="buy-btn">WhatsApp Buy</button>
 
 </div>
 
+</div>
 
+<!-- Product 5 -->
+
+<div class="product-card">
+
+<div class="product-image">
+<img src="images/products/kali-mirch.jpg">
+</div>
+
+<div class="product-info">
+
+<p class="category">Whole Spice</p>
+
+<h3>VE Black Pepper</h3>
+
+<div class="rating">
+★★★★★
+<span>(60 Reviews)</span>
+</div>
+
+<div class="price-box">
+<span class="price">₹199</span>
+</div>
+
+<div class="quantity-box">
+<button>-</button>
+<input type="number" value="1">
+<button>+</button>
+</div>
+
+<button class="cart-btn">🛒 Add to Cart</button>
+
+<button class="buy-btn">WhatsApp Buy</button>
 
 </div>
 
+</div>
+
+<!-- Product 6 -->
+
+<div class="product-card">
+
+<div class="product-image">
+<img src="images/products/cumin-seeds.jpg">
+</div>
+
+<div class="product-info">
+
+<p class="category">Whole Spice</p>
+
+<h3>VE Cumin Seeds</h3>
+
+<div class="rating">
+★★★★★
+<span>(81 Reviews)</span>
+</div>
+
+<div class="price-box">
+<span class="price">₹159</span>
+</div>
+
+<div class="quantity-box">
+<button>-</button>
+<input type="number" value="1">
+<button>+</button>
+</div>
+
+<button class="cart-btn">🛒 Add to Cart</button>
+
+<button class="buy-btn">WhatsApp Buy</button>
 
 </div>
 
+</div>
+
+<!-- Product 7 -->
+
+<div class="product-card">
+<div class="product-image">
+<img src="images/products/tea-masala.jpg">
+</div>
+
+<div class="product-info">
+
+<p class="category">Masala</p>
+
+<h3>VE Tea Masala</h3>
+
+<div class="rating">★★★★★</div>
+
+<div class="price-box">
+<span class="price">₹139</span>
+<del>₹179</del>
+</div>
+
+<div class="quantity-box">
+<button>-</button>
+<input type="number" value="1">
+<button>+</button>
+</div>
+
+<button class="cart-btn">🛒 Add to Cart</button>
+<button class="buy-btn">WhatsApp Buy</button>
+
+</div>
+</div>
+
+<!-- Product 8 -->
+
+<div class="product-card">
+<div class="product-image">
+<img src="images/products/kitchenking-masala.jpg">
+</div>
+
+<div class="product-info">
+
+<p class="category">Masala</p>
+
+<h3>Kitchen King Masala</h3>
+
+<div class="rating">★★★★★</div>
+
+<div class="price-box">
+<span class="price">₹169</span>
+</div>
+
+<div class="quantity-box">
+<button>-</button>
+<input type="number" value="1">
+<button>+</button>
+</div>
+
+<button class="cart-btn">🛒 Add to Cart</button>
+<button class="buy-btn">WhatsApp Buy</button>
+
+</div>
+</div>
+
+<!-- Product 9 -->
+
+<div class="product-card">
+<div class="product-image">
+<img src="images/products/chole-masala.jpg">
+</div>
+
+<div class="product-info">
+
+<p class="category">Masala</p>
+
+<h3>Chole Masala</h3>
+
+<div class="rating">★★★★★</div>
+
+<div class="price-box">
+<span class="price">₹129</span>
+</div>
+
+<div class="quantity-box">
+<button>-</button>
+<input type="number" value="1">
+<button>+</button>
+</div>
+
+<button class="cart-btn">🛒 Add to Cart</button>
+<button class="buy-btn">WhatsApp Buy</button>
+
+</div>
+</div>
+
+<!-- Product 10 -->
+
+<div class="product-card">
+<div class="product-image">
+<img src="images/products/biryani-masala.jpg">
+</div>
+
+<div class="product-info">
+
+<p class="category">Masala</p>
+
+<h3>Biryani Masala</h3>
+
+<div class="rating">★★★★★</div>
+
+<div class="price-box">
+<span class="price">₹149</span>
+</div>
+
+<div class="quantity-box">
+<button>-</button>
+<input type="number" value="1">
+<button>+</button>
+</div>
+
+<button class="cart-btn">🛒 Add to Cart</button>
+<button class="buy-btn">WhatsApp Buy</button>
+
+</div>
+</div>
+
+<!-- Product 11 -->
+
+<div class="product-card">
+<div class="product-image">
+<img src="images/products/neem-powder.jpg">
+</div>
+
+<div class="product-info">
+
+<p class="category">Herbal</p>
+
+<h3>Neem Powder</h3>
+
+<div class="rating">★★★★★</div>
+
+<div class="price-box">
+<span class="price">₹199</span>
+</div>
+
+<div class="quantity-box">
+<button>-</button>
+<input type="number" value="1">
+<button>+</button>
+</div>
+
+<button class="cart-btn">🛒 Add to Cart</button>
+<button class="buy-btn">WhatsApp Buy</button>
+
+</div>
+</div>
+
+<!-- Product 12 -->
+
+<div class="product-card">
+<div class="product-image">
+<img src="images/products/moringa-powder.jpg">
+</div>
+
+<div class="product-info">
+
+<p class="category">Herbal</p>
+
+<h3>Moringa Powder</h3>
+
+<div class="rating">★★★★★</div>
+
+<div class="price-box">
+<span class="price">₹249</span>
+</div>
+
+<div class="quantity-box">
+<button>-</button>
+<input type="number" value="1">
+<button>+</button>
+</div>
+
+<button class="cart-btn">🛒 Add to Cart</button>
+<button class="buy-btn">WhatsApp Buy</button>
+
+</div>
+</div>
+
+</div>
+
+</div>
 
 </section>
 
-
-
-
-
-
-
-
-<!-- =========================
-WHATSAPP ORDER POPUP
-========================= -->
-
-
-<div id="orderBox" class="order-popup">
-
-
-<div class="popup-content">
-
-
-<span onclick="closeOrder()"
-class="close">
-
-×
-
-</span>
-
-
-
-<h2>
-Place Your Order
-</h2>
-
-
-
-<input type="text"
-id="customerName"
-placeholder="Your Name">
-
-
-
-<input type="text"
-id="customerPhone"
-placeholder="Mobile Number">
-
-
-
-<textarea id="customerAddress"
-placeholder="Delivery Address"></textarea>
-
-
-
-<button onclick="sendOrder()">
-
-<i class="fa-brands fa-whatsapp"></i>
-
-Confirm Order
-
-</button>
-
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-
-<script>
-
-
-function plusQty(btn){
-
-let input = btn.parentElement.querySelector("input");
-
-input.value++;
-
-}
-
-
-
-function minusQty(btn){
-
-let input = btn.parentElement.querySelector("input");
-
-if(input.value>1){
-
-input.value--;
-
-}
-
-}
-
-
-
-function whatsappOrder(product){
-
-
-document.getElementById("orderBox").style.display="flex";
-
-
-window.selectedProduct = product;
-
-
-}
-
-
-
-
-function closeOrder(){
-
-document.getElementById("orderBox").style.display="none";
-
-}
-
-
-
-
-function sendOrder(){
-
-
-let name =
-document.getElementById("customerName").value;
-
-
-let phone =
-document.getElementById("customerPhone").value;
-
-
-let address =
-document.getElementById("customerAddress").value;
-
-
-
-let message =
-"Hello VE Naturals,%0A%0A"+
-"Product: "+window.selectedProduct+
-"%0AName: "+name+
-"%0AMobile: "+phone+
-"%0AAddress: "+address;
-
-
-
-window.open(
-
-"https://wa.me/919935830935?text="+message,
-
-"_blank"
-
-);
-
-
-
-}
-
-
-</script>
-<!-- =========================
+<!-- PRODUCT SECTION END -->
+<!-- ==========================================
 NEWSLETTER
-========================= -->
-
+========================================== -->
 
 <section class="newsletter">
 
+<div class="container">
 
-<div class="container newsletter-flex">
+<div class="newsletter-box">
 
-
-<div>
-
-<h2>
-Subscribe Our Newsletter
+<h2 data-en="Subscribe Newsletter"
+    data-hi="न्यूज़लेटर सब्सक्राइब करें">
+Subscribe Newsletter
 </h2>
 
-
-<p>
-Get latest offers, discounts and new product updates.
+<p
+data-en="Get latest offers and new product updates."
+data-hi="नए ऑफर और प्रोडक्ट अपडेट प्राप्त करें।">
+Get latest offers and new product updates.
 </p>
 
+<form>
 
-</div>
-
-
-
-<div class="newsletter-form">
-
-
-<input type="email"
-placeholder="Enter Your Email">
-
-
+<input
+type="email"
+placeholder="Enter Email">
 
 <button>
 
@@ -2538,276 +1649,1071 @@ Subscribe
 
 </button>
 
+</form>
 
 </div>
 
-
 </div>
-
 
 </section>
 
-
-
-
-
-
-
-<!-- =========================
+<!-- ==========================================
 FOOTER
-========================= -->
+========================================== -->
 
-
-<footer>
-
+<footer class="footer">
 
 <div class="container footer-grid">
 
+<!-- Logo -->
 
+<div>
 
-<div class="footer-box">
-
-
-<h2>
-VE Naturals
-</h2>
-
+<img src="images/logo.png"
+class="footer-logo">
 
 <p>
 
-Pure Herbal Products & Premium Natural Spices.
-
-Nature's Purity, Trusted Taste.
+VE Naturals provides Premium
+Natural Spices and Herbal Products
+with Hygienic Packing.
 
 </p>
 
-
-
-<div class="social">
-
-
-<a href="#">
-<i class="fab fa-facebook-f"></i>
-</a>
-
-
-<a href="#">
-<i class="fab fa-instagram"></i>
-</a>
-
-
-<a href="#">
-<i class="fab fa-youtube"></i>
-</a>
-
-
-<a href="#">
-<i class="fab fa-whatsapp"></i>
-</a>
-
-
 </div>
 
+<!-- Quick Links -->
 
-</div>
+<div>
 
-
-
-
-
-
-<div class="footer-box">
-
-
-<h3>
-Quick Links
-</h3>
-
+<h3>Quick Links</h3>
 
 <ul>
 
+<li><a href="index.html">Home</a></li>
 
-<li>
-<a href="index.html">
-Home
-</a>
-</li>
+<li><a href="shop.html">Shop</a></li>
 
+<li><a href="#">About</a></li>
 
-<li>
-<a href="shop.html">
-Shop
-</a>
-</li>
+<li><a href="#">Contact</a></li>
 
-
-<li>
-<a href="about.html">
-About Us
-</a>
-</li>
-
-
-<li>
-<a href="contact.html">
-Contact
-</a>
-</li>
-
-
-<li>
-<a href="login.html">
-Account
-</a>
-</li>
-
+<li><a href="#">Privacy Policy</a></li>
 
 </ul>
 
+</div>
+
+<!-- Categories -->
+
+<div>
+
+<h3>Categories</h3>
+
+<ul>
+
+<li>Masala</li>
+
+<li>Herbal Powder</li>
+
+<li>Combo Pack</li>
+
+<li>Natural Products</li>
+
+</ul>
 
 </div>
 
+<!-- Contact -->
 
+<div>
 
-
-
-
-
-<div class="footer-box">
-
-
-<h3>
-Contact Us
-</h3>
-
+<h3>Contact</h3>
 
 <p>
-<strong>
-VISHWAKARMA ENTERPRISES
-</strong>
-</p>
 
+📍 Lucknow, Uttar Pradesh
+
+</p>
 
 <p>
-Near Purvanchal Expressway,
-<br>
-Bareha, Bahrauli,
-<br>
-Mohanlalganj,
-<br>
-Lucknow - 226303
-</p>
 
+📞 +91 XXXXXXXXXX
+
+</p>
 
 <p>
-📞 +91 9935830935
+
+✉️ support@venaturals.in
+
 </p>
-
-
-<p>
-✉️ vishwakarmaenterprises.co@gmail.com
-</p>
-
 
 </div>
 
-
-
-
-
-
-
-<div class="footer-box">
-
-
-<h3>
-Customer Service
-</h3>
-
-
-<p>
-🚚 Delivery Information
-</p>
-
-
-<p>
-🔒 Secure Payment
-</p>
-
-
-<p>
-↩️ Return Policy
-</p>
-
-
-<p>
-📦 Order Tracking
-</p>
-
-
-
 </div>
-
-
-
-
-</div>
-
-
-
 
 <div class="copyright">
 
-
-© 2026 VE Naturals |
-
-Manufactured & Marketed By
-
-VISHWAKARMA ENTERPRISES |
-
+© 2026 VE Naturals.
 All Rights Reserved.
-
 
 </div>
 
-
-
 </footer>
 
+<!-- ==========================================
+FLOATING WHATSAPP
+========================================== -->
 
+<a href="https://wa.me/91XXXXXXXXXX"
+class="whatsapp-float">
 
-
-
-
-
-
-<!-- WHATSAPP FLOAT BUTTON -->
-
-
-<a href="https://wa.me/919935830935"
-class="whatsapp-float"
-target="_blank">
-
-
-<i class="fa-brands fa-whatsapp"></i>
-
+<i class="fab fa-whatsapp"></i>
 
 </a>
 
+<!-- ==========================================
+BACK TO TOP
+========================================== -->
 
+<button id="topBtn">
 
+<i class="fa-solid fa-arrow-up"></i>
 
+</button>
 
+<!-- ==========================================
+LANGUAGE SWITCHER
+========================================== -->
 
+<script>
 
+const language=document.getElementById("language");
 
-<!-- SCRIPT -->
+language.addEventListener("change",function(){
 
+const lang=this.value;
 
-<script src="js/script.js"></script>
+document.querySelectorAll("[data-en]").forEach(el=>{
 
+el.innerHTML=el.getAttribute("data-"+lang);
+
+});
+
+});
+
+</script>
+
+<!-- ==========================================
+BACK TO TOP SCRIPT
+========================================== -->
+
+<script>
+
+let btn=document.getElementById("topBtn");
+
+window.onscroll=function(){
+
+if(document.body.scrollTop>300||
+
+document.documentElement.scrollTop>300){
+
+btn.style.display="block";
+
+}else{
+
+btn.style.display="none";
+
+}
+
+}
+
+btn.onclick=function(){
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+}
+
+</script>
+
+<!-- Pagination -->
+
+<script src="js/pagination.js"></script>
+
+<!-- Main -->
+
+<script src="js/main.js"></script>
 
 </body>
 
-
 </html>
+<!-- ==========================================
+WHY CHOOSE VE NATURALS
+========================================== -->
+
+<section class="product-features">
+
+<div class="container">
+
+<div class="feature-title">
+
+<h2>Why Choose VE Naturals?</h2>
+
+<p>100% Pure • Hygienically Packed • Premium Quality</p>
+
+</div>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+<i class="fa-solid fa-seedling"></i>
+<h3>100% Natural</h3>
+<p>Pure ingredients with no harmful chemicals.</p>
+</div>
+
+<div class="feature-card">
+<i class="fa-solid fa-shield-heart"></i>
+<h3>Quality Tested</h3>
+<p>Every product is carefully quality checked.</p>
+</div>
+
+<div class="feature-card">
+<i class="fa-solid fa-box"></i>
+<h3>Safe Packaging</h3>
+<p>Food-grade hygienic packaging for freshness.</p>
+</div>
+
+<div class="feature-card">
+<i class="fa-solid fa-truck-fast"></i>
+<h3>Fast Delivery</h3>
+<p>Quick dispatch across India.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+CUSTOMER REVIEWS
+========================================== -->
+
+<section class="customer-review">
+
+<div class="container">
+
+<h2>Happy Customers</h2>
+
+<div class="review-box">
+
+<div class="review-card">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+
+Excellent quality spices.
+Fresh aroma and fast delivery.
+
+</p>
+
+<h4>- Rahul Sharma</h4>
+
+</div>
+
+<div class="review-card">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+
+Packaging is amazing.
+Highly recommended.
+
+</p>
+
+<h4>- Pooja Verma</h4>
+
+</div>
+
+<div class="review-card">
+
+<div class="stars">
+★★★★★
+</div>
+
+<p>
+
+Best herbal powders.
+Very satisfied.
+
+</p>
+
+<h4>- Amit Singh</h4>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+ORDER PROCESS
+========================================== -->
+
+<section class="order-process">
+
+<div class="container">
+
+<h2>How To Order</h2>
+
+<div class="process-grid">
+
+<div class="feature-card">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<h3>Choose Product</h3>
+
+<p>Select your favorite product.</p>
+
+</div>
+
+<div class="feature-card">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<h3>Add To Cart</h3>
+
+<p>Add products to your shopping cart.</p>
+
+</div>
+
+<div class="feature-card">
+
+<i class="fa-solid fa-credit-card"></i>
+
+<h3>Checkout</h3>
+
+<p>Complete secure payment.</p>
+
+</div>
+
+<div class="feature-card">
+
+<i class="fa-solid fa-truck"></i>
+
+<h3>Delivered</h3>
+
+<p>Fast doorstep delivery.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+SHOP STATISTICS
+========================================== -->
+
+<section class="shop-stats">
+
+<div class="container">
+
+<div class="stats-grid">
+
+<div class="stat-box">
+<h2>59+</h2>
+<p>Products</p>
+</div>
+
+<div class="stat-box">
+<h2>5000+</h2>
+<p>Happy Customers</p>
+</div>
+
+<div class="stat-box">
+<h2>100%</h2>
+<p>Natural</p>
+</div>
+
+<div class="stat-box">
+<h2>24×7</h2>
+<p>Support</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ==========================================
+BEST SELLER PRODUCTS
+========================================== -->
+
+<section class="best-seller">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>🔥 Best Seller Products</h2>
+
+<p>Most Loved Products</p>
+
+</div>
+
+<div class="best-grid">
+
+<div class="mini-card">
+
+<img src="images/products/garam-masala.jpg">
+
+<h4>VE Garam Masala</h4>
+
+<p>₹149</p>
+
+<button class="mini-btn">View</button>
+
+</div>
+
+<div class="mini-card">
+
+<img src="images/products/haldi-powder.jpg">
+
+<h4>VE Haldi Powder</h4>
+
+<p>₹99</p>
+
+<button class="mini-btn">View</button>
+
+</div>
+
+<div class="mini-card">
+
+<img src="images/products/moringa-powder.jpg">
+
+<h4>VE Moringa Powder</h4>
+
+<p>₹249</p>
+
+<button class="mini-btn">View</button>
+
+</div>
+
+<div class="mini-card">
+
+<img src="images/products/tea-masala.jpg">
+
+<h4>VE Tea Masala</h4>
+
+<p>₹139</p>
+
+<button class="mini-btn">View</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+RECENTLY VIEWED
+========================================== -->
+
+<section class="recent-products">
+
+<div class="container">
+
+<div class="section-title">
+
+<h2>👀 Recently Viewed</h2>
+
+</div>
+
+<div class="best-grid">
+
+<div class="mini-card">
+
+<img src="images/products/chole-masala.jpg">
+
+<h4>VE Chole Masala</h4>
+
+<p>₹129</p>
+
+</div>
+
+<div class="mini-card">
+
+<img src="images/products/biryani-masala.jpg">
+
+<h4>VE Biryani Masala</h4>
+
+<p>₹149</p>
+
+</div>
+
+<div class="mini-card">
+
+<img src="images/products/neem-powder.jpg">
+
+<h4>VE Neem Powder</h4>
+
+<p>₹199</p>
+
+</div>
+
+<div class="mini-card">
+
+<img src="images/products/kitchenking-masal.jpg">
+
+<h4>Kitchen King</h4>
+
+<p>₹169</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+SHOPPING BENEFITS
+========================================== -->
+
+<section class="shopping-benefits">
+
+<div class="container">
+
+<div class="benefit-grid">
+
+<div class="benefit-box">
+
+<i class="fa-solid fa-truck-fast"></i>
+
+<h3>Free Delivery</h3>
+
+<p>Above ₹499 Order</p>
+
+</div>
+
+<div class="benefit-box">
+
+<i class="fa-solid fa-rotate-left"></i>
+
+<h3>Easy Return</h3>
+
+<p>7 Days Return Policy</p>
+
+</div>
+
+<div class="benefit-box">
+
+<i class="fa-solid fa-credit-card"></i>
+
+<h3>Secure Payment</h3>
+
+<p>100% Safe Payment</p>
+
+</div>
+
+<div class="benefit-box">
+
+<i class="fa-solid fa-headset"></i>
+
+<h3>24×7 Support</h3>
+
+<p>Always Ready To Help</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+MOBILE BOTTOM MENU
+========================================== -->
+
+<nav class="mobile-menu">
+
+<a href="index.html">
+
+<i class="fa-solid fa-house"></i>
+
+<span>Home</span>
+
+</a>
+
+<a href="shop.html">
+
+<i class="fa-solid fa-store"></i>
+
+<span>Shop</span>
+
+</a>
+
+<a href="wishlist.html">
+
+<i class="fa-regular fa-heart"></i>
+
+<span>Wishlist</span>
+
+</a>
+
+<a href="cart.html">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span>Cart</span>
+
+</a>
+
+<a href="profile.html">
+
+<i class="fa-regular fa-user"></i>
+
+<span>Account</span>
+
+</a>
+
+</nav>
+
+<!-- ==========================================
+LOADING SCREEN
+========================================== -->
+
+<div id="loader">
+
+<div class="spinner"></div>
+
+<p>Loading VE Naturals...</p>
+
+</div>
+
+<script>
+
+window.onload=function(){
+
+document.getElementById("loader").style.display="none";
+
+}
+
+</script>
+<!-- ==========================================
+LIVE SEARCH + FILTER + CART/WISHLIST COUNTER
+========================================== -->
+
+<script>
+
+//=============================
+// Product Search
+//=============================
+
+const searchInput = document.querySelector(".search-box input");
+const products = document.querySelectorAll(".product-card");
+
+if(searchInput){
+
+searchInput.addEventListener("keyup",function(){
+
+let value=this.value.toLowerCase();
+
+products.forEach(product=>{
+
+let title=product.querySelector("h3").innerText.toLowerCase();
+
+if(title.indexOf(value)>-1){
+
+product.style.display="block";
+
+}else{
+
+product.style.display="none";
+
+}
+
+});
+
+});
+
+}
+
+//=============================
+// Wishlist Counter
+//=============================
+
+let wishlist=0;
+
+document.querySelectorAll(".wishlist-btn").forEach(btn=>{
+
+btn.onclick=function(){
+
+wishlist++;
+
+document.getElementById("wishlist-count").innerHTML=wishlist;
+<!-- ==========================================
+COUPON SECTION
+========================================== -->
+
+<section class="coupon-section">
+
+<div class="container">
+
+<h2>🎁 Apply Coupon</h2>
+
+<div class="coupon-box">
+
+<input type="text"
+id="couponCode"
+placeholder="Enter Coupon Code">
+
+<button onclick="applyCoupon()">
+Apply
+</button>
+
+</div>
+
+<p id="couponMessage"></p>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+PAYMENT METHODS
+========================================== -->
+
+<section class="payment-section">
+
+<div class="container">
+
+<h2>💳 Secure Payment</h2>
+
+<div class="payment-grid">
+
+<div class="payment-card">
+<i class="fa-brands fa-google-pay"></i>
+<h3>Google Pay</h3>
+</div>
+
+<div class="payment-card">
+<i class="fa-solid fa-qrcode"></i>
+<h3>UPI QR</h3>
+</div>
+
+<div class="payment-card">
+<i class="fa-solid fa-building-columns"></i>
+<h3>Bank Transfer</h3>
+</div>
+
+<div class="payment-card">
+<i class="fa-solid fa-money-bill-wave"></i>
+<h3>Cash on Delivery</h3>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+RELATED PRODUCTS
+========================================== -->
+
+<section class="related-products">
+
+<div class="container">
+
+<h2>Related Products</h2>
+
+<div class="best-grid">
+
+<div class="mini-card">
+<img src="images/products/garam-masala.jpg">
+<h4>Garam Masala</h4>
+<p>₹149</p>
+</div>
+
+<div class="mini-card">
+<img src="images/products/haldi-powder.jpg">
+<h4>Haldi Powder</h4>
+<p>₹99</p>
+</div>
+
+<div class="mini-card">
+<img src="images/products/tea-masala.jpg">
+<h4>Tea Masala</h4>
+<p>₹139</p>
+</div>
+
+<div class="mini-card">
+<img src="images/products/moringa-powder.jpg">
+<h4>Moringa Powder</h4>
+<p>₹249</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+DOWNLOAD INVOICE
+========================================== -->
+
+<section class="invoice-section">
+
+<div class="container">
+
+<h2>Invoice</h2>
+
+<button class="download-btn"
+onclick="window.print()">
+
+<i class="fa-solid fa-download"></i>
+
+Download Invoice
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+JAVASCRIPT
+========================================== -->
+
+<script>
+
+function applyCoupon(){
+
+let code=document.getElementById("couponCode").value;
+
+let msg=document.getElementById("couponMessage");
+
+if(code==="VE10"){
+
+msg.style.color="green";
+
+msg.innerHTML="Coupon Applied! 10% Discount.";
+
+}else if(code==="WELCOME"){
+
+msg.style.color="green";
+
+msg.innerHTML="Welcome Coupon Applied!";
+
+}else{
+
+msg.style.color="red";
+
+msg.innerHTML="Invalid Coupon.";
+
+}
+
+}
+
+</script>
+<!-- ==========================================
+VE NATURALS - PART 13
+Real Cart + Wishlist + Dark Mode
+========================================== -->
+
+<!-- Notification -->
+<div id="toast" class="toast">
+Product Added Successfully
+</div>
+
+<!-- Dark Mode Button -->
+<button id="darkModeBtn" class="dark-btn">
+<i class="fa-solid fa-moon"></i>
+</button>
+
+<script>
+
+/* ===========================
+LOCAL STORAGE CART
+=========================== */
+
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+document.querySelectorAll(".cart-btn").forEach(btn=>{
+
+btn.onclick=function(){
+
+let card=this.closest(".product-card");
+
+let name=card.querySelector("h3").innerText;
+
+let price=card.querySelector(".price").innerText;
+
+cart.push({
+
+name:name,
+
+price:price
+
+});
+
+localStorage.setItem("cart",JSON.stringify(cart));
+
+updateCartCount();
+
+showToast(name+" Added To Cart");
+
+};
+
+});
+
+/* ===========================
+UPDATE CART
+=========================== */
+
+function updateCartCount(){
+
+let c=document.getElementById("cart-count");
+
+if(c){
+
+c.innerHTML=cart.length;
+
+}
+
+}
+
+updateCartCount();
+
+/* ===========================
+WISHLIST
+=========================== */
+
+let wishlist=JSON.parse(localStorage.getItem("wishlist"))||[];
+
+document.querySelectorAll(".wishlist-btn").forEach(btn=>{
+
+btn.onclick=function(){
+
+let card=this.closest(".product-card");
+
+let name=card.querySelector("h3").innerText;
+
+wishlist.push(name);
+
+localStorage.setItem("wishlist",
+
+JSON.stringify(wishlist));
+
+document.getElementById("wishlist-count").innerHTML=wishlist.length;
+
+showToast(name+" Added To Wishlist");
+
+}
+
+});
+
+if(document.getElementById("wishlist-count")){
+
+document.getElementById("wishlist-count").innerHTML=wishlist.length;
+
+}
+
+/* ===========================
+TOAST
+=========================== */
+
+function showToast(text){
+
+let toast=document.getElementById("toast");
+
+toast.innerHTML=text;
+
+toast.classList.add("show");
+
+setTimeout(()=>{
+
+toast.classList.remove("show");
+
+},2500);
+
+}
+
+/* ===========================
+DARK MODE
+=========================== */
+
+let dark=document.getElementById("darkModeBtn");
+
+dark.onclick=function(){
+
+document.body.classList.toggle("dark");
+
+localStorage.setItem("theme",
+
+document.body.classList.contains("dark")?
+
+"dark":"light");
+
+}
+
+if(localStorage.getItem("theme")=="dark"){
+
+document.body.classList.add("dark");
+
+}
+
+/* ===========================
+LOGIN CHECK
+=========================== */
+
+function checkLogin(){
+
+let user=localStorage.getItem("user");
+
+if(user==null){
+
+alert("Please Login First");
+
+window.location="login.html";
+
+}
+
+}
+
+document.querySelectorAll(".buy-btn").forEach(btn=>{
+
+btn.onclick=function(){
+
+checkLogin();
+
+}
+
+});
+
+</script>
+
