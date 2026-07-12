@@ -2726,3 +2726,841 @@ background-position:-200% 0;
 
 
 /* End Part 11 */
+
+/* ==========================================
+   VE NATURALS SHOP CSS
+   PART 12
+   Advanced E-Commerce UI
+========================================== */
+
+
+/* Product Card Advanced */
+
+.product-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    transition:.4s;
+
+}
+
+
+.product-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:#0b8a3b;
+
+    transform:scaleX(0);
+
+    transition:.4s;
+
+}
+
+
+.product-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+
+
+
+/* Compare Button */
+
+
+.compare-btn{
+
+    position:absolute;
+
+    top:70px;
+
+    right:15px;
+
+    width:42px;
+
+    height:42px;
+
+    background:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#0b8a3b;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.compare-btn:hover{
+
+    background:#0b8a3b;
+
+    color:#fff;
+
+}
+
+
+
+
+
+/* Discount Coupon */
+
+
+.coupon-box{
+
+    background:#fff8e8;
+
+    border:2px dashed #ff9800;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    margin:25px 0;
+
+}
+
+
+.coupon-box h3{
+
+    color:#e65100;
+
+    margin-bottom:10px;
+
+}
+
+
+.coupon-code{
+
+    display:inline-block;
+
+    background:#ff9800;
+
+    color:#fff;
+
+    padding:8px 20px;
+
+    border-radius:30px;
+
+    font-weight:700;
+
+}
+
+
+
+
+
+/* Offer Popup */
+
+
+.offer-popup{
+
+    position:fixed;
+
+    right:20px;
+
+    bottom:20px;
+
+    width:320px;
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+
+    z-index:999;
+
+    display:none;
+
+}
+
+
+.offer-popup.show{
+
+    display:block;
+
+    animation:popup .4s ease;
+
+}
+
+
+@keyframes popup{
+
+from{
+
+transform:translateY(50px);
+
+opacity:0;
+
+}
+
+to{
+
+transform:translateY(0);
+
+opacity:1;
+
+}
+
+}
+
+
+.offer-popup h3{
+
+    color:#0b8a3b;
+
+}
+
+
+.offer-popup button{
+
+    margin-top:15px;
+
+    background:#0b8a3b;
+
+    color:#fff;
+
+    border:none;
+
+    padding:10px 25px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+/* Pagination Premium */
+
+
+.pagination{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin:50px 0;
+
+}
+
+
+.pagination button{
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    border:2px solid #0b8a3b;
+
+    background:#fff;
+
+    color:#0b8a3b;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.pagination button:hover,
+.pagination button.active{
+
+    background:#0b8a3b;
+
+    color:#fff;
+
+}
+
+
+
+
+
+/* Recently Viewed */
+
+
+.recent-products{
+
+    padding:60px 0;
+
+    background:#f8f9fa;
+
+}
+
+
+.recent-products h2{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+
+
+
+
+/* Product Tags */
+
+
+.product-tags{
+
+    display:flex;
+
+    gap:8px;
+
+    flex-wrap:wrap;
+
+    margin:15px 0;
+
+}
+
+
+.product-tags span{
+
+    background:#e8f5e9;
+
+    color:#0b8a3b;
+
+    padding:5px 12px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+}
+
+
+
+
+
+/* Rating Progress */
+
+
+.rating-bar{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin:8px 0;
+
+}
+
+
+.rating-line{
+
+    height:7px;
+
+    background:#ddd;
+
+    flex:1;
+
+    border-radius:10px;
+
+}
+
+
+.rating-fill{
+
+    height:100%;
+
+    width:90%;
+
+    background:#ffc107;
+
+    border-radius:10px;
+
+}
+
+
+
+
+
+/* Mobile Adjustment */
+
+
+@media(max-width:768px){
+
+.offer-popup{
+
+    width:90%;
+
+    right:5%;
+
+}
+
+
+.pagination button{
+
+    width:38px;
+
+    height:38px;
+
+    font-size:14px;
+
+}
+
+
+.compare-btn{
+
+    display:none;
+
+}
+
+
+}
+
+
+/* End Part 12 */
+/* ==========================================
+   VE NATURALS SHOP CSS
+   PART 13 FINAL
+   Premium E-Commerce Finishing
+========================================== */
+
+
+/* Sticky Header */
+
+.main-header{
+
+    position:sticky;
+
+    top:0;
+
+    z-index:1000;
+
+    background:#fff;
+
+}
+
+
+
+/* Navbar Shadow */
+
+.navbar{
+
+    position:sticky;
+
+    top:80px;
+
+    z-index:999;
+
+    background:#fff;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+
+
+
+/* Mega Menu */
+
+
+.mega-menu{
+
+    position:absolute;
+
+    top:100%;
+
+    left:0;
+
+    width:100%;
+
+    background:#fff;
+
+    padding:35px;
+
+    display:none;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+    z-index:999;
+
+}
+
+
+.nav-item:hover .mega-menu{
+
+    display:grid;
+
+}
+
+
+.mega-menu h3{
+
+    color:#0b8a3b;
+
+    margin-bottom:15px;
+
+}
+
+
+.mega-menu a{
+
+    display:block;
+
+    color:#555;
+
+    text-decoration:none;
+
+    margin-bottom:10px;
+
+    transition:.3s;
+
+}
+
+
+.mega-menu a:hover{
+
+    color:#0b8a3b;
+
+    padding-left:8px;
+
+}
+
+
+
+
+
+/* Cart Animation */
+
+
+.cart-btn:active,
+.buy-btn:active{
+
+    transform:scale(.95);
+
+}
+
+
+
+
+
+/* Add To Cart Success */
+
+
+.cart-success{
+
+    position:fixed;
+
+    top:100px;
+
+    right:20px;
+
+    background:#0b8a3b;
+
+    color:#fff;
+
+    padding:15px 25px;
+
+    border-radius:40px;
+
+    display:none;
+
+    z-index:9999;
+
+    animation:slideIn .4s ease;
+
+}
+
+
+
+@keyframes slideIn{
+
+from{
+
+right:-300px;
+
+}
+
+to{
+
+right:20px;
+
+}
+
+}
+
+
+
+
+
+/* Floating WhatsApp */
+
+
+.whatsapp-float{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:25px;
+
+    width:60px;
+
+    height:60px;
+
+    background:#25D366;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    text-decoration:none;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+
+    z-index:999;
+
+    transition:.3s;
+
+}
+
+
+.whatsapp-float:hover{
+
+    transform:scale(1.1);
+
+}
+
+
+
+
+
+/* Back To Top */
+
+
+.back-top{
+
+    position:fixed;
+
+    right:25px;
+
+    bottom:100px;
+
+    width:45px;
+
+    height:45px;
+
+    background:#0b8a3b;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    cursor:pointer;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+}
+
+
+
+.back-top.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+
+
+
+/* Product Image Zoom */
+
+
+.product-image{
+
+    overflow:hidden;
+
+}
+
+
+
+.product-image img{
+
+    transition:.5s;
+
+}
+
+
+
+.product-image:hover img{
+
+    transform:scale(1.12);
+
+}
+
+
+
+
+
+/* Secure Payment Box */
+
+
+.payment-box{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+    margin:40px 0;
+
+}
+
+
+.payment-box div{
+
+    background:#fff;
+
+    padding:15px 25px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    font-weight:600;
+
+}
+
+
+
+
+
+/* Mobile Final Fix */
+
+
+@media(max-width:768px){
+
+
+.main-header{
+
+    position:relative;
+
+}
+
+
+.navbar{
+
+    position:relative;
+
+    top:0;
+
+}
+
+
+.mega-menu{
+
+    grid-template-columns:1fr;
+
+    padding:20px;
+
+}
+
+
+.whatsapp-float{
+
+    width:55px;
+
+    height:55px;
+
+    right:15px;
+
+    bottom:80px;
+
+}
+
+
+.payment-box div{
+
+    width:100%;
+
+    text-align:center;
+
+}
+
+
+}
+
+
+
+/* ==========================================
+   SHOP CSS COMPLETE
+   VE NATURALS
+========================================== */
